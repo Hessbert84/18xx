@@ -16,6 +16,7 @@ const ThemeSelect = ({scheme, setScheme}) => {
         <option value="aag">All Aboard Games</option>
         <option value="ps18xx">px18xx</option>
         <option value="carth">Carth</option>
+        <option value="galatolol">Galatolol</option>
       </select>
     </div>
   );

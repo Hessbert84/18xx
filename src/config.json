@@ -1,7 +1,7 @@
 {
   "coords": "outside",
   "font": {
-    "family": "Bitter, serif",
+    "family": "Libre Baskerville",
     "size": "0.15in",
     "weight": "normal",
     "stock": {
@@ -14,12 +14,12 @@
     "height": 1100,
     "margins": 25
   },
-  "useCompanySvgLogos": false,
+  "useCompanySvgLogos": true,
   "plainMapDestinations": false,
   "plainMapHomes": false,
   "straightCityNames": false,
-  "theme": "gmt",
-  "companiesTheme": "gmt",
+  "theme": "galatolol",
+  "companiesTheme": "galatolol",
   "shareLayout": "left",
   "tiles": {
     "layout": "offset",

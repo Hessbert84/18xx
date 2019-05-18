@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-print-color-adjust: exact;
-  font-family: "Bitter", serif;
+  font-family: "Libre Baskerville";
 }
 
 .tokens {
@@ -93,7 +93,7 @@ svg {
 
 .card {
   page-break-inside: avoid;
-  font-family: "Bitter", serif;
+  font-family: "Libre Baskerville";
   height: calc(44mm + 0.25in);
   width: calc(67.5mm + 0.25in);
   box-sizing: border-box;
@@ -104,7 +104,7 @@ svg {
 
 .charter {
   page-break-inside: avoid;
-  font-family: "Bitter", serif;
+  font-family: "Libre Baskerville";
   height: 4.75in;
   width: 7.5in;
   position: relative;
@@ -177,7 +177,7 @@ svg {
 
 .charter__phase th {
   padding: 0 0.05in;
-  font-family: "Bitter", serif;
+  font-family: "Libre Baskerville";
   text-align: center;
 }
 
@@ -239,7 +239,7 @@ svg {
 
 .minorCharter {
   page-break-inside: avoid;
-  font-family: "Bitter", serif;
+  font-family: "Libre Baskerville";
   height: 3in;
   width: 5in;
   position: relative;
@@ -325,7 +325,7 @@ svg {
 
 .minorCharter__phase th {
   padding: 0 0.05in;
-  font-family: "Bitter", serif;
+  font-family: "Libre Baskerville";
   text-align: center;
 }
 
@@ -435,7 +435,7 @@ svg {
   box-sizing: border-box;
   right: 0;
   text-align: right;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Libre Baskerville";
   font-size: 0.12in;
   line-height: 0.16in;
 }
@@ -528,7 +528,7 @@ svg {
   left: 0;
   line-height: 0.105in;
   font-size: 0.085in;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Libre Baskerville";
 }
 
 

@@ -188,6 +188,7 @@ const Config = ({config, setConfig, resetConfig}) => {
         <option value="carth">Carth</option>
         <option value="dtg">Deep Thought</option>
         <option value="gmt">GMT</option>
+        <option value="galatolol">Galatolol</option>
         <option value="ps18xx">px18xx</option>
       </select>
       <ThemePreview/>
@@ -197,6 +198,7 @@ const Config = ({config, setConfig, resetConfig}) => {
         <option value="carth">Carth</option>
         <option value="dtg">Deep Thought</option>
         <option value="gmt">GMT</option>
+        <option value="galatolol">Galatolol</option>
         <option value="ps18xx">px18xx</option>
         <option value="rob">Rails on Board</option>
       </select>

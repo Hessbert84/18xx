@@ -12,7 +12,7 @@ export const Coordinate = ({x, y, label}) => (
     {c => (
       <text
         fill={c("black")}
-        fontFamily="Bitter"
+        fontFamily="Libre Baskerville"
         fontWeight="normal"
         fontSize="16"
         dominantBaseline="central"
