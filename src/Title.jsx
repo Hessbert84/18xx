@@ -26,9 +26,9 @@ const Title = ({ game, variation, hexWidth }) => {
         >
           <text
             fill={c("black")}
-            fontFamily="Libre Baskerville"
+            fontFamily="Adamina"
             fontWeight="bold"
-            fontSize={size}
+            fontSize={0.6*size}
             textAnchor="start"
             lengthAdjust="spacingAndGlyphs"
             x="0"
@@ -40,8 +40,9 @@ const Title = ({ game, variation, hexWidth }) => {
             <text
               fill={c("black")}
               fontFamily="Libre Baskerville"
-              fontWeight="bold"
-              fontSize={subSize}
+              fontWeight="italic"
+              fontStyle="italic"
+              fontSize={0.6*subSize}
               textAnchor="start"
               lengthAdjust="spacingAndGlyphs"
               x="0"
@@ -53,14 +54,14 @@ const Title = ({ game, variation, hexWidth }) => {
           <text
             fill={c("black")}
             fontFamily="Libre Baskerville"
-            fontWeight="bold"
-            fontSize={designerSize}
+            fontWeight="regular"
+            fontSize={0.7*designerSize}
             textAnchor="start"
             lengthAdjust="spacingAndGlyphs"
             x="0"
             y={designerSize + 10 + (game.info.subtitle ? (subSize + 10) : 0)}
           >
-            by {game.info.designer}
+            {game.info.designer}
             {mapName && ` ⋯ ${mapName}`}
           </text>
         </g>
