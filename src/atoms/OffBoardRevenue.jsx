@@ -45,7 +45,7 @@ const makeNode = (x, y, reverse, revenue) => {
           textLength={length}
           lengthAdjust="spacingAndGlyphs"
           x={x + 0.5 * width}
-          y={y - 1}
+          y={y + 1}
         >
           {revenue.cost}
         </text>
