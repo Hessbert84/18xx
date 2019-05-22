@@ -18,7 +18,8 @@ const LeftShare = ({
   label,
   name,
   abbrev,
-  token
+  token,
+  layout
 }) => {
   let count = shares > 1 ? `${shares} Shares` : `${shares} Share`;
 
@@ -29,7 +30,7 @@ const LeftShare = ({
                   <div className="share__token__wrapper">
                     <svg style={{width:"0.52in",height:"0.52in"}}
                          viewBox="-26 -26 52 52">
-                      <Token label={abbrev} token={token} width={25} />
+                      <Token label={abbrev} token={token} outline="white" width={25} />
                     </svg>
                   </div>
                 </div>);
@@ -38,7 +39,7 @@ const LeftShare = ({
 
   return (
     <div className="cutlines">
-      <div className="card share share--left">
+      <div className={`card share share--${layout || "left"}`}>
         {name && <div className="share__name">{name}</div>}
         {shares && <div className="share__shares">{count}</div>}
         {cost && <div className="share__shares">{cost}</div>}
@@ -139,6 +140,8 @@ const Share = (props) => (
     {config => {
       if(config.shareLayout === "left") {
         return <LeftShare {...props} />;
+      } else if (config.shareLayout === "gmt") {
+        return <LeftShare {...props} layout="gmt" />;
       } else {
         return <CenterShare {...props} />;
       }

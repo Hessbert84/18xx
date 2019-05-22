@@ -82,12 +82,48 @@ const App = () => (
           xmlns="http://www.w3.org/2000/svg"
           style={{height:0,width:0,position:"absolute"}}>
           <defs>
-            <clipPath id="hexClip">
+            <mask id="hexMask">
+              <rect x="-100" y="-100" width="200" height="200" fill="black"/>
               <polygon points="-86.6025,0 -43.30125,-75 43.30125,-75 86.6025,0 43.30125,75 -43.30125,75"
-                       fill="black"
-                       stroke="black"
+                       fill="white"
+                       stroke="white"
                        strokeWidth="2" />
-            </clipPath>
+            </mask>
+            <mask id="hexBleedMask">
+              <rect x="-100" y="-100" width="200" height="200" fill="black"/>
+              <polygon points="-98.1495,0 -49.07475,-85 49.07475,-85 98.1495,0 49.07475,85 -49.07475,85"
+                       fill="white"
+                       stroke="white"
+                       strokeWidth="2" />
+            </mask>
+            <mask id="hexBleedMaskOffset">
+              <rect x="-100" y="-100" width="200" height="200" fill="black"/>
+              <polygon points="-86.6025,0 -92.376,-9.999995337 -54.84825,-75 -43.30125,-75 -37.52775,-85 37.52775,-85 43.30125,-75 54.84825,-75 92.376,-9.999995337 86.6025,0 92.376,9.999995337 54.84825,75 43.30125,75 37.52775,85 -37.52775,85 -43.30125,75 -54.84825,75 -92.376,9.999995337"
+                       fill="white"
+                       stroke="white"
+                       strokeWidth="2" />
+            </mask>
+            <mask id="hexBleedMaskDie">
+              <rect x="-100" y="-100" width="200" height="200" fill="black"/>
+              <polygon points="-98.1495,0 -54.84825,-75 54.84825,-75 98.1495,0 54.84825,75 -54.84825,75"
+                       fill="white"
+                       stroke="white"
+                       strokeWidth="2" />
+            </mask>
+            <mask id="hexBleedMaskDieTop">
+              <rect x="-100" y="-100" width="200" height="200" fill="black"/>
+              <polygon points="-98.1495,0 -49.07475,-85 49.07475,-85 98.1495,0 54.84825,75 -54.84825,75"
+                       fill="white"
+                       stroke="white"
+                       strokeWidth="2" />
+            </mask>
+            <mask id="hexBleedMaskDieBottom">
+              <rect x="-100" y="-100" width="200" height="200" fill="black"/>
+              <polygon points="-98.1495,0 -54.84825,-75 54.84825,-75 98.1495,0 49.07475,85 -49.07475,85"
+                       fill="white"
+                       stroke="white"
+                       strokeWidth="2" />
+            </mask>
             <Color>
               {c => (
                 <React.Fragment>
@@ -226,21 +262,21 @@ const App = () => (
                     d="M 0 42 L 25 42 A 30 30 0 0 0 47 -1 L 25 -40 A 30 30 0 0 0 -25 -40 L -47 -1 A 30 30 0 0 0 -25 42 L 0 42"
                   />
                   <linearGradient id="yellow-green" spreadMethod="repeat"
-                                  x1="0" x2="0" y1="0" y2="16.6667%">
+                                  x1="0" x2="0" y1="0" y2="22%">
                     <stop offset="0%" stopColor={c("yellow")}/>
                     <stop offset="50%" stopColor={c("yellow")}/>
                     <stop offset="50%" stopColor={c("green")}/>
                     <stop offset="100%" stopColor={c("green")}/>
                   </linearGradient>
                   <linearGradient id="green-brown" spreadMethod="repeat"
-                                  x1="0" x2="0" y1="0" y2="16.6667%">
+                                  x1="0" x2="0" y1="0" y2="22%">
                     <stop offset="0%" stopColor={c("green")}/>
                     <stop offset="50%" stopColor={c("green")}/>
                     <stop offset="50%" stopColor={c("brown")}/>
                     <stop offset="100%" stopColor={c("brown")}/>
                   </linearGradient>
                   <linearGradient id="brown-gray" spreadMethod="repeat"
-                                  x1="0" x2="0" y1="0" y2="16.6667%">
+                                  x1="0" x2="0" y1="0" y2="22%">
                     <stop offset="0%" stopColor={c("brown")}/>
                     <stop offset="50%" stopColor={c("brown")}/>
                     <stop offset="50%" stopColor={c("gray")}/>

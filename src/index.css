@@ -9,6 +9,10 @@ body {
   font-family: "Libre Baskerville";
 }
 
+p {
+  font-weight: normal;
+}
+
 .tokens {
   position: relative;
   margin: 2em auto;
@@ -53,8 +57,13 @@ body {
 .tileSheet div.row {
   clear: left;
   page-break-inside: avoid;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.tileSheet--die {
+  width: 8in;
   margin: auto;
-  overflow: hidden;
 }
 
 .tileSheet--offset div.row:nth-child(even) {
@@ -62,15 +71,33 @@ body {
 }
 
 .tileSheet--individual div.row svg {
-  margin: 0.125in 0.125in 0 0;
+  margin: 0 0.125in 0.125in 0;
 }
 
 .tileSheet--individual div.row svg:last-child {
-  margin: 0.125in 0 0 0;
+  margin: 0 0 0.125in 0;
+}
+
+.tileSheet--die div.row {
+  overflow: hidden;
+}
+
+.tileSheet--die div.row:first-child,
+.tileSheet--die div.row:last-child {
+  overflow: visible;
+}
+
+.tileSheet--die div.row svg {
+  margin: 0 0.05in 0 0;
+}
+
+.tileSheet--die div.row svg:last-child {
+  margin: 0;
 }
 
 .tileSheet svg {
   float: left;
+  position: relative;
 }
 
 a {
@@ -169,7 +196,8 @@ svg {
 }
 
 .charter__phase table {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
   font-size: 0.09in;
   border-collapse: collapse;
   width: 100%;
@@ -214,7 +242,8 @@ svg {
 .charter dd {
   margin: 0;
   font-size: 0.12in;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
 }
 
 .charter ul {
@@ -317,7 +346,7 @@ svg {
 }
 
 .minorCharter__phase table {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 0.09in;
   border-collapse: collapse;
   width: 100%;
@@ -349,7 +378,7 @@ svg {
 .minorCharter dd {
   margin: 0;
   font-size: 0.12in;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 
 .minorCharter ul {
@@ -437,6 +466,7 @@ svg {
   text-align: right;
   font-family: "Libre Baskerville";
   font-size: 0.12in;
+  font-weight: normal;
   line-height: 0.16in;
 }
 
@@ -529,6 +559,7 @@ svg {
   line-height: 0.105in;
   font-size: 0.085in;
   font-family: "Libre Baskerville";
+  font-weight: normal;
 }
 
 
@@ -786,7 +817,7 @@ footer {
   width: 800px;
   margin: 0 auto;
   font-weight: normal;
-  font-family: sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 0.8em;
 }
 
@@ -804,7 +835,7 @@ footer a:hover {
   background-color: #a00;
   color: #fff;
   border-bottom: 2px solid #b00;
-  font-family: sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 
 .LegalNotes strong {
@@ -814,14 +845,14 @@ footer a:hover {
 .WIP {
   background-color: #ffa;
   border-bottom: 2px solid #ff9;
-  font-family: sans-serif;
+  font-family: Open Sans, sans-serif;
   font-weight: normal;
 }
 
 .PrintNotes {
   background-color: #ddd;
   border-bottom: 2px solid #bbb;
-  font-family: sans-serif;
+  font-family: Open Sans, sans-serif;
   font-weight: normal;
 }
 
