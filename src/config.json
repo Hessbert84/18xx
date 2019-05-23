@@ -15,6 +15,8 @@
   "plainMapDestinations": false,
   "plainMapHomes": false,
   "straightCityNames": false,
+  "charterLayout": "color",
+  "shareLayout": "gmt",
   "theme": "galatolol",
   "companiesTheme": "galatolol",
   "shareLayout": "left",

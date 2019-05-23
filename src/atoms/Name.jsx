@@ -28,7 +28,7 @@ const Name = ({ name, color, bgColor, path, rotation, reverse, offset, y, textLe
           fill={p(fillColor)}
           fontFamily="Libre Baskerville"
           fontSize={fontSize || 11}
-          fontWeight="normal"
+          fontWeight="bold"
           textLength={textLength}
           textAnchor="middle"
         >

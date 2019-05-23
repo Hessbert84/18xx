@@ -39,10 +39,9 @@ const Title = ({ game, variation, hexWidth }) => {
           {game.info.subtitle && (
             <text
               fill={c("black")}
-              fontFamily="Libre Baskerville"
-              fontWeight="italic"
-              fontStyle="italic"
               fontSize={0.6*subSize}
+              fontStyle="italic"
+              fontFamily="Libre Baskerville"
               textAnchor="start"
               lengthAdjust="spacingAndGlyphs"
               x="0"
