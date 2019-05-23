@@ -1389,10 +1389,6 @@
           {
             "type": "sharp",
             "side": 1
-          },
-          {
-            "type": "sharp",
-            "side": 6
           }
         ],
         "hexes": [
@@ -1654,6 +1650,120 @@
         ],
         "hexes": [
           "A11"
+        ]
+      },
+      {
+        "color": "offboard",
+        "offBoardTrack": [
+          {
+            "side": 3
+          }
+        ],
+        "removeBorders": [
+          1
+        ],
+        "hexes": [
+          "J6"
+        ]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "name": {
+            "name": "Belarus"
+          },
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "20"
+            },             
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
+        "offBoardTrack": [
+          {
+            "side": 2
+          }
+        ],
+        "removeBorders": [
+          4,
+          1
+        ],
+        "hexes": [
+          "J8"
+        ]
+      },
+      {
+        "color": "offboard",
+        "offBoardTrack": [
+          {
+            "side": 2
+          }
+        ],
+        "removeBorders": [
+          4,
+          1
+        ],
+        "hexes": [
+          "J10"
+        ]
+      },
+      {
+        "color": "water",
+        "removeBorders": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "hexes": [
+          "C1"
+        ]
+      },
+      {
+        "color": "water",
+        "removeBorders": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "hexes": [
+          "A3"
+        ]
+      },
+      {
+        "color": "water",
+        "offBoardTrack": [
+          {
+            "side": 1
+          }
+        ],
+        "icons": [
+          {
+            "type": "port",
+            "angle": 0,
+            "percent": 0.1
+          }
+        ],
+        "values": [
+          { 
+            "percent": -0.4, 
+            "angle": 0, 
+            "value": 30 
+          } 
+        ],
+        "removeBorders": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "hexes": [
+          "B2"
         ]
       },
       {
