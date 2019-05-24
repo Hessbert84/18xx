@@ -1351,8 +1351,29 @@
           }
         ],
         "hexes": [
-          "E1",
           "I3"
+        ]
+      },
+      {
+        "color": "gray",
+        "divides": [
+          {
+            "side": 2
+          }
+        ],
+        "track": [
+          {
+            "type": "sharp",
+            "side": 1
+          }
+        ],
+        "hexes": [
+          "E1"
+        ],
+        "removeBorders": [
+          5,
+          3,
+          4
         ]
       },
       {
@@ -1713,6 +1734,25 @@
       },
       {
         "color": "water",
+        "offBoardTrack": [
+          {
+            "side": 6
+          }
+        ],
+        "icons": [
+          {
+            "type": "port",
+            "angle": 0,
+            "percent": 0.1
+          }
+        ],
+        "values": [
+          { 
+            "percent": -0.4, 
+            "angle": 0, 
+            "value": 30 
+          } 
+        ],
         "removeBorders": [
           2,
           3,
@@ -1764,6 +1804,47 @@
         ],
         "hexes": [
           "B2"
+        ]
+      },
+      {
+        "color": "water",
+        "offBoardTrack": [
+          {
+            "side": 1
+          }
+        ],
+        "icons": [
+          {
+            "type": "port",
+            "angle": 0,
+            "percent": 0.1
+          }
+        ],
+        "values": [
+          { 
+            "percent": -0.4, 
+            "angle": 0, 
+            "value": 60 
+          } 
+        ],
+        "removeBorders": [
+          4,
+          5
+        ],
+        "hexes": [
+          "F2"
+        ]
+      },
+      {
+        "color": "water",
+        "removeBorders": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "hexes": [
+          "G1"
         ]
       },
       {
