@@ -58,13 +58,17 @@
       "type": "string",
       "enum": ["equal", "max"]
     },
-    "shareLayout": {
+    "shareStyle": {
       "type": "string",
       "enum": ["center", "left", "gmt"]
     },
-    "charterLayout": {
+    "charterStyle": {
       "type": "string",
       "enum": ["carth", "color"]
+    },
+    "tokenLayout": {
+      "type": "string",
+      "enum": ["max", "gsp"]
     },
     "coords": {
       "type": "string",
@@ -95,6 +99,7 @@
     "font": { "$ref": "#/definitions/font" }
   },
   "required": [
+    "charterStyle",
     "companiesTheme",
     "coords",
     "font",
@@ -102,9 +107,10 @@
     "paper",
     "plainMapDestinations",
     "plainMapHomes",
-    "shareLayout",
+    "shareStyle",
     "stock",
     "theme",
+    "tokenLayout",
     "useCompanySvgLogos"
   ],
   "additionalProperties": false

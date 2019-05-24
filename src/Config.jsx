@@ -212,6 +212,8 @@ const Config = ({config, setConfig, resetConfig}) => {
       <Input name="paper.margins" label="Paper Margins" dimension={true}/>
       <p>For reference US Letter size would be 8.5in by 11in. A4 is 210mm by 297mm.</p>
       <h3>Companies</h3>
+      <Input name="tokenLayout" label="Token Layout"
+             description="This lets you choose between different layouts when printing tokens. GSP matches the GarageSalePup AWE label sheets."/>
       <Input name="useCompanySvgLogos" label="Use Company SVG Logos"
              description="Use Company logos (if available) instead of text on tokens and city spots." />
       <Input name="plainMapHomes" label="Plain Map Home Spaces"
@@ -231,11 +233,11 @@ const Config = ({config, setConfig, resetConfig}) => {
              description="This determines the default size of maps and tiles. It defines the distance from flat to flat. 1.5in would be standard 18xx size. 1in is small (1822 / 18OE) size. GMT uses 1.75in."/>
       <h3>Stock Markets</h3>
       <h3>Charters</h3>
-      <Input name="charterLayout" label="Charter Layout"
-             description="This lets you choose between two layouts for charters. One is simular to Carth's style while the other includes more color at the top."/>
+      <Input name="charterStyle" label="Charter Style"
+             description="This lets you choose between two styles for charters. One is simular to Carth's style while the other includes more color at the top."/>
       <h3>Cards</h3>
-      <Input name="shareLayout" label="Share Layout"
-             description="This lets you choose between two layouts for shares. One keeps the token in the center of the card, the other puts the tokens on the let (Simular to All Aboard Games and Deep Thought Games)."/>
+      <Input name="shareStyle" label="Share Style"
+             description="This lets you choose between two styles for shares. One keeps the token in the center of the card, the other puts the tokens on the let (Simular to All Aboard Games and Deep Thought Games)."/>
       <h2>Reset</h2>
       <p>You can remove any custom settings and revert back to the defaults with this button.</p>
       <button onClick={resetConfig}>Reset To Defaults</button>

@@ -15,11 +15,11 @@
   "plainMapDestinations": false,
   "plainMapHomes": false,
   "straightCityNames": false,
-  "charterLayout": "color",
-  "shareLayout": "gmt",
+  "tokenLayout": "gsp",
   "theme": "galatolol",
+  "charterStyle": "color",
+  "shareStyle": "gmt",
   "companiesTheme": "galatolol",
-  "shareLayout": "left",
   "tiles": {
     "layout": "offset",
     "width": 150

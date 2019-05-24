@@ -3,12 +3,8 @@
     "title": "1846",
     "subtitle": "The Race for the Midwest",
     "designer": "Thomas Lehmann",
-    "background": "brown",
+    "background": "orange",
     "extraTokens": 2,
-    "width": 150,
-    "rotation": 90,
-    "color_5": "orange",
-    "color_10": "brown",
     "currency": "USD"
   },
   "links": {
@@ -49,16 +45,16 @@
       "abbrev": "PRR",
       "tokens": [
         "Free",
+        "$80 / $40 / $60",
         "$80",
         "$80",
-        "$80",
-        "$80 / $40 / $60"
+        "$80"
       ],
       "color": "red",
       "shares": [
         {
           "quantity": 1,
-          "label": "President Share",
+          "label": "President's Certificate",
           "percent": 20,
           "shares": 2
         },
@@ -82,7 +78,7 @@
       "shares": [
         {
           "quantity": 1,
-          "label": "President Share",
+          "label": "President's Certificate",
           "percent": 20,
           "shares": 2
         },
@@ -98,15 +94,15 @@
       "abbrev": "B&O",
       "tokens": [
         "Free",
+        "$80 / $60 / $100",
         "$80",
-        "$80",
-        "$80 / $60 / $100"
+        "$80"
       ],
       "color": "blue",
       "shares": [
         {
           "quantity": 1,
-          "label": "President Share",
+          "label": "President's Certificate",
           "percent": 20,
           "shares": 2
         },
@@ -130,7 +126,7 @@
       "shares": [
         {
           "quantity": 1,
-          "label": "President Share",
+          "label": "President's Certificate",
           "percent": 20,
           "shares": 2
         },
@@ -146,15 +142,15 @@
       "abbrev": "ERIE",
       "tokens": [
         "Free",
+        "$80 / $40",
         "$80",
-        "$80",
-        "$80 / $40"
+        "$80"
       ],
       "color": "yellow",
       "shares": [
         {
           "quantity": 1,
-          "label": "President Share",
+          "label": "President's Certificate",
           "percent": 20,
           "shares": 2
         },
@@ -177,7 +173,7 @@
       "shares": [
         {
           "quantity": 1,
-          "label": "President Share",
+          "label": "President's Certificate",
           "percent": 20,
           "shares": 2
         },
@@ -201,7 +197,7 @@
       "shares": [
         {
           "quantity": 1,
-          "label": "President Share",
+          "label": "President's Certificate",
           "percent": 20,
           "shares": 2
         },
@@ -339,7 +335,10 @@
         "Pay dividends, half dividends or retain revenue",
         "Purchase trains"
       ],
-      "ordered": true
+      "ordered": true,
+      "optional": [
+        "Purchase private companies"
+      ]
     }
   ],
   "stock": {
