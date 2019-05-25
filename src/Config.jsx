@@ -216,6 +216,8 @@ const Config = ({config, setConfig, resetConfig}) => {
              description="This lets you choose between different layouts when printing tokens. GSP matches the GarageSalePup AWE label sheets."/>
       <Input name="useCompanySvgLogos" label="Use Company SVG Logos"
              description="Use Company logos (if available) instead of text on tokens and city spots." />
+      <Input name="overrideSvgLogoColors" label="Override SVG Logo Colors"
+             description="Override the colors used in the company SVG's with the colors from your selected company theme." />
       <Input name="plainMapHomes" label="Plain Map Home Spaces"
              description="This sets all home spots on maps to be empty white cities with black company text instead of colored or using logos." />
       <h3>Maps</h3>
@@ -235,6 +237,8 @@ const Config = ({config, setConfig, resetConfig}) => {
       <h3>Charters</h3>
       <Input name="charterStyle" label="Charter Style"
              description="This lets you choose between two styles for charters. One is simular to Carth's style while the other includes more color at the top."/>
+      <Input name="halfWidthCharters" label="Half Width Charters"
+             description="This draws all charters (major and minor) as half width. They will take up half of the width of your page (minus cutlines)."/>
       <h3>Cards</h3>
       <Input name="shareStyle" label="Share Style"
              description="This lets you choose between two styles for shares. One keeps the token in the center of the card, the other puts the tokens on the let (Simular to All Aboard Games and Deep Thought Games)."/>

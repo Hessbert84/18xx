@@ -11,13 +11,15 @@
     "height": 1100,
     "margins": 25
   },
-  "useCompanySvgLogos": true,
+  "useCompanySvgLogos": false,
+  "overrideSvgLogoColors": false,
   "plainMapDestinations": false,
   "plainMapHomes": false,
   "straightCityNames": false,
   "tokenLayout": "gsp",
   "theme": "galatolol",
   "charterStyle": "color",
+  "halfWidthCharters": false,
   "shareStyle": "gmt",
   "companiesTheme": "galatolol",
   "tiles": {

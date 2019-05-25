@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { withRouter } from "react-router";
 
 const ScrollToTop = ({location, children}) => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (!window._virtualConsole) {
+      window.scrollTo(0, 0);
+    }
   }, [location]);
 
   return children;

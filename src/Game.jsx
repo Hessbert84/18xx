@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 
 import GameContext from "./context/GameContext";
 
 import games from "./data/games";
 
+import About from "./About";
 import Background from "./Background";
 import Cards from "./cards";
 import Charters from "./Charters";
-import Minors from "./Minors";
 import IPO from "./IPO";
 import Revenue from "./Revenue";
 import Tokens from "./Tokens";
@@ -61,6 +61,7 @@ const Game = ({ match }) => {
         <Route path="/:game/b18-map" component={B18Map} />
         <Route path="/:game/b18-tiles-:color" component={B18Tiles} />
         <Route path="/:game/b18-tokens" component={B18Tokens} />
+        <Route component={About} />
       </Switch>
     </GameContext.Provider>
   );
