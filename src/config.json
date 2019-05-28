@@ -17,12 +17,12 @@
   "straightCityNames": false,
   "tokenLayout": "gsp",
   "theme": "galatolol",
-  "charterStyle": "color",
+  "charterStyle": "carth",
   "halfWidthCharters": false,
-  "shareStyle": "gmt",
+  "shareStyle": "left",
   "companiesTheme": "galatolol",
   "tiles": {
-    "layout": "offset",
+    "layout": "individual",
     "width": 150
   },
   "stock": {
