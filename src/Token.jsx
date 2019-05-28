@@ -44,8 +44,7 @@ const Token = ({
   width,
   bleed,
   outline,
-  useCompanySvgLogos,
-  overrideSvgLogoColors
+  companySvgLogos,
 }) => {
   width = width || 25;
 
@@ -83,16 +82,22 @@ const Token = ({
               }
             }
 
-            let textFill = (token && token.labelColor) ? c(token.labelColor) : p("black");
+            let textFill = (token && token.labelColor) ? c(token.labelColor) : t(c(color));
             let textStroke = "none";
 
-            if (useCompanySvgLogos) {
-              if(!is(Object, token)) {
-                let temp = token;
-                token = {colors: [temp]};
+            if (companySvgLogos !== "none") {
+              if (!is(Object, token)) {
+                if (is(Array, token)) {
+                  token = {colors: token}
+                } else {
+                  token = {colors: [token]}
+                }
               }
 
-              token["type"] = "logo";
+              let logo = logos[label];
+              if (logo) {
+                token["type"] = "logo";
+              }
             }
 
             if(inverse) {
@@ -125,6 +130,7 @@ const Token = ({
                           stroke={p("black")}
                           clipPath={`url(#${clipId})`}/>
                   ];
+                  textFill = t(c("white"));
                   break;
                 case "halves":
                   gradient = (
@@ -139,6 +145,7 @@ const Token = ({
                           stroke={p("black")}
                           clipPath={`url(#${clipId})`}/>
                   );
+                  textFill = t(c("white"));
                   break;
                 case "stripes":
                   gradient = (
@@ -163,6 +170,7 @@ const Token = ({
                           stroke={p("black")}
                           clipPath={`url(#${clipId})`}/>
                   );
+                  textFill = t(c("white"));
                   break;
                 case "bar":
                   shape = (
@@ -188,6 +196,7 @@ const Token = ({
                           stroke={p("black")}
                           clipPath={`url(#${clipId})`}/>
                   );
+                  textFill = t(c("white"));
                   break;
                 case "target":
                   gradient = (
@@ -206,6 +215,7 @@ const Token = ({
                           stroke={p("black")}
                           clipPath={`url(#${clipId})`}/>
                   );
+                  textFill = t(c("white"));
                   break;
                 case "logo":
                   let logo = logos[label];
@@ -214,7 +224,8 @@ const Token = ({
                   if (logo) {
                     let Component = logo.Component;
                     shape = (
-                      <Component x={start} y={start}
+                      <Component className={`color-main-${color}`}
+                                 x={start} y={start}
                                  height={size} width={size}/>
                     );
                     tokenFill = c("white");
@@ -285,9 +296,8 @@ const Token = ({
   );
 };
 
-const mapStateToProps = state => ({
-  useCompanySvgLogos: state.config.useCompanySvgLogos,
-  overrideSvgLogoColors: state.config.overrideSvgLogoColors
+const mapStateToProps = (state, {companySvgLogos}) => ({
+  companySvgLogos: companySvgLogos || state.config.companySvgLogos,
 });
 
 export default connect(mapStateToProps)(Token);

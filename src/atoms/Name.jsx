@@ -25,8 +25,8 @@ const Name = ({ name, color, bgColor, path, rotation, reverse, offset, y, textLe
         <text
           dy={y}
           transform={`rotate(${(rotation || 0) + 360})`}
-          fill={p(fillColor)}
           fontFamily="Libre Baskerville"
+          fill={bgColor ? t(c(bgColor)) : p(fillColor)}
           fontSize={fontSize || 11}
           fontWeight="bold"
           textLength={textLength}
