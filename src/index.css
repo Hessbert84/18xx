@@ -225,7 +225,7 @@ svg {
 }
 
 .charter__game {
-  font-family: sans-serif;
+  font-family: Libre Baskerville;
   font-weight: normal;
   font-size: 0.12in;
   text-align: left;
@@ -260,7 +260,7 @@ svg {
 }
 
 .charter__phase table {
-  font-family: sans-serif;
+  font-family: Libre Baskerville;
   font-weight: normal;
   font-size: 0.09in;
   border-collapse: collapse;
