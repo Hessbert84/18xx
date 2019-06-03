@@ -7,8 +7,8 @@
   },
   "pagination": "equal",
   "paper": {
-    "width": 850,
-    "height": 1100,
+    "width": 825,
+    "height": 1175,
     "margins": 25
   },
   "companySvgLogos": "none",

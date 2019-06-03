@@ -53,8 +53,8 @@ const MarketCell = ({ borders, value, legend, par, colSpan, width, height }) => 
               color = c(legend[value.legend].color);
               labelColor = value.textColor ? c(value.textColor) : t(c(legend[value.legend].color));
             } else if (value && value.par) {
-              color = c((par && par.color) || "gray");
-              labelColor = value.textColor ? c(value.textColor) : t(c((par && par.color) || "gray"));
+              color = c((par && par.color) || "par_gray");
+              labelColor = value.textColor ? c(value.textColor) : t(c((par && par.color) || "par_gray"));
             }
 
             if (value && value.companies) {

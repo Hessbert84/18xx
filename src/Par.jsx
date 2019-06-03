@@ -27,7 +27,7 @@ const groupValues = values => {
 };
 
 const ParCell = connect(mapStateToProps)(({ value, par, legend, stock }) => {
-  let color = "gray";
+  let color = "par_gray";
   if (par.color) {
     color = par.color;
   }
