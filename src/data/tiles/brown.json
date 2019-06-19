@@ -4407,5 +4407,50 @@
         "side": 3
       }
     ]
+  },
+  "IPL4": {
+    "color": "brown",
+    "values": [
+      {
+        "value": 80,
+        "angle": 210,
+        "percent": 0.8
+      }
+    ],
+    "labels": [
+      {
+        "label": "W",
+        "angle": 150,
+        "percent": 0.8
+      }
+    ],
+    "cities": [
+      {
+        "size": 2,
+        "name": {
+          "reverse": true
+        }
+      }
+    ],
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      },
+      {
+        "side": 3
+      },
+      {
+        "side": 4
+      },
+      {
+        "side": 5
+      },
+      {
+        "side": 6
+      }
+    ]
   }
 }

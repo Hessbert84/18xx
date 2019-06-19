@@ -1,8 +1,8 @@
 {
   "info": {
     "title": "18IrePL",
-    "subtitle": "Belgium & Luxembourg",
-    "designer": "Eddie Robbins",
+    "subtitle": "18Ireland in Poland",
+    "designer": "",
     "background": "gray",
     "orientation": "horizontal",
     "titleX": 50,
@@ -708,10 +708,56 @@
     ]
   },
   "tiles": {
-    "18340": 1,
-    "18341": 1,
-    "18342": 1,
-    "18343": 1
+    "3": 5,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 10,
+    "8": 16,
+    "9": 16,
+    "57": 8,
+    "58": 8,
+    "235": 2,
+    "14": 4,
+    "15": 4,
+    "619": 4,
+    "23": 2,
+    "24": 2,
+    "25": 2,
+    "26": 2,
+    "27": 2,
+    "28": 2,
+    "29": 2,
+    "30": 2,
+    "31": 2,
+    "59": 2,
+    "39": 1,
+    "40": 1,
+    "41": 2,
+    "42": 2,
+    "43": 2,
+    "44": 1,
+    "45": 2,
+    "46": 2,
+    "47": 1,
+    "63": 7,
+    "448": 3,
+    "64": 1,
+    "65": 1,
+    "66": 1,
+    "67": 1,
+
+    "IPL1": 1,
+    "IPL2": 1,
+    "IPL3": 1,
+    "IPL4": 1,
+    "IPL5": 1,
+    "IPL6": 1,
+    "IPL7": 1,
+    "IPL8": 1,
+    "IPL9": 1,
+    "IPL10": 1,
+    "IPL11": 1
   },
   "map": {
     "hexes": [
@@ -722,7 +768,7 @@
           }
         ],
         "hexes": [
-          "A11", "D18", "I21", "H2", "L18"
+          "A11", "D18", "I21", "I3", "L18", "K3", "L10"
         ]
       },
       {
@@ -977,7 +1023,6 @@
         "color": "plain",
         "cities": [
           {
-            "size": 2,
             "name": {
               "name": "Łódź"
             },
@@ -1190,8 +1235,122 @@
           "J18"
         ]
       },
-
-
+      {
+        "color": "plain",
+        "cities": [
+          {
+            "name": {
+              "name": "Białystok"
+            },
+            "companies": [
+              {
+                "label": "6",
+                "color": "white"
+              }
+            ]
+          }
+        ],
+        "hexes": [
+          "K7"
+        ]
+      },
+      {
+        "color": "plain",
+        "cities": [
+          {
+            "name": {
+              "name": "Lublin"
+            },
+            "companies": [
+              {
+                "label": "10",
+                "color": "white"
+              }
+            ]
+          }
+        ],
+        "hexes": [
+          "K13"
+        ]
+      },  
+      {
+        "color": "plain",
+        "centerTowns": [
+          {
+            "name": {
+              "name": "Suwałki"
+            }
+          }
+        ],
+        "hexes": [
+          "K5"
+        ]
+      },   
+      {
+        "color": "plain",
+        "centerTowns": [
+          {
+            "name": {
+              "name": "Chełm"
+            }
+          }
+        ],
+        "hexes": [
+          "L14"
+        ]
+      },   
+      {
+        "color": "gray_real",
+        "track": [
+          {
+            "type": "sharp",
+            "side": 1
+          }
+        ],
+        "hexes": [
+          "F2"
+        ]
+      },   
+      {
+        "color": "white",
+        "offBoardTrack": [
+          {
+            "side": 1
+          }
+        ],
+        "icons": [
+          {
+            "type": "port",
+            "percent": 0.2
+          }
+        ],
+        "removeBorders": [
+          2,3,4,5
+        ],
+        "hexes": [
+          "B4", "E1"
+        ]
+      },
+      {
+        "color": "white",
+        "offBoardTrack": [
+          {
+            "side": 1
+          }
+        ],
+        "icons": [
+          {
+            "type": "port",
+            "percent": 0.2
+          }
+        ],
+        "removeBorders": [
+          4, 5
+        ],
+        "hexes": [
+          "G3"
+        ]
+      },
       {
         "color": "plain",
         "water": {
@@ -1204,8 +1363,8 @@
       {
         "color": "plain",
         "hexes": [
-          "B8", "B14", "C7", "C9", "C11", "C13", "C15", "D4", "D6", "D8", "D12", "D16", "E5", "E7", "E9", "E11", "E13", "E17", "F12", "F14", "F16", "F18", "G7", "G11", "G15", "H4", "H8", "H12", "H14", "H20", "I7", "I9", "I15",
-          "J4", "J6", "J8", "J10", "J20", "K9", "K11", "K15", "K17", "K19", "L16"
+          "B8", "B14", "C7", "C9", "C11", "C13", "C15", "D4", "D6", "D8", "D12", "D16", "E5", "E9", "E11", "E13", "E17", "F12", "F14", "F16", "F18", "G7", "G11", "G15", "H4", "H8", "H12", "H14", "H20", "I7", "I9", "I15",
+          "J4", "J6", "J8", "J10", "J20", "K9", "K11", "K15", "K17", "K19", "L8", "L12", "L16"
         ]
       }
     ]
