@@ -27,7 +27,6 @@ import game_18Mex from "./18Mex";
 import game_FourthAge from "./FourthAge";
 import game_Harzbahn from "./Harzbahn";
 import game_18PL from "./18PL";
-import game_18IrePL from "./18IrePL";
 
 let all_games = {
   "1800": game_1800,
@@ -59,7 +58,6 @@ let all_games = {
   FourthAge: game_FourthAge,
   Harzbahn: game_Harzbahn,
   "18PL": game_18PL,
-  "18IrePL": game_18IrePL
 };
 
 let public_games = {
