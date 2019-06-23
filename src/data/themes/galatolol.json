@@ -32,5 +32,7 @@
   "blue_light": "#0375dc",
   "red_light": "#e0474e",
   "black_light": "#4d4d4d",
-  "gray_light": "#dcdfe0"
+  "gray_light": "#dcdfe0",
+
+  "yellow_very_light": "#fff384"
 }

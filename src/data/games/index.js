@@ -22,6 +22,7 @@ import game_18AL from "./18AL";
 import game_18EB from "./18EB";
 import game_18EU from "./18EU";
 import game_18Ireland from "./18Ireland";
+import game_18IrePL from "./18IrePL";
 import game_18NK from "./18NK";
 import game_18SS from "./18SS";
 import game_18SY from "./18SY";
@@ -55,6 +56,7 @@ let all_games = {
   "18EB": game_18EB,
   "18EU": game_18EU,
   "18Ireland": game_18Ireland,
+  "18IrePL": game_18IrePL,
   "18NK": game_18NK,
   "18SS": game_18SS,
   "18SY": game_18SY,
