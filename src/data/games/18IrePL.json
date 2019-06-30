@@ -403,18 +403,18 @@
           "label": 100,
           "legend": 1
         },
-        {
-          "value": 110,
-          "label": 110,
-          "legend": 2
-        },
+        110,
         {
           "value": 122,
           "label": 122,
-          "legend": 3
+          "legend": 2
         },
         134,
-        148,
+        {
+          "value": 148,
+          "label": 148,
+          "legend": 3
+        },
         170,
         196,
         225,
@@ -635,8 +635,7 @@
     "45": 2,
     "46": 2,
     "47": 1,
-    "63": 7,
-    "448": 3,
+    "611": 10,
     "64": 1,
     "65": 1,
     "66": 1,
@@ -660,10 +659,91 @@
         "color": "white",
         "cities": [
           {
+            "name": {
+              "name": "Germany"
+            }
           }
         ],
         "hexes": [
-          "A11", "D18", "I21", "I3", "L18", "K3", "L10"
+          "A11"
+        ]
+      },
+      {
+        "color": "white",
+        "cities": [
+          {
+            "name": {
+              "name": "Czechia"
+            }
+          }
+        ],
+        "hexes": [
+          "D18"
+        ]
+      },
+      {
+        "color": "white",
+        "cities": [
+          {
+            "name": {
+              "name": "Slovakia"
+            }
+          }
+        ],
+        "hexes": [
+          "I21"
+        ]
+      },
+      {
+        "color": "white",
+        "cities": [
+          {
+            "name": {
+              "name": "Russia"
+            }
+          }
+        ],
+        "hexes": [
+          "I3"
+        ]
+      },
+      {
+        "color": "white",
+        "cities": [
+          {
+            "name": {
+              "name": "Ukraine"
+            }
+          }
+        ],
+        "hexes": [
+          "L18"
+        ]
+      },
+      {
+        "color": "white",
+        "cities": [
+          {
+            "name": {
+              "name": "Lithuania"
+            }
+          }
+        ],
+        "hexes": [
+          "K3"
+        ]
+      },
+      {
+        "color": "white",
+        "cities": [
+          {
+            "name": {
+              "name": "Belarus"
+            }
+          }
+        ],
+        "hexes": [
+          "L10"
         ]
       },
       {
@@ -1204,6 +1284,18 @@
         ],
         "hexes": [
           "F2"
+        ]
+      },   
+      {
+        "color": "gray_real",
+        "track": [
+          {
+            "type": "sharp",
+            "side": 5
+          }
+        ],
+        "hexes": [
+          "A7"
         ]
       },   
       {
