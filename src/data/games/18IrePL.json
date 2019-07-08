@@ -897,28 +897,18 @@
         "color": "plain",
         "water": {
           "cost": "$40",
-          "angle": 30,
-          "percent": 0.7
+          "percent": 0.65
         },
-        "labels": [
+        "values": [
           {
-            "label": "OO",
-            "angle": 210,
-            "percent": 0.667
+            "value": "+10",
+            "angle": 90,
+            "percent": 0.67,
+            "size": 13
           }
         ],
         "cities": [
           {
-            "angle": 120,
-            "percent": 0.5,
-            "name": {
-              "name": "Sopot",
-              "reverse": true
-            }
-          },
-          {
-            "angle": -60,
-            "percent": 0.5,
             "name": {
               "name": "Gdańsk"
             },
@@ -1015,25 +1005,8 @@
       },
       {
         "color": "plain",
-        "labels": [
-          {
-            "label": "OO",
-            "angle": 210,
-            "percent": 0.667
-          }
-        ],
         "cities": [
           {
-            "angle": 120,
-            "percent": 0.5,
-            "name": {
-              "name": "Bytom",
-              "reverse": true
-            }
-          },
-          {
-            "angle": -60,
-            "percent": 0.5,
             "name": {
               "name": "Katowice"
             },
