@@ -957,6 +957,32 @@
       }
     ]
   },
+  "621": {
+    "color": "yellow",
+    "rotations": 3,
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.75,
+        "value": 30
+      }
+    ],
+    "labels": [
+      {
+        "label": "Y",
+        "angle": 155,
+        "percent": 0.75
+      }
+    ],
+    "cities": [
+      {}
+    ],
+    "track": [
+      {
+        "type": "straight"
+      }
+    ]
+  },
   "630": {
     "color": "yellow",
     "values": [
@@ -1678,6 +1704,36 @@
       {
         "side": 5.5,
         "type": "mid"
+      }
+    ]
+  },
+  "CC1": {
+    "color": "yellow",
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.75,
+        "value": 30
+      }
+    ],
+    "labels": [
+      {
+        "label": "DC",
+        "angle": 155,
+        "percent": 0.75
+      }
+    ],
+    "cities": [
+      {
+        "size": 1
+      }
+    ],
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 5
       }
     ]
   }
