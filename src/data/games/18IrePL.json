@@ -806,6 +806,14 @@
       },
       {
         "color": "plain",
+        "values": [
+          {
+            "value": "+10",
+            "angle": 90,
+            "percent": 0.67,
+            "size": 13
+          }
+        ],
         "cities": [
           {
             "name": {
@@ -825,6 +833,14 @@
       },
       {
         "color": "plain",
+        "values": [
+          {
+            "value": "+10",
+            "angle": 90,
+            "percent": 0.67,
+            "size": 13
+          }
+        ],
         "cities": [
           {
             "name": {
@@ -1005,6 +1021,14 @@
       },
       {
         "color": "plain",
+        "values": [
+          {
+            "value": "+10",
+            "angle": 90,
+            "percent": 0.67,
+            "size": 13
+          }
+        ],
         "cities": [
           {
             "name": {
@@ -1056,6 +1080,14 @@
       }, 
       {
         "color": "plain",
+        "values": [
+          {
+            "value": "+10",
+            "angle": 90,
+            "percent": 0.67,
+            "size": 13
+          }
+        ],
         "water": {
           "cost": "$40",
           "percent": 0.65
@@ -1261,10 +1293,23 @@
       },   
       {
         "color": "gray_real",
+        "values": [
+          {
+            "value": 10,
+            "angle": 90,
+            "percent": -0.1
+          }
+        ],
         "track": [
           {
             "type": "sharp",
             "side": 5
+          }
+        ],
+        "towns": [
+          {
+            "angle": 270,
+            "percent": 0.57735
           }
         ],
         "hexes": [
