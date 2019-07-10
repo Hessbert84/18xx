@@ -36,6 +36,29 @@
       }
     ]
   },
+  "60": {
+    "color": "gray",
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      },
+      {
+        "side": 3
+      },
+      {
+        "side": 4
+      },
+      {
+        "side": 5
+      },
+      {
+        "side": 6
+      }
+    ]
+  },
   "123": {
     "color": "gray",
     "labels": [
