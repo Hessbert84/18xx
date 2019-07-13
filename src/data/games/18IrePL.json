@@ -384,7 +384,7 @@
         "Withheld revenue"
       ],
       "right": [
-        "Paid dividends higher than current value"
+        "Paid dividends higher or equal to the current value"
       ]
     },
     "market": [
@@ -1121,8 +1121,8 @@
         "labels": [
           {
             "label": "W",
-            "angle": 270,
-            "percent": 0.667
+            "angle": 210,
+            "percent": 0.8
           }
         ],
         "cities": [
@@ -1159,15 +1159,16 @@
         "labels": [
           {
             "label": "R",
-            "angle": 270,
-            "percent": 0.667
+            "angle": 210,
+            "percent": 0.8
           }
         ],
         "names": [
           {
             "name": "Radom",
             "reverse": true,
-            "percent": 0.2
+            "y": -2,
+            "x": 40
           }
         ],
         "towns": [
@@ -1182,6 +1183,9 @@
           }
         ],
         "track": [
+          {
+            "side": 1
+          },
           {
             "side": 4
           }
