@@ -58,7 +58,7 @@
         "100g",
         "100g"
       ],
-      "color": "orange",
+      "color": "blue",
       "shares": [
         {
           "quantity": 1,
@@ -196,7 +196,7 @@
         "$100",
         "Bonus"
       ],
-      "color": "blue",
+      "color": "orange",
       "shares": [
         {
           "quantity": 1,
@@ -241,7 +241,7 @@
         "Free",
         "$40"
       ],
-      "color": "cyan",
+      "color": "yellow",
       "shares": [
         {
           "quantity": 1,
@@ -1406,8 +1406,16 @@
           "H22",
           "I21",
           "J22",
-          "K7",
           "P10"
+        ]
+      },
+      {
+        "color": "river",
+        "water": {
+          "cost": "60g"
+        },
+        "hexes": [
+          "K7"
         ]
       },
       {
@@ -1420,6 +1428,16 @@
         ]
       },
       {
+        "color": "river",
+        "water": {
+          "cost": "80g"
+        },
+        "hexes": [
+          "K11",
+          "K13"
+        ]
+      },
+      {
         "color": "plain",
         "water": {
           "cost": "80g"
@@ -1428,9 +1446,7 @@
           "C1",
           "C9",
           "D10",
-          "E15",
-          "K11",
-          "K13"
+          "E15"
         ]
       },
       {
@@ -1447,15 +1463,15 @@
             "label": "RGH",
             "width": 15,
             "color": "purple",
-            "angle": 30,
-            "percent": 0.75
+            "angle": 270,
+            "percent": 0.7
           },
           {
             "label": "E",
             "width": 15,
             "color": "pink",
             "angle": 330,
-            "percent": 0.75
+            "percent": 0.7
           }
         ],
         "hexes": [
@@ -1518,7 +1534,15 @@
         "hexes": [
           "D18",
           "E17",
-          "F22",
+          "F22"
+        ]
+      },
+      {
+        "color": "river",
+        "water": {
+          "cost": "100g"
+        },
+        "hexes": [
           "J18"
         ]
       },
@@ -1527,8 +1551,7 @@
         "companies": [
           {
             "label": "THT",
-            "angle": 180,
-            "percent": 0.667
+            "percent": 0.65
           }
         ],
         "cities": [
@@ -1540,8 +1563,7 @@
               }
             ],
             "name": {
-              "name": "Hobbitown",
-              "reverse": true
+              "name": "Hobbitown"
             }
           }
         ],
@@ -1581,22 +1603,18 @@
         "color": "plain",
         "labels": [
           {
-            "percent": 0.67,
-            "angle": 180,
+            "percent": 0.667,
+            "angle": 270,
             "label": "P"
           }
         ],
         "cities": [
           {
             "companies": [
-              {
-                "label": "BPS",
-                "color": "orange"
-              }
+              "BPS"
             ],
             "name": {
-              "name": "Bree",
-              "reverse": true
+              "name": "Bree"
             }
           }
         ],
@@ -1716,15 +1734,14 @@
         "labels": [
           {
             "percent": 0.67,
-            "angle": 180,
+            "angle": 270,
             "label": "P"
           }
         ],
         "cities": [
           {
             "name": {
-              "name": "Umbar",
-              "reverse": true
+              "name": "Umbar"
             }
           }
         ],
@@ -1764,7 +1781,7 @@
           {
             "label": "SER",
             "width": 15,
-            "color": "cyan",
+            "color": "yellow",
             "angle": 150,
             "percent": 0.7
           },
@@ -1787,28 +1804,28 @@
       {
         "color": "plain",
         "water": {
-          "percent": 0.67,
+          "percent": 0.667,
           "cost": "80g"
         },
         "labels": [
           {
-            "percent": 0.67,
-            "angle": 180,
+            "percent": 0.667,
+            "angle": 270,
             "label": "P"
           }
         ],
-        "token": [
+        "tokens": [
           {
             "label": "E",
             "width": 15,
             "color": "pink",
-            "percent": 0.75
+            "angle": 210,
+            "percent": 0.8
           }
         ],
         "cities": [
           {
             "name": {
-              "offset": 25,
               "name": "Dol Amoroth"
             }
           }
@@ -1860,7 +1877,8 @@
             "label": "SWR",
             "width": 15,
             "color": "green",
-            "percent": 0.65
+            "angle": 90,
+            "percent": 0.667
           }
         ],
         "hexes": [
@@ -1896,12 +1914,21 @@
             }
           }
         ],
+        "tokens": [
+          {
+            "label": "MTR",
+            "width": 15,
+            "color": "orange",
+            "angle": 330,
+            "percent": 0.7
+          }
+        ],
         "hexes": [
           "I13"
         ]
       },
       {
-        "color": "plain",
+        "color": "river",
         "water": {
           "cost": "120g"
         },
@@ -1913,29 +1940,24 @@
         "color": "plain",
         "labels": [
           {
-            "percent": 0.67,
-            "angle": 180,
+            "percent": 0.667,
+            "angle": 270,
             "label": "P"
           }
         ],
         "water": [
           {
-            "percent": 0.67,
+            "percent": 0.667,
             "cost": "120g"
           }
         ],
         "cities": [
           {
             "companies": [
-              {
-                "label": "DMH",
-                "color": "brown"
-              }
+              "DMH"
             ],
             "name": {
-              "name": "Moria",
-              "offset": 75,
-              "reverse": true
+              "name": "Moria"
             }
           }
         ],
@@ -1948,10 +1970,7 @@
         "cities": [
           {
             "companies": [
-              {
-                "label": "SER",
-                "color": "cyan"
-              }
+              "SER"
             ],
             "name": {
               "name": "Harondor"
@@ -1963,10 +1982,9 @@
         ]
       },
       {
-        "color": "plain",
+        "color": "river",
         "water": {
-          "percent": 0.7,
-          "angle": 30,
+          "percent": 0.667,
           "cost": "60g"
         },
         "cities": [
@@ -1987,8 +2005,8 @@
             "label": "LLM",
             "width": 15,
             "color": "black",
-            "angle": 330,
-            "percent": 0.7
+            "angle": 270,
+            "percent": 0.667
           }
         ],
         "hexes": [
@@ -1996,33 +2014,27 @@
         ]
       },
       {
-        "color": "plain",
+        "color": "river",
         "labels": [
           {
-            "percent": 0.67,
-            "angle": 180,
+            "percent": 0.667,
+            "angle": 270,
             "label": "P"
           }
         ],
         "water": [
           {
-            "percent": 0.7,
-            "angle": 30,
+            "percent": 0.667,
             "cost": "80g"
           }
         ],
         "cities": [
           {
             "companies": [
-              {
-                "label": "MTR",
-                "color": "blue"
-              }
+              "MTR"
             ],
             "name": {
-              "name": "Minas Tirith",
-              "offset": 75,
-              "reverse": true
+              "name": "Minas Tirith"
             }
           }
         ],
@@ -2030,9 +2042,9 @@
           {
             "label": "BPS",
             "width": 15,
-            "color": "orange",
-            "angle": 330,
-            "percent": 0.75
+            "color": "blue",
+            "angle": 150,
+            "percent": 0.8
           }
         ],
         "hexes": [
@@ -2040,7 +2052,7 @@
         ]
       },
       {
-        "color": "plain",
+        "color": "river",
         "water": {
           "size": "small",
           "cost": "$80",
@@ -2084,16 +2096,8 @@
         "cities": [
           {
             "name": {
-              "name": "Edoras"
+              "name": "Erebor"
             }
-          }
-        ],
-        "tokens": [
-          {
-            "label": "MTR",
-            "width": 15,
-            "color": "blue",
-            "percent": 0.65
           }
         ],
         "hexes": [
@@ -2104,8 +2108,8 @@
         "color": "plain",
         "labels": [
           {
-            "percent": 0.67,
-            "angle": 180,
+            "percent": 0.667,
+            "angle": 270,
             "label": "P"
           }
         ],
@@ -2118,8 +2122,7 @@
               }
             ],
             "name": {
-              "name": "Laketown",
-              "reverse": true
+              "name": "Laketown"
             }
           }
         ],
