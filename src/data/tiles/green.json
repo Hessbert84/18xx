@@ -5586,6 +5586,7 @@
   },
   "IPL1": {
     "color": "green",
+    "rotations": 3,
     "values": [
       {
         "value": 60,
@@ -5625,6 +5626,7 @@
   },
   "IPL2": {
     "color": "green",
+    "rotations": 3,
     "values": [
       {
         "value": 20,

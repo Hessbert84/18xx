@@ -4719,6 +4719,7 @@
   },
   "IPL3": {
     "color": "brown",
+    "rotations": 1,
     "values": [
       {
         "value": 80,

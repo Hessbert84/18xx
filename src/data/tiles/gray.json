@@ -1498,6 +1498,7 @@
   },
   "IPL4": {
     "color": "gray",
+    "rotations": 1,
     "cities": [
       {
         "name": {
@@ -1533,6 +1534,7 @@
   },
   "IPL5": {
     "color": "gray",
+    "rotations": 1,
     "cities": [
       {
         "name": {
@@ -1569,6 +1571,7 @@
   },
   "IPL6": {
     "color": "gray",
+    "rotations": 1,
     "cities": [
       {
         "name": {
@@ -1608,6 +1611,7 @@
   },
   "IPL7": {
     "color": "gray",
+    "rotations": 1,
     "cities": [
       {
         "name": {
@@ -1647,6 +1651,7 @@
   },
   "IPL8": {
     "color": "gray",
+    "rotations": 1,
     "cities": [
       {
         "name": {
@@ -1689,6 +1694,7 @@
   },
   "IPL9": {
     "color": "gray",
+    "rotations": 1,
     "cities": [
       {
         "name": {
@@ -1724,6 +1730,7 @@
   },
   "IPL10": {
     "color": "gray",
+    "rotations": 1,
     "cities": [
       {
         "name": {
