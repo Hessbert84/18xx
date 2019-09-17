@@ -1509,15 +1509,15 @@
     "offBoardRevenue": {
       "revenues": [
         {
-          "cost": "30",
+          "cost": "40",
           "color": "yellow"
         },
         {
-          "cost": "40",
+          "cost": "50",
           "color": "green"
         },
         {
-          "cost": "50",
+          "cost": "60",
           "color": "brown"
         }
       ],
@@ -1546,15 +1546,15 @@
     "offBoardRevenue": {
       "revenues": [
         {
-          "cost": "30",
+          "cost": "40",
           "color": "yellow"
         },
         {
-          "cost": "40",
+          "cost": "50",
           "color": "green"
         },
         {
-          "cost": "50",
+          "cost": "60",
           "color": "brown"
         }
       ],
@@ -1583,15 +1583,15 @@
     "offBoardRevenue": {
       "revenues": [
         {
-          "cost": "30",
+          "cost": "40",
           "color": "yellow"
         },
         {
-          "cost": "40",
+          "cost": "50",
           "color": "green"
         },
         {
-          "cost": "50",
+          "cost": "60",
           "color": "brown"
         }
       ],
@@ -1623,15 +1623,15 @@
     "offBoardRevenue": {
       "revenues": [
         {
-          "cost": "30",
+          "cost": "40",
           "color": "yellow"
         },
         {
-          "cost": "40",
+          "cost": "50",
           "color": "green"
         },
         {
-          "cost": "50",
+          "cost": "60",
           "color": "brown"
         }
       ],
@@ -1663,15 +1663,15 @@
     "offBoardRevenue": {
       "revenues": [
         {
-          "cost": "30",
+          "cost": "40",
           "color": "yellow"
         },
         {
-          "cost": "40",
+          "cost": "50",
           "color": "green"
         },
         {
-          "cost": "50",
+          "cost": "60",
           "color": "brown"
         }
       ],
@@ -1705,15 +1705,15 @@
     "offBoardRevenue": {
       "revenues": [
         {
-          "cost": "30",
+          "cost": "40",
           "color": "yellow"
         },
         {
-          "cost": "40",
+          "cost": "50",
           "color": "green"
         },
         {
-          "cost": "50",
+          "cost": "60",
           "color": "brown"
         }
       ],
@@ -1741,15 +1741,15 @@
     "offBoardRevenue": {
       "revenues": [
         {
-          "cost": "30",
+          "cost": "40",
           "color": "yellow"
         },
         {
-          "cost": "40",
+          "cost": "50",
           "color": "green"
         },
         {
-          "cost": "50",
+          "cost": "60",
           "color": "brown"
         }
       ],
