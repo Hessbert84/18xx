@@ -1351,6 +1351,9 @@
         "offBoardTrack": [
           {
             "side": 1
+          },
+          {
+            "side": 6
           }
         ],
         "icons": [
@@ -1363,7 +1366,7 @@
           2,3,4,5
         ],
         "hexes": [
-          "B4", "E1"
+          "B4"
         ]
       },
       {
@@ -1371,6 +1374,29 @@
         "offBoardTrack": [
           {
             "side": 1
+          }
+        ],
+        "icons": [
+          {
+            "type": "port",
+            "percent": 0.2
+          }
+        ],
+        "removeBorders": [
+          2,3,4,5
+        ],
+        "hexes": [
+          "E1"
+        ]
+      },
+      {
+        "color": "white",
+        "offBoardTrack": [
+          {
+            "side": 1
+          },
+          {
+            "side": 2
           }
         ],
         "icons": [
