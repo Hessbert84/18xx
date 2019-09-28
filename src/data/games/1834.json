@@ -906,8 +906,7 @@
           {
             "name": {
               "name": "Luxembourg",
-              "reverse": true,
-              "rotation": -90
+              "reverse": true
             },
             "companies": [
               {
@@ -934,8 +933,7 @@
           {
             "name": {
               "name": "Ghent",
-              "reverse": true,
-              "rotation": -90
+              "rotation": 40
             }
           }
         ],
