@@ -27,7 +27,7 @@ const Label = ({ label, size, length, fixed, bgColor }) => {
             <text
               transform={fixed ? null : `rotate(-${rotation})`}
               fill={bgColor ? t(c(bgColor)) : p("black")}
-              fontFamily="Libre Baskerville"
+              fontFamily="sans-serif"
               fontWeight="bold"
               fontSize={0.8*fontSize}
               dominantBaseline="central"

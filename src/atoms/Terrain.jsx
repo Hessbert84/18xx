@@ -81,6 +81,8 @@ const Terrain = ({ type, size, cost, color, fontSize }) => {
           <text
             fill={p("black")}
             fontSize={fontSize}
+            fontFamily="sans-serif"
+            fontWeight="bold"
             dominantBaseline="hanging"
             textAnchor="middle"
             x="0"

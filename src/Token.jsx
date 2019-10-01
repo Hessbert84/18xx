@@ -252,7 +252,8 @@ const Token = ({
               <use href={icon} transform="scale(1.66666 1.66666)" />
             ) : (
               <text
-                fontFamily="Libre Baskerville"
+                fontFamily="sans-serif"
+                fontWeight="bold"
                 fontSize={width * 0.64}
                 textAnchor="middle"
                 strokeWidth="0.5"
