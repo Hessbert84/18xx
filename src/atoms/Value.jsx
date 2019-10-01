@@ -35,8 +35,8 @@ const Value = ({ value, fixed, outerBorderColor }) => {
               <text
                 transform={fixed ? null : `rotate(-${rotation})`}
                 fontWeight="bold"
-                fontSize={size}
-                fontFamily="Libre Baskerville"
+                fontSize={size + 3}
+                fontFamily="sans-serif"
                 fill={p("black")}
                 dominantBaseline="central"
                 textAnchor="middle"

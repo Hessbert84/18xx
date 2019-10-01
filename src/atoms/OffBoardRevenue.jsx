@@ -48,6 +48,8 @@ const makeNode = (x, y, reverse, revenue, size) => {
         <text
           fill={c(revenue.textColor) || c("black")}
           fontSize={size}
+          fontFamily="sans-serif"
+          fontWeight="bold"
           dominantBaseline="central"
           textAnchor="middle"
           textLength={length}

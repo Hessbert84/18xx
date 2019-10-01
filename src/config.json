@@ -22,7 +22,7 @@
   "shareStyle": "left",
   "companiesTheme": "galatolol",
   "tiles": {
-    "layout": "offset",
+    "layout": "individual",
     "width": 150
   },
   "stock": {
