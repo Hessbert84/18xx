@@ -688,6 +688,11 @@
             }
           }
         ],
+        "offBoardTrack": [
+          {
+            "side": 5
+          }
+        ],
         "hexes": [
           "J20"
         ]
