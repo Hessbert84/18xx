@@ -533,9 +533,10 @@
           "legend": 0
         },
         50,
+        55, 
         {
-          "value": 66,
-          "label": 66,
+          "value": 60,
+          "label": 60,
           "arrow": "up"
         }
       ],
@@ -663,7 +664,7 @@
           }
         ],
         "hexes": [
-          "A11"
+          "B14"
         ]
       },
       {
@@ -686,11 +687,6 @@
             "name": {
               "name": "Slovakia"
             }
-          }
-        ],
-        "offBoardTrack": [
-          {
-            "side": 5
           }
         ],
         "hexes": [
@@ -778,7 +774,7 @@
           }
         ],
         "hexes": [
-          "B10"
+          "B8"
         ]
       },
       {
@@ -786,12 +782,25 @@
         "centerTowns": [
           {
             "name": {
-              "name": "Zielona Góra"
+              "name": "Jelenia Góra"
             }
           }
         ],
         "hexes": [
-          "B12"
+          "C13"
+        ]
+      },
+      {
+        "color": "plain",
+        "centerTowns": [
+          {
+            "name": {
+              "name": "Wałbrzych"
+            }
+          }
+        ],
+        "hexes": [
+          "C15"
         ]
       },
       {
@@ -1270,90 +1279,7 @@
         "hexes": [
           "F2"
         ]
-      },   
-      {
-        "color": "gray_real",
-        "track": [
-          {
-            "type": "gentle",
-            "side": 4
-          },
-          {
-            "type": "sharp",
-            "side": 4
-          },
-          {
-            "type": "sharp",
-            "side": 5
-          }
-        ],
-        "removeBorders": [
-          6  
-        ],
-        "hexes": [
-          "B14"
-        ]
-      },  
-      {
-        "color": "gray_real",
-        "track": [
-          {
-            "type": "straight",
-            "side": 3
-          },
-          {
-            "type": "sharp",
-            "side": 4
-          }
-        ],
-        "removeBorders": [
-          3
-        ],
-        "hexes": [
-          "C15"
-        ]
-      }, 
-      {
-        "color": "gray_real",
-        "values": [
-          {
-            "value": 10,
-            "angle": 90,
-            "percent": -0.1
-          }
-        ],
-        "track": [
-          {
-            "type": "sharp",
-            "side": 5
-          }
-        ],
-        "towns": [
-          {
-            "angle": 270,
-            "percent": 0.57735
-          }
-        ],
-        "hexes": [
-          "A7"
-        ]
-      },   
-      {
-        "color": "gray_real",
-        "track": [
-          {
-            "type": "sharp",
-            "side": 3
-          },
-          {
-            "type": "gentle",
-            "side": 2
-          }
-        ],
-        "hexes": [
-          "K19"
-        ]
-      },
+      },       
       {
         "color": "white",
         "offBoardTrack": [
@@ -1426,7 +1352,7 @@
           "cost": "$40"
         },
         "hexes": [
-          "F6", "G19", "H10", "I7", "I17", "J12", "J14", "J16"
+          "F6", "H10", "I5", "I7", "I17", "J6", "J12", "J14", "J16"
         ]
       },
       {
@@ -1436,14 +1362,14 @@
           "cost": "$60"
         },
         "hexes": [
-          "H20"
+          "G19", "H20"
         ]
       },
       {
         "color": "plain",
         "hexes": [
-          "B8", "C7", "C9", "C11", "C13", "D4", "D6", "D8", "D12", "D16", "E5", "E9", "E13", "E17", "F10", "F14", "F16", "F18", "G7", "G11", "G15", "H8", "H12", "H14", "I5", "I9", "I15",
-          "J6", "J8", "J10", "K9", "K11", "K17", "L8", "L12", "L14"
+          "B10", "B12", "C7", "C9", "C11", "D4", "D6", "D8", "D12", "D16", "E5", "E9", "E13", "E17", "F10", "F14", "F16", "F18", "G7", "G11", "G15", "H8", "H12", "H14", "I9", "I15",
+          "J8", "J10", "K9", "K11", "K17", "K19", "L8", "L12", "L14"
         ]
       }
     ]

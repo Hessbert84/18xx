@@ -1525,6 +1525,9 @@
     },
     "offBoardTrack": [
       {
+        "side": 4
+      },
+      {
         "side": 5
       },
       {
