@@ -1141,7 +1141,7 @@
         "icons": [
           {
             "type": "port",
-            "percent": 0.2
+            "percent": 0
           }
         ],
         "removeBorders": [
@@ -1164,7 +1164,7 @@
         "icons": [
           {
             "type": "port",
-            "percent": 0.2
+            "percent": 0
           }
         ],
         "removeBorders": [
@@ -1190,7 +1190,7 @@
         "icons": [
           {
             "type": "port",
-            "percent": 0.2
+            "percent": 0
           }
         ],
         "removeBorders": [
