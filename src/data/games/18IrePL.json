@@ -151,164 +151,9 @@
       ]
     }
   ],
-  "trains": [
-    {
-      "name": "2",
-      "quantity": 5,
-      "price": "$80",
-      "color": "yellow",
-      "info": [
-        {
-          "color": "blue",
-          "note": "Rusted by 4"
-        }
-      ]
-    },
-    {
-      "name": "3",
-      "quantity": 4,
-      "price": "$180",
-      "color": "green",
-      "info": [
-        {
-          "color": "brown",
-          "note": "Rusted by 5"
-        }
-      ]
-    },
-    {
-      "name": "4",
-      "quantity": 3,
-      "price": "$300",
-      "color": "blue",
-      "info": [
-        {
-          "color": "red",
-          "note": "Rusted by 6"
-        }
-      ]
-    },
-    {
-      "name": "5",
-      "quantity": 2,
-      "price": "$450",
-      "color": "brown",
-      "info": [
-        {
-          "color": "gray",
-          "note": "Permanent"
-        }
-      ]
-    },
-    {
-      "name": "6",
-      "quantity": 2,
-      "price": "$630",
-      "color": "red",
-      "info": [
-        {
-          "color": "gray",
-          "note": "Permanent"
-        }
-      ]
-    },
-    {
-      "name": "2T",
-      "quantity": 5,
-      "price": "$750",
-      "color": "gray",
-      "description": "Runs between 2 cities, counts all towns, doubles one city.",
-      "info": [
-        {
-          "color": "gray",
-          "note": "Permanent"
-        }
-      ]
-    }
-  ],
-  "privates": [
-    {
-      "name": "Ostend Port Society",
-      "price": "$20",
-      "revenue": "$5",
-      "description": "Increase runs to Ostend port(blue offboard) by $20. Can be sold in YELLOW and GREEN."
-    },
-    {
-      "name": "De Kempen Coal Company",
-      "price": "$40",
-      "revenue": "$10",
-      "description": "Owning corporation may place a track tile on a mountain hex at half cost. Can be sold in YELLOW and GREEN."
-    },
-    {
-      "name": "Burbach Foundry",
-      "price": "$70",
-      "revenue": "$15",
-      "description": "Owning corporation may upgrade an additional track tile, the Luxembourg city tile(hexes N11 and M10), from YELLOW to GREEN. THis is in addition to it's normal placement. Can be sold in GREEN."
-    },
-    {
-      "name": "MNBS SNCF Electrification",
-      "price": "$100",
-      "revenue": "$0",
-      "description": "At the start of the silver phase after all 4 trains have been removed, the player holding this private must place a 2T train on a railraod's charter. This costs nothing and can be used immediately. MAY NOT BE SOLD TO A RAILROAD."
-    },
-    {
-      "name": "Cockerill Locomotive Company",
-      "price": "$120",
-      "revenue": "$20",
-      "description": "Allows owning railroad to purchase a train at half price, this closes the private. Can be sold in YELLOW and GREEN."
-    },
-    {
-      "name": "Albert Canal Corporation",
-      "price": "$150",
-      "revenue": "$25",
-      "description": "No other ability. Closes in BROWN or if track connects Antwerp to Liege by any route or manner regardless of tokens. Can be sold in GREEN."
-    }
-  ],
-  "phases": [
-    {
-      "name": "2",
-      "limit": "4",
-      "number": "5",
-      "tiles": "yellow",
-      "notes": "Some Private companies may be purchased"
-    },
-    {
-      "name": "3",
-      "limit": "3",
-      "number": "4",
-      "tiles": "green",
-      "notes": "All Private companies may be purchased"
-    },
-    {
-      "name": "4",
-      "rust": "2",
-      "limit": "3",
-      "number": "3",
-      "tiles": "green"
-    },
-    {
-      "name": "5",
-      "rust": "3",
-      "limit": "2",
-      "number": "2",
-      "tiles": "brown",
-      "notes": "Private companies are closed"
-    },
-    {
-      "name": "6",
-      "limit": "1",
-      "number": "2",
-      "rust": "4",
-      "tiles": "gray",
-      "notes": "2T may be purchased"
-    },
-    {
-      "name": "2T",
-      "limit": "1",
-      "number": "5",
-      "tiles": "gray"
-    }
-  ],
+  "trains": [],
+  "privates": [],
+  "phases": [],
   "pools": [
     {
       "name": "Market",
@@ -1266,7 +1111,13 @@
         ]
       },
       {
-        "color": "gray_real",
+        "color": "water",
+        "removeBorders": [
+          3,
+          4,
+          5,
+          6
+        ],
         "track": [
           {
             "type": "sharp",
@@ -1278,7 +1129,7 @@
         ]
       },
       {
-        "color": "white",
+        "color": "water",
         "offBoardTrack": [
           {
             "side": 1
@@ -1304,7 +1155,7 @@
         ]
       },
       {
-        "color": "white",
+        "color": "water",
         "offBoardTrack": [
           {
             "side": 6
@@ -1327,7 +1178,7 @@
         ]
       },
       {
-        "color": "white",
+        "color": "water",
         "offBoardTrack": [
           {
             "side": 1
@@ -1343,6 +1194,7 @@
           }
         ],
         "removeBorders": [
+          3,
           4,
           5
         ],
@@ -1377,6 +1229,20 @@
         "hexes": [
           "F18",
           "G19"
+        ]
+      },
+      {
+        "color": "water",
+        "removeBorders": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hexes": [
+          "B2",
+          "G1"
         ]
       },
       {
