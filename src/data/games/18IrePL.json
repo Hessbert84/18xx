@@ -1,19 +1,18 @@
 {
-  "info": {
+ "info": {
     "title": "18IrePL",
-    "subtitle": "18Ireland in Poland",
+    "subtitle": "",
     "designer": "",
     "background": "gray",
     "orientation": "horizontal",
-    "titleY": -80,
-    "titleX": 1100,
+    "titleY": -50,
+    "titleX": 950,
     "currency": "EUR",
-    "titleSize": 150
+    "titleSize": 200
   },
   "links": {
   },
   "tokens": [
-    "Round"
   ],
   "ipo": true,
   "bank": "$7,500",
@@ -37,12 +36,11 @@
   "companies": [
     {
       "name": "Luxembourg Railway",
-      "abbrev": "LUX",
+      "abbrev": "KKG",
       "tokens": [
         "Free",
         "$40",
-        "$70",
-        "$100"
+        "$70"
       ],
       "color": "purple",
       "shares": [
@@ -61,7 +59,7 @@
     },
     {
       "name": "Ostend Railway",
-      "abbrev": "OST",
+      "abbrev": "PKP",
       "tokens": [
         "Home",
         "$40",
@@ -84,9 +82,10 @@
     },
     {
       "name": "Antwerp Railway",
-      "abbrev": "ANT",
+      "abbrev": "MW",
       "tokens": [
         "Home",
+        "40",
         "$100"
       ],
       "color": "yellow",
@@ -106,7 +105,7 @@
     },
     {
       "name": "Liege Railway",
-      "abbrev": "LIE",
+      "abbrev": "KWP",
       "tokens": [
         "Home",
         "$40",
@@ -129,7 +128,7 @@
     },
     {
       "name": "Mons Railway",
-      "abbrev": "MON",
+      "abbrev": "LHS",
       "tokens": [
         "Home",
         "$40",
@@ -148,6 +147,166 @@
           "percent": 10,
           "shares": 1
         }
+      ]
+    },
+    {
+      "name": "Mons Railway",
+      "abbrev": "CMK",
+      "tokens": [
+        "Home",
+        "$40",
+        "$100"
+      ],
+      "color": "brown",
+      "shares": [
+        {
+          "quantity": 1,
+          "label": "President's Certificate",
+          "percent": 20,
+          "shares": 2
+        },
+        {
+          "quantity": 8,
+          "percent": 10,
+          "shares": 1
+        }
+      ]
+    },
+    {
+      "name": "Mons Railway",
+      "abbrev": "TKG",
+      "tokens": [
+        "Home",
+        "$40",
+        "$100"
+      ],
+      "color": "orange",
+      "shares": [
+        {
+          "quantity": 1,
+          "label": "President's Certificate",
+          "percent": 20,
+          "shares": 2
+        },
+        {
+          "quantity": 8,
+          "percent": 10,
+          "shares": 1
+        }
+      ]
+    },
+    {
+      "abbrev": "1",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "2",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "3",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "4",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "5",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "6",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "7",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "8",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "9",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "10",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "11",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "12",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "13",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "14",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "A",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "B",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "+10",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "+20",
+      "tokens": [
+        "Home"
+      ]
+    },
+    {
+      "abbrev": "50",
+      "tokens": [
+        "Home"
       ]
     }
   ],
@@ -496,8 +655,7 @@
     "IPL6": 1,
     "IPL7": 1,
     "IPL8": 1,
-    "IPL9": 1,
-    "IPL10": 1
+    "IPL9": 2
   },
   "map": {
     "hexes": [
