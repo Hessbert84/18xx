@@ -145,8 +145,8 @@ const App = () => (
                   <g id="port">
                     <path
                       d="M 0 -6 L 0 8"
-                      fill={c("water")}
-                      stroke={c("water")}
+                      fill={c("black")}
+                      stroke={c("black")}
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -154,15 +154,15 @@ const App = () => (
                     <path
                       d="M -9 5 C -7 11, 7 11, 9 5 C 7 9, -7 9, -9 5"
                       fill="none"
-                      stroke={c("water")}
+                      stroke={c("black")}
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                     <path
                       d="M -5 -3 L 5 -3"
-                      fill={c("water")}
-                      stroke={c("water")}
+                      fill={c("black")}
+                      stroke={c("black")}
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -172,7 +172,7 @@ const App = () => (
                       cy="-8"
                       r="2"
                       fill="none"
-                      stroke={c("water")}
+                      stroke={c("black")}
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
