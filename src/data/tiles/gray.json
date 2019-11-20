@@ -1643,9 +1643,6 @@
       },
       {
         "side": 4
-      },
-      {
-        "side": 2
       }
     ]
   },
@@ -1656,8 +1653,7 @@
       {
         "name": {
           "name": "Belarus"
-        },
-        "x": 40
+        }
       }
     ],
     "offBoardRevenue": {
@@ -1675,14 +1671,11 @@
           "color": "brown"
         }
       ],
-      "x": -35
+      "percent": -0.7
     },
     "offBoardTrack": [
       {
         "side": 3
-      },
-      {
-        "side": 4
       },
       {
         "side": 1
