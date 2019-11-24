@@ -972,19 +972,6 @@
         "centerTowns": [
           {
             "name": {
-              "name": "Sieradz"
-            }
-          }
-        ],
-        "hexes": [
-          "E11"
-        ]
-      },
-      {
-        "color": "plain",
-        "centerTowns": [
-          {
-            "name": {
               "name": "Elbląg"
             }
           }
@@ -1438,6 +1425,7 @@
           "D12",
           "D16",
           "E9",
+          "E11",
           "E13",
           "E15",
           "E17",
