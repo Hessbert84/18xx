@@ -82,36 +82,13 @@
     },
     {
       "name": "Antwerp Railway",
-      "abbrev": "MW",
+      "abbrev": "MWW",
       "tokens": [
         "Home",
         "40",
         "$100"
       ],
       "color": "yellow",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
-    },
-    {
-      "name": "Liege Railway",
-      "abbrev": "KWP",
-      "tokens": [
-        "Home",
-        "$40",
-        "$100"
-      ],
-      "color": "red",
       "shares": [
         {
           "quantity": 1,
@@ -157,7 +134,7 @@
         "$40",
         "$100"
       ],
-      "color": "brown",
+      "color": "red",
       "shares": [
         {
           "quantity": 1,
