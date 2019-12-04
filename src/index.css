@@ -138,8 +138,12 @@ svg {
   float: left;
 }
 
+.charter--minor {
+  height: 3in;
+}
+
 .charter--half {
-  width: 3.75in;
+  width: 3.5in;
 }
 
 .charter__hr {
@@ -149,9 +153,17 @@ svg {
   width: 100%;
 }
 
+.charter--minor .charter__hr {
+  top: 1in;
+}
+
 .charter--color .charter__hr {
   top: 0;
   height: 1.1875in;
+}
+
+.charter--color.charter--minor .charter__hr {
+  height: 1in;
 }
 
 .charter__name {
@@ -169,6 +181,10 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.charter--minor .charter__name {
+  height: 1in;
 }
 
 .charter--half .charter__name {
@@ -194,6 +210,17 @@ svg {
   position: relative;
 }
 
+.charter--minor .charter__logo {
+  height: 0.625in;
+  width: 0.625in;
+  padding-top: 0.0625in;
+}
+
+.charter--minor .charter__logo > svg {
+  height: 0.625in;
+  width: 0.66in;
+}
+
 .charter__trains {
   text-align: left;
   position: absolute;
@@ -209,6 +236,10 @@ svg {
   border-style: dashed;
 }
 
+.charter--minor .charter__trains {
+  height: 1.5625in;
+}
+
 .charter__assets {
   text-align: left;
   position: absolute;
@@ -222,6 +253,10 @@ svg {
   border-width: 0 0 0 1px;
   border-color: #666;
   border-style: dashed;
+}
+
+.charter--minor .charter__assets {
+  height: 1.5625in;
 }
 
 .charter__game {
@@ -250,6 +285,10 @@ svg {
   width: 3.625in;
   padding: 0 0.125in 0.25in 0.125in;
   box-sizing: border-box;
+}
+
+.charter--minor .charter__treasury {
+  height: 1.8125in;
 }
 
 .charter__phase {
@@ -580,6 +619,10 @@ svg {
   line-height: normal;
 }
 
+.charter--minor .charter__tokens {
+  padding-top: 0.135in;
+}
+
 .charter__tokens svg {
   width: 0.5in;
   height: 0.7in;
@@ -594,6 +637,11 @@ svg {
   padding: 0 0.125in 0.125in 0.125in;
   left: 0;
   right: auto;
+}
+
+.charter--minor.charter--half .charter__tokens {
+  top: 1.0625in;
+  height: calc(100% - 1.0625 - 0.25in);
 }
 
 .charter--half .charter__tokens svg {
