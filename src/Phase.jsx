@@ -10,7 +10,7 @@ const formatCell = value => {
   }
 }
 
-const Phase = ({ phases }) => {
+const Phase = ({ phases, minor }) => {
   let includeName = !R.all(
     R.compose(
       R.isNil,
@@ -60,14 +60,14 @@ const Phase = ({ phases }) => {
   );
 
   let phaseRows = phases.map(phase => {
-    return (
+    return (!!phase.minor === minor) && (
       <Color key={phase.phase || phase.name || phase.train}>
         {c => (
           <tr key={phase.phase || phase.name || phase.train}>
             {includeName && <td>{phase.name}</td>}
             {includePhase && <td>{phase.phase}</td>}
             {includeTrain && <td>{formatCell(phase.train)}</td>}
-            {includePrice && <td>{phase.price}</td>}
+            {includePrice && <td>{formatCell(phase.price)}</td>}
             <td>{formatCell(phase.number)}</td>
             <td>{phase.limit}</td>
             {!excludeTiles && <td style={{ backgroundColor: c(phase.tiles) }}>&nbsp;</td>}
