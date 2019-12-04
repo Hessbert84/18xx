@@ -550,8 +550,7 @@
         {
           "value": 20,
           "label": 20,
-          "legend": 0,
-          "arrow": "left"
+          "legend": 0
         },
         {
           "value": 24,
