@@ -1,10 +1,12 @@
 import game_1800 from "./1800";
 import game_1817 from "./1817";
+import game_18Misc from "./18Misc";
 import game_1830 from "./1830";
 import game_1832 from "./1832";
 import game_1834 from "./1834";
 import game_1836jr_30 from "./1836jr-30";
 import game_1836jr_56 from "./1836jr-56";
+import game_1836 from "./1836";
 import game_1846 from "./1846";
 import game_1848 from "./1848";
 import game_1849 from "./1849";
@@ -41,6 +43,7 @@ let all_games = {
   "1834": game_1834,
   "1836jr-30": game_1836jr_30,
   "1836jr-56": game_1836jr_56,
+  "1836": game_1836,
   "1846": game_1846,
   "1848": game_1848,
   "1849": game_1849,
@@ -57,9 +60,10 @@ let all_games = {
   "1891": game_1891,
   "1899": game_1899,
   "18AL": game_18AL,
-  "18CLE": game_18CLE,  
+  "18CLE": game_18CLE,
   "18EB": game_18EB,
   "18EU": game_18EU,
+  "18Misc": game_18Misc,
   "18NK": game_18NK,
   "18SS": game_18SS,
   "18SY": game_18SY,
