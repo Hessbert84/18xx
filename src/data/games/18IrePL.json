@@ -641,12 +641,14 @@
     "hexes": [
       {
         "color": "white",
-        "cities": [
-          {
-            "name": {
-              "name": "Germany"
-            }
-          }
+        "names": {
+          "fontSize": 20,
+          "fontStyle": "italic",
+          "fontWeight": "regular",
+          "name": "Germany"
+        },
+        "removeBorders": [
+          1, 2, 3
         ],
         "hexes": [
           "A13"
@@ -654,12 +656,14 @@
       },
       {
         "color": "white",
-        "cities": [
-          {
-            "name": {
-              "name": "Czechia"
-            }
-          }
+        "names": {
+          "fontSize": 20,
+          "fontStyle": "italic",
+          "fontWeight": "regular",
+          "name": "Czechia"
+        },
+        "removeBorders": [
+          1, 2, 3, 6
         ],
         "hexes": [
           "C17"
@@ -667,38 +671,39 @@
       },
       {
         "color": "white",
-        "cities": [
-          {
-            "name": {
-              "name": "Slovakia"
-            }
-          }
+        "names": {
+          "fontSize": 20,
+          "fontStyle": "italic",
+          "fontWeight": "regular",
+          "name": "Slovakia"
+        },
+        "removeBorders": [
+          1, 2, 5, 6
         ],
         "hexes": [
           "I19"
         ]
       },
       {
-        "color": "white",
-        "cities": [
-          {
-            "name": {
-              "name": "Russia"
-            }
-          }
-        ],
+        "color": "gray_real",
+        "names": {
+          "fontSize": 14,
+          "name": "Russia"
+        },
         "hexes": [
           "G3"
         ]
       },
       {
-        "color": "white",
-        "cities": [
-          {
-            "name": {
-              "name": "Ukraine"
-            }
-          }
+        "color": "gray_real",
+        "names": {
+          "fontSize": 20,
+          "fontStyle": "italic",
+          "fontWeight": "regular",
+          "name": "Ukraine"
+        },
+        "removeBorders": [
+          1, 2, 5, 6
         ],
         "hexes": [
           "K17"
@@ -706,12 +711,14 @@
       },
       {
         "color": "white",
-        "cities": [
-          {
-            "name": {
-              "name": "Lithuania"
-            }
-          }
+        "names": {
+          "fontSize": 20,
+          "fontStyle": "italic",
+          "fontWeight": "regular",
+          "name": "Lithuania"
+        },
+        "removeBorders": [
+          3, 4, 5
         ],
         "hexes": [
           "I3"
@@ -719,12 +726,14 @@
       },
       {
         "color": "white",
-        "cities": [
-          {
-            "name": {
-              "name": "Belarus"
-            }
-          }
+        "names": {
+          "fontSize": 20,
+          "fontStyle": "italic",
+          "fontWeight": "regular",
+          "name": "Belarus"
+        },
+        "removeBorders": [
+          4, 5, 6
         ],
         "hexes": [
           "K5"
