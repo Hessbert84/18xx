@@ -640,46 +640,31 @@
   "map": {
     "hexes": [
       {
-        "color": "white",
+        "color": "gray_real",
         "names": {
-          "fontSize": 20,
-          "fontStyle": "italic",
-          "fontWeight": "regular",
+          "fontSize": 14,
           "name": "Germany"
         },
-        "removeBorders": [
-          1, 2, 3
-        ],
         "hexes": [
           "A13"
         ]
       },
       {
-        "color": "white",
+        "color": "gray_real",
         "names": {
-          "fontSize": 20,
-          "fontStyle": "italic",
-          "fontWeight": "regular",
+          "fontSize": 14,
           "name": "Czechia"
         },
-        "removeBorders": [
-          1, 2, 3, 6
-        ],
         "hexes": [
           "C17"
         ]
       },
       {
-        "color": "white",
+        "color": "gray_real",
         "names": {
-          "fontSize": 20,
-          "fontStyle": "italic",
-          "fontWeight": "regular",
+          "fontSize": 14,
           "name": "Slovakia"
         },
-        "removeBorders": [
-          1, 2, 5, 6
-        ],
         "hexes": [
           "I19"
         ]
@@ -697,44 +682,29 @@
       {
         "color": "gray_real",
         "names": {
-          "fontSize": 20,
-          "fontStyle": "italic",
-          "fontWeight": "regular",
+          "fontSize": 14,
           "name": "Ukraine"
         },
-        "removeBorders": [
-          1, 2, 5, 6
-        ],
         "hexes": [
           "K17"
         ]
       },
       {
-        "color": "white",
+        "color": "gray_real",
         "names": {
-          "fontSize": 20,
-          "fontStyle": "italic",
-          "fontWeight": "regular",
+          "fontSize": 14,
           "name": "Lithuania"
         },
-        "removeBorders": [
-          3, 4, 5
-        ],
         "hexes": [
           "I3"
         ]
       },
       {
-        "color": "white",
+        "color": "gray_real",
         "names": {
-          "fontSize": 20,
-          "fontStyle": "italic",
-          "fontWeight": "regular",
+          "fontSize": 14,
           "name": "Belarus"
         },
-        "removeBorders": [
-          4, 5, 6
-        ],
         "hexes": [
           "K5"
         ]
