@@ -11,10 +11,40 @@
     "height": 1175,
     "margins": 25
   },
+  "currency": {
+    "bank": true,
+    "capital": true,
+    "market": false,
+    "offboard": false,
+    "par": false,
+    "private": true,
+    "revenue": false,
+    "terrain": false,
+    "token": true,
+    "train": true,
+    "value": false
+  },
   "companySvgLogos": "none",
-  "plainMapDestinations": false,
-  "plainMapHomes": false,
+  "overrideCompanies": "none",
+  "overrideSelection": [],
+  "plainMapCompanies": false,
   "straightCityNames": false,
+  "cards": {
+    "shareStyle": "gmt",
+    "width": 265.748,
+    "cutlines": 25,
+    "bleed": 12.5,
+    "border": 0
+  },
+    "layout": "free",
+    "height":  173.228,
+  "charters": {
+    "style": "color",
+    "cutlines": 25,
+    "border": 0
+  },
+    "bleed": 12.5,
+    "halfWidth": false,
   "tokenLayout": "gsp",
   "theme": "galatolol",
   "charterStyle": "carth",
@@ -24,6 +54,8 @@
   "tiles": {
     "layout": "offset",
     "width": 150
+    "gaps": true
+    "mapWidth": 150,
   },
   "stock": {
     "cell": {

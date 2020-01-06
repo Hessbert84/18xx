@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 import "./TileSheet.scss";
 
-import { sortTiles, tileColors } from "./util";
+import { sortTiles } from "./util";
 import { getTileSheetContext } from "./tilesheet/util";
 import tileDefs from "./data/tiles";
 import { sidesFromTile } from "./atoms/Track";
@@ -57,6 +57,15 @@ const gatherTiles = compose(sortTiles,
 
 const rotate = sides => map(s => (s % 6) + 1, sides);
 
+const tileAboveSmall = (page, i) => {
+  let offset = i % 60;
+  if ([0,9,17,26,34,43,51].includes(offset)) {
+    return null;
+  }
+
+  let target = i - 1;
+  return target >= 0 && page[target];
+};
 const tileAbove = (page, i) => {
   if (i % 6 === 0) {
     return null;
@@ -66,6 +75,15 @@ const tileAbove = (page, i) => {
   return target >= 0 && page[target];
 };
 
+const tileBelowSmall = (page, i) => {
+  let offset = (i + 1) % 60;
+  if ([0,9,17,26,34,43,51].includes(offset)) {
+    return null;
+  }
+
+  let target = i + 1;
+  return target < page.length && page[target];
+};
 const tileBelow = (page, i) => {
   if ((i + 1) % 6 === 0) {
     return null;
@@ -88,7 +106,7 @@ const pageTiles = (perPage, pages, tiles) => {
   return pageTiles(perPage, append(current, pages), rest);
 };
 
-const TileSheet = ({ paper, layout, hexWidth }) => {
+const TileSheet = ({ paper, layout, hexWidth, gaps }) => {
   let params = useParams();
   let game = games[params.game];
 
@@ -105,6 +123,11 @@ const TileSheet = ({ paper, layout, hexWidth }) => {
     reduce((tiles, color) => {
       if (tiles.length === 0) return color;
 
+      // If people don't want gaps... let them do it!
+      if (gaps === false) {
+        return concat(tiles, color);
+      }
+
       switch(layout) {
       case "offset":
         let odd = Math.ceil(((tiles.length + 1) % c.perPage) / c.perRow) % 2 !== 0;
@@ -113,6 +136,13 @@ const TileSheet = ({ paper, layout, hexWidth }) => {
           return concat(tiles, concat(repeat(null, c.perRow), color));
         } else {
           return concat(tiles, concat(repeat(null, c.perRow + 1), color));
+        }
+      case "smallDie":
+        let offset = tiles.length % 60;
+        if ([0,9,17,26,34,43,51].includes(offset)) {
+          return concat(tiles, color);
+        } else {
+          return concat(tiles, concat([null], color));
         }
       case "die":
         if (tiles.length % 6 === 0) {
@@ -126,7 +156,7 @@ const TileSheet = ({ paper, layout, hexWidth }) => {
     }, []),
     filter(x => x && x.length > 0),
     map(color => groupedByColor[color])
-  )(tileColors);
+  )(keys(groupedByColor));
 
   let pagedTiles = pageTiles(c.perPage, [], separatedTiles);
 
@@ -142,13 +172,25 @@ const TileSheet = ({ paper, layout, hexWidth }) => {
         let rotation = 0;
         let mask = c.mask;
 
-        if (layout === "die" || layout === "individual") {
+        if (layout === "smallDie" || layout === "die" || layout === "individual") {
           let currentSides = sidesFromTile(hex);
           let pastSides = [];
-          if (layout === "die" && i - 1 >= 0) {
+          if ((layout === "smallDie" || layout === "die") && i - 1 >= 0) {
             pastSides = sides[i - 1];
           } else if (layout === "individual" && i - c.perRow >= 0) {
             pastSides = sides[i - c.perRow];
+          }
+
+          if (layout === "smallDie") {
+            if (tileAboveSmall(page, i) && tileBelowSmall(page, i)) {
+              mask = "hexBleedMaskDie";
+            } else if (tileAboveSmall(page, i)) {
+              mask = "hexBleedMaskDieBottom";
+            } else if (tileBelowSmall(page, i)) {
+              mask = "hexBleedMaskDieTop";
+            } else {
+              mask = "hexBleedMask";
+            }
           }
 
           if (layout === "die") {
@@ -201,7 +243,7 @@ const TileSheet = ({ paper, layout, hexWidth }) => {
 
         return (
           <g mask={`url(#${mask})`}
-             transform={`translate(${c.getX(i)} ${c.getY(i)}) scale(${hexWidth/150})`}
+             transform={`translate(${c.getX(i)} ${c.getY(i)}) scale(${c.hexWidth/150})`}
              key={`${hex.id}-${i}`}>
             <g transform={`rotate(${rotation})`}>
               <Hex hex={hex} id={hex.id} mask="hexBleedMask" />
@@ -212,7 +254,7 @@ const TileSheet = ({ paper, layout, hexWidth }) => {
       page
     );
 
-    let pins = layout === "die" ? <Pins/> : null;
+    let pins = (layout === "die" || layout === "smallDie") ? <Pins/> : null;
 
     return (
       <div className="TileSheet--Page"
@@ -253,7 +295,8 @@ const TileSheet = ({ paper, layout, hexWidth }) => {
 const mapStateToProps = state => ({
   layout: state.config.tiles.layout,
   paper: state.config.paper,
-  hexWidth: state.config.tiles.width
+  hexWidth: state.config.tiles.width,
+  gaps: state.config.tiles.gaps
 });
 
 export default connect(mapStateToProps)(TileSheet);

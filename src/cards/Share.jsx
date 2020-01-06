@@ -1,5 +1,5 @@
 import React from "react";
-import Token from "../Token";
+import CompanyToken from "../tokens/CompanyToken";
 import Color from "../data/Color";
 import ColorContext from "../context/ColorContext";
 
@@ -16,10 +16,13 @@ const LeftShare = ({
   shares,
   percent,
   label,
+  logo,
   name,
   abbrev,
   token,
-  shareStyle
+  color,
+  shareStyle,
+  company
 }) => {
   let count = shares > 1 ? `${shares} Shares` : `${shares} Share`;
 
@@ -30,7 +33,8 @@ const LeftShare = ({
                   <div className="share__token__wrapper">
                     <svg style={{width:"0.52in",height:"0.52in"}}
                          viewBox="-26 -26 52 52">
-                      <Token label={abbrev} token={token} outline={shareStyle === "gmt" ? "white" : null} width={25} />
+                      <CompanyToken company={company}
+                                    outline={shareStyle === "gmt" ? (company.color === "white" ? "black" : "white") : null} />
                     </svg>
                   </div>
                 </div>);
@@ -40,34 +44,38 @@ const LeftShare = ({
   return (
     <div className="cutlines">
       <div className={`card share share--${shareStyle || "left"}`}>
-        {name && <div className="share__name"><div>{name}</div></div>}
-        {shares && <div className="share__shares">{count}</div>}
-        {cost && <div className="share__shares">{cost}</div>}
-        {percent && <div className="share__percent">{percent}%</div>}
-        {revenue && <div className="share__percent">Revenue: {revenue}</div>}
-        <Color context="companies">
-          {(c,t) => (
-            <div className="share__hr" style={{ backgroundColor: c(is(Object,token) ? token.colors[0] : token) }} />
-          )}
-        </Color>
-        <div className="share__tokens">
-          <ColorContext.Provider value="companies">
-            {tokens}
-          </ColorContext.Provider>
+        <div className="card__bleed">
+          <Color context="companies">
+            {(c,t) => (
+              <div className="share__hr" style={{ backgroundColor: c(is(Object,token) ? token.colors[0] : token) }} />
+            )}
+          </Color>
+          <div className="card__body">
+            {name && <div className="share__name"><div>{name}</div></div>}
+            {shares && <div className="share__shares">{count}</div>}
+            {cost && <div className="share__shares">{cost}</div>}
+            {percent && <div className="share__percent">{percent}%</div>}
+            {revenue && <div className="share__percent">Revenue: {revenue}</div>}
+            <div className="share__tokens">
+              <ColorContext.Provider value="companies">
+                {tokens}
+              </ColorContext.Provider>
+            </div>
+            {label &&
+             label.length > 0 && (
+               <div className="share__label">
+                 <Color context="map">
+                   {(c,t) => (
+                     <div className="share__label__text"
+                          style={{ color: t(c("yellow")), backgroundColor: c("yellow") }} >
+                       {label}
+                     </div>
+                   )}
+                 </Color>
+               </div>
+             )}
+          </div>
         </div>
-        {label &&
-         label.length > 0 && (
-           <div className="share__label">
-             <Color context="map">
-               {(c,t) => (
-                 <div className="share__label__text"
-                      style={{ color: t(c("yellow")), backgroundColor: c("yellow") }} >
-                   {label}
-                 </div>
-               )}
-             </Color>
-           </div>
-         )}
       </div>
     </div>
   );
@@ -79,9 +87,11 @@ const CenterShare = ({
   shares,
   percent,
   label,
+  logo,
   name,
   abbrev,
-  token
+  token,
+  company
 }) => {
   let count = shares > 1 ? `${shares} Shares` : `${shares} Share`;
 
@@ -93,7 +103,7 @@ const CenterShare = ({
                        className="share__token__wrapper">
                     <svg style={{width:"0.52in",height:"0.52in"}}
                          viewBox="-26 -26 52 52">
-                      <Token label={abbrev} token={token} width={25} />
+                      <CompanyToken company={company} />
                     </svg>
                   </div>
                 </div>);
@@ -103,33 +113,37 @@ const CenterShare = ({
   return (
     <div className="cutlines">
       <div className="card share">
-        {shares && <div className="share__shares">{count}</div>}
-        {cost && <div className="share__shares">{cost}</div>}
-        {percent && <div className="share__percent">{percent}%</div>}
-        {revenue && <div className="share__percent">Revenue: {revenue}</div>}
-        <div className="share__tokens">
-          <ColorContext.Provider value="companies">
-            {tokens}
-          </ColorContext.Provider>
+        <div className="card__bleed">
+          <Color context="companies">
+            {(c,t) => (
+              <div className="share__hr" style={{ backgroundColor: c(is(Object,token) ? token.colors[0] : token) }} />
+            )}
+          </Color>
+          <div className="card__body">
+            {shares && <div className="share__shares">{count}</div>}
+            {cost && <div className="share__shares">{cost}</div>}
+            {percent && <div className="share__percent">{percent}%</div>}
+            {revenue && <div className="share__percent">Revenue: {revenue}</div>}
+            <div className="share__tokens">
+              <ColorContext.Provider value="companies">
+                {tokens}
+              </ColorContext.Provider>
+            </div>
+            {label &&
+             label.length > 0 && (
+               <div className="share__label">
+                 <Color context="map">
+                   {(c,t) => (
+                     <div className="share__label__text"
+                          style={{ color: t(c("yellow")), backgroundColor: c("yellow") }} >
+                       {label}
+                     </div>
+                   )}
+                 </Color>
+               </div>
+             )}
+          </div>
         </div>
-        <Color context="companies">
-          {(c,t) => (
-            <div className="share__hr" style={{ backgroundColor: c(is(Object,token) ? token.colors[0] : token) }} />
-          )}
-        </Color>
-        {label &&
-         label.length > 0 && (
-           <div className="share__label">
-             <Color context="map">
-               {(c,t) => (
-                 <div className="share__label__text"
-                      style={{ color: t(c("yellow")), backgroundColor: c("yellow") }} >
-                   {label}
-                 </div>
-               )}
-             </Color>
-           </div>
-         )}
       </div>
     </div>
   );
@@ -138,9 +152,9 @@ const CenterShare = ({
 const Share = (props) => (
   <Config>
     {config => {
-      if(config.shareStyle === "left") {
+      if(config.cards.shareStyle === "left") {
         return <LeftShare {...props} />;
-      } else if (config.shareStyle === "gmt") {
+      } else if (config.cards.shareStyle === "gmt") {
         return <LeftShare {...props} shareStyle="gmt" />;
       } else {
         return <CenterShare {...props} />;
