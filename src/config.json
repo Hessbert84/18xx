@@ -53,9 +53,9 @@
   "companiesTheme": "galatolol",
   "tiles": {
     "layout": "offset",
-    "width": 150
-    "gaps": true
-    "mapWidth": 150,
+    "width": 150,
+    "gaps": true,
+    "mapWidth": 150
   },
   "stock": {
     "cell": {
