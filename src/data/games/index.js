@@ -115,7 +115,7 @@ let all_games = {
   FourthAge: game_FourthAge,
   Harzbahn: game_Harzbahn,
   Powerrails: game_Powerrails,
-  "18Test": game_18Test
+  "18Test": game_18Test,
   "1830PL": game_1830PL,
 };
 

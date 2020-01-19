@@ -29,8 +29,8 @@
   "overrideSelection": [],
   "plainMapCompanies": false,
   "straightCityNames": false,
-  "theme": "gmt",
-  "companiesTheme": "gmt",
+  "theme": "galatolol",
+  "companiesTheme": "galatolol",
   "ipo": {
     "borderRadius": 11.811
   },
@@ -46,13 +46,7 @@
     "shareStyle": "gmt",
     "layout": "miniEuroDie",
     "width": 265.748,
-    "height":  173.228,
-  "charters": {
-    "style": "color",
-    "cutlines": 25,
-    "bleed": 12.5,
-    "border": 0,
-    "blackBand": false
+    "height":  173.228
   },
   "tokens": {
     "layout": "free",
