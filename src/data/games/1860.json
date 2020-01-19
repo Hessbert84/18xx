@@ -292,30 +292,35 @@
       "name": "Brading Harbour Company",
       "price": 30,
       "revenue": 5,
+      "company": "BHI&R",
       "description": "Can be exchanged for a share in the BHI&R pubilc company."
     },
     {
       "name": "Yarmouth Harbour Company",
       "price": 50,
       "revenue": 10,
+      "company": "FYN",
       "description": "Can be exchanged for a share in the FYN public company."
     },
     {
       "name": "Cowes Marina and Harbour",
       "price": 90,
       "revenue": 20,
+      "company": "C&N",
       "description": "Can be exchanged for a share in the C&N public company."
     },
     {
       "name": "Ryde Pier & Shipping Company",
       "price": 130,
       "revenue": 30,
+      "company": "IOW",
       "description": "Can be exchanged for a share in the IOW public company."
     },
     {
       "name": "Fishbourne Ferry Company",
       "price": 200,
       "revenue": 25,
+      "icon": "boat",
       "description": "Not available until the first 6+3 train has been purchased. Closes all other private companies."
     }
   ],
@@ -955,28 +960,12 @@
               }
             }
           ],
-          "borders": [
-            {
-              "side": 2,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "G1"
           ]
         },
         {
           "color": "plain",
-          "borders": [
-            {
-              "side": 5,
-              "color": "mountain"
-            },
-            {
-              "side": 6,
-              "color": "mountain"
-            }
-          ],
           "labels": [
             {
               "label": "C",
@@ -1071,16 +1060,6 @@
               }
             }
           ],
-          "borders": [
-            {
-              "side": 2,
-              "color": "mountain"
-            },
-            {
-              "side": 3,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "G3"
           ]
@@ -1149,12 +1128,6 @@
               "name": {
                 "name": "Cement Mills"
               }
-            }
-          ],
-          "borders": [
-            {
-              "side": 5,
-              "color": "mountain"
             }
           ],
           "hexes": [
@@ -1327,12 +1300,6 @@
         },
         {
           "color": "plain",
-          "borders": [
-            {
-              "side": 1,
-              "color": "mountain"
-            }
-          ],
           "centerTowns": [
             {
               "name": {
@@ -1554,12 +1521,6 @@
               "percent": 0.4
             }
           ],
-          "borders": [
-            {
-              "side": 4,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "I7"
           ]
@@ -1617,12 +1578,6 @@
               }
             }
           ],
-          "borders": [
-            {
-              "side": 1,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "I9"
           ]
@@ -1654,12 +1609,6 @@
               "side": 3
             }
           ],
-          "borders": [
-            {
-              "side": 4,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "I11"
           ]
@@ -1678,6 +1627,20 @@
             "F12"
           ]
         }
+      ],
+      "borders": [
+        {
+          "color": "mountain",
+          "coords": ["F2p3", "F2p4", "F2p5", "F4p4"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["I7p2", "I7p3"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["I11p2", "I11p3"]
+        }
       ]
     },
     {
@@ -1692,12 +1655,6 @@
               "name": {
                 "name": "Norton Green"
               }
-            }
-          ],
-          "borders": [
-            {
-              "side": 5,
-              "color": "mountain"
             }
           ],
           "hexes": [
@@ -1727,12 +1684,6 @@
               "companies": ["FYN"]
             }
           ],
-          "borders": [
-            {
-              "side": 2,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "B4"
           ]
@@ -1742,6 +1693,24 @@
           "hexes": [
             "E11"
           ]
+        }
+      ],
+      "borders": [
+        {
+          "color": "mountain",
+          "coords": ["F2p3", "F2p4", "F2p5", "F4p4"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["I7p2", "I7p3"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["I11p2", "I11p3"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["A5p3", "A5p4"]
         }
       ]
     }

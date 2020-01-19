@@ -46,7 +46,10 @@ const Token = ({
   inverse, // Should we render the "inverse" of this token? No logos, only text
 
   bleed, // Should we draw bleed around the token (for printing)
-  outline // Should we draw an outline around the token circle
+  outline, // Should we draw an outline around the token circle
+  outlineWidth, // What stroke width to use on the outline
+
+  angle // option for some of the token types
 }) => {
   // If we only passed in one color, collect it in a single item array as "colors"
   colors = colors || [color];
@@ -94,26 +97,28 @@ const Token = ({
             switch(type) {
             case "square":
               shape = (
-                <rect rx="2" ry="2" x="-17.5" y="-17.5" width="35" height="35"
-                      fill={c(colors[0])}/>
+                <g transform={`rotate(${angle || 0})`}>
+                  <rect rx="2" ry="2" x="-17.5" y="-17.5" width="35" height="35"
+                        fill={c(colors[0])}/>
+                </g>
               );
               textFill = labelColor ? p(labelColor) : t(c(colors[0]));
               tokenFill = c(colors[1]);
               textStroke = "none";
               break;
             case "quarters":
-              shape = [
-                <rect key="upperLeft" x="-50" y="-50" width="50" height="50"
-                      fill={c(colors[1])}
-                      clipPath={`url(#${clipId})`}/>,
-                <rect key="lowerRight" x="0" y="0" width="50" height="50"
-                      fill={c(colors[1])}
-                      clipPath={`url(#${clipId})`}/>,
-                <rect key="bar" x="-50" y="-8" width="100" height="18"
-                      fill={p("white")}
-                      stroke={p("black")}
-                      clipPath={`url(#${clipId})`}/>
-              ];
+              shape = [<g transform={`rotate(${angle || 0})`}>
+                         <rect key="upperLeft" x="-50" y="-50" width="50" height="50"
+                               fill={c(colors[1])}
+                               clipPath={`url(#${clipId})`}/>,
+                         <rect key="lowerRight" x="0" y="0" width="50" height="50"
+                               fill={c(colors[1])}
+                               clipPath={`url(#${clipId})`}/>,
+                       </g>,
+                       <rect key="bar" x="-50" y="-8" width="100" height="18"
+                             fill={p("white")}
+                             stroke={p("black")}
+                             clipPath={`url(#${clipId})`}/>];
               textFill = t(c("white"));
               break;
             case "halves":
@@ -133,7 +138,7 @@ const Token = ({
               break;
             case "stripes":
               gradient = (
-                <linearGradient id={id} x1="0" x2="0" y1="0" y2="1">
+                <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
                   <stop offset={bleedAdjust(bleed,12.5)} stopColor={c(colors[0])}/>
                   <stop offset={bleedAdjust(bleed,12.5)} stopColor={c(colors[1])}/>
                   <stop offset={bleedAdjust(bleed,25)} stopColor={c(colors[1])}/>
@@ -207,7 +212,7 @@ const Token = ({
               let size = 2 * width;
               let Component = svg.Component;
               shape = (
-                <Component className={`color-main-${colors[0]}`}
+                <Component className={`color-main-${colors[0]}${reserved ? " color-reserved" : ""}`}
                            x={start} y={start}
                            height={size} width={size}/>
               );
@@ -222,50 +227,82 @@ const Token = ({
             tokenFill = gradient ? `url(#${id})` : (tokenFill || c(colors[0]));
           } else {
 
-            textFill = t(c(colors[0]));
+            textFill = t(c(colors[0]) || p("white"));
             tokenFill = c(colors[0]) || p("white");
           }
         }
 
-        let content = icon ? (
-          <use href={icon} transform="scale(1.66666 1.66666)" />
-        ) : (
-          <text
-            fontFamily="display"
-            fontSize={width * 0.64}
-            textAnchor="middle"
-            strokeWidth="0.5"
-            stroke={textStroke}
-            fill={textFill}
-            textLength={
-              label ?
-                label.length > 2
-                ? width * 2 - width * 0.4
-                : label.length === 1
-                ? width * 0.5
-                : width
-              : 0
-            }
-            lengthAdjust="spacingAndGlyphs"
-            x="0"
-            y={width * 0.24}
-          >
-            {label}
-          </text>
-        );
+        let content = [];
+        if (icon) {
+          content.push(<use key="icon" href={`#${icon}`} transform="scale(1.66666 1.66666)" />);
+          if (label) {
+            content.push(<text
+                           key="text"
+                           fontFamily="display"
+                           fontSize={width * 0.48}
+                           textAnchor="middle"
+                           strokeWidth="0.5"
+                           stroke={textStroke}
+                           fill={textFill}
+                           textLength={
+                             label ?
+                               label.length > 2
+                               ? width * 1.8 - width * 0.4
+                               : label.length === 1
+                               ? width * 0.4
+                               : width * 0.8
+                             : 0
+                           }
+                           lengthAdjust="spacingAndGlyphs"
+                           x="0"
+                           y={(width * 0.24) + 12}
+                         >
+                           {label}
+                         </text>
+                        );
+          }
+        } else {
+          content.push(<text
+                         key="text"
+                         fontFamily="display"
+                         fontSize={width * 0.64}
+                         textAnchor="middle"
+                         strokeWidth="0.5"
+                         stroke={textStroke}
+                         fill={textFill}
+                         textLength={
+                           label ?
+                             label.length > 2
+                             ? width * 2 - width * 0.4
+                             : label.length === 1
+                             ? width * 0.5
+                             : width
+                           : 0
+                         }
+                         lengthAdjust="spacingAndGlyphs"
+                         x="0"
+                         y={width * 0.24}
+                       >
+                         {label}
+                       </text>
+                      );
+        }
 
         let outlineColor = p(outline || "black");
         return (
           <g>
             {clip}
             {gradient}
-            <circle
-              cx="0"
-              cy="0"
-              r={width + (bleed ? 5 : 0)}
-              fill={tokenFill}
-              stroke={outlineColor}
-            />
+            <g transform={`rotate(${angle || 0})`}>
+              <circle
+                cx="0"
+                cy="0"
+                r={width + (bleed ? 5 : 0)}
+                fill={tokenFill}
+                stroke={outlineColor}
+                strokeWidth={outlineWidth || 1}
+              />
+            </g>
             {shape}
             {content}
           </g>

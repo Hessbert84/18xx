@@ -8,11 +8,8 @@
 .share--left .share__hr {
   height: 100%;
   position: absolute;
-  left: 0.2225in;
   bottom: 0;
   width: 0.25in;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -22,7 +19,6 @@
   left: 0;
   bottom: 0;
   width: 0.795in;
-  border-right: 2px solid black;
 }
 
 .share__name {
@@ -31,7 +27,7 @@
   top: 0;
   right: 0;
   width: 100%;
-  padding: 0.125in;
+  padding: 0.125in 0.125in 0 0.125in;
   line-height: 0.20in;
   font-size: 0.16in;
   text-align: center;
@@ -41,6 +37,34 @@
   justify-content: center;
 }
 
+.share__subtext {
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0.0625in 0.125in 0 0.125in;
+  line-height: 0.20in;
+  text-align: center;
+  font-size: 0.12in;
+  font-weight: bold;
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > div {
+    margin: auto;
+  }
+}
+
+.share--center .share__subtext {
+  padding-top: 0.75in;
+}
+
+.share--left .share__subtext,
+.share--gmt .share__subtext,
 .share--left .share__name,
 .share--gmt .share__name {
   width: calc(100% - 0.67in);
@@ -54,7 +78,7 @@
   width: 75%;
   height: 0.52in;
   left: 12.5%;
-  overflow: auto;
+  overflow: visible;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -66,7 +90,7 @@
   top: 0.125in;
   width: 0.52in;
   height: calc(100% - 0.25in);
-  flex-direction: column-reverse;
+  flex-direction: column;
   overflow: visible;
 }
 
@@ -75,7 +99,7 @@
   top: 0.125in;
   width: 0.52in;
   height: calc(100% - 0.25in);
-  flex-direction: column-reverse;
+  flex-direction: column;
   overflow: visible;
 }
 
@@ -156,4 +180,17 @@
 .share--gmt .share__shares {
   margin-left: 0.67in;
   padding: 0.125in;
+}
+
+.share__variant {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0.125in;
+  line-height: 1;
+  padding-right: 0.125in;
+  font-weight: normal;
+  font-size: 0.5em;
+  font-style: italic;
+  font-family: sans-serif;
 }

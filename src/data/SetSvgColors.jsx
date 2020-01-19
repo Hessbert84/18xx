@@ -23,6 +23,20 @@ const SetSvgColors = ({ companySvgLogos }) => {
             `svg .color-stroke-${color}{stroke:${c(color)}}`
           ], colors);
 
+          rules = concat(rules, chain(color => {
+            if (color !== "white") {
+              return [`svg.color-reserved .color-${color}{fill:${c("gray")}}`,
+                 `svg.color-reserved .color-stroke-${color}{stroke:${c("gray")}}`]
+            }
+
+            return [];
+          }, colors));
+
+          rules.push(`svg.color-reserved .color-reserved-white{fill:${c("white")}}`);
+          rules.push(`svg.color-reserved .color-stroke-reserved-white{stroke:${c("white")}}`);
+          rules.push(`svg.color-reserved .color-reserved-gray{fill:${c("gray")}}`);
+          rules.push(`svg.color-reserved .color-stroke-reserved-gray{stroke:${c("gray")}}`);
+
           if (companySvgLogos === "main") {
             rules = concat(rules, chain(color => [
               `svg.color-main-${color} .color-main{fill:${c(color)}}`,

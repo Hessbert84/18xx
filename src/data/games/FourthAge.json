@@ -17,7 +17,8 @@
   "tokens": [
     "Round",
     "+20",
-    "+20"
+    "+20",
+    { "color": "brown", "label": "+20" }
   ],
   "ipo": true,
   "bank": 12000,
@@ -99,8 +100,8 @@
     },
     {
       "name": "Dwarvish Mountain Express",
-      "abbrev": "DMH",
-      "logo": "lotr/DMH",
+      "abbrev": "DME",
+      "logo": "lotr/DME",
       "tokens": [
         "Free",
         "$40",
@@ -161,7 +162,7 @@
         "Free",
         "$40"
       ],
-      "color": "yellow"
+      "color": "cyan"
     },
     {
       "name": "Far Harad Railway",
@@ -176,6 +177,18 @@
     }
   ],
   "trains": [
+    {
+      "name": "2",
+      "quantity": 1,
+      "color": "yellow",
+      "description": "Runs from Hobbiton.",
+      "info": [
+        {
+          "color": "yellow",
+          "note": "Shire and Westlands"
+        }
+      ]
+    },
     {
       "name": "2",
       "quantity": 4,
@@ -338,35 +351,44 @@
       "name": "The Hobbiton Teakettle",
       "price": 20,
       "revenue": 5,
+      "token": { "color": "yellow", "label": "g" },
       "description": ""
     },
     {
       "name": "The Great River Bridge Company",
       "price": 50,
       "revenue": 10,
+      "icon": "bridge",
       "description": "Owning railroad pays nothing for one tile lay across the Anduin; may be bought in during Phase 2 for up to face value."
     },
     {
       "name": "Mountain Guides, Inc",
       "price": 80,
       "revenue": 15,
+      "icon": "mountain",
       "description": "Owning railroad pays nothing for one tile lay in a mountain hex; may be bought in during Phase 2 for up to face value."
     },
     {
       "name": "Trollheim",
       "price": 120,
       "revenue": 20,
+      "token": {
+        "color": "white",
+        "label": "+20"
+      },
       "description": "Owning railroad may play a permanent +20 marker in any city or town. Bonus applies only to the owning railroad."
     },
     {
       "name": "Moria Mining Company",
       "price": 140,
-      "description": "This is the President's certificate of the Moria Mining Company. The purchaser sets the par value of the railway. Unlike other companies, this company may operate with just 20% sold. It may not be purchased by another public company."
+      "company": "DME",
+      "description": "This comes with the President's certificate of the Dwarvish Mountain Express, this company may operate with just 20% sold. It may not be purchased by another public company."
     },
     {
       "name": "Lorien Border Railway",
       "price": 170,
       "revenue": 25,
+      "company": "E",
       "description": "Comes with a 10% share of the Elvish."
     }
   ],
@@ -449,7 +471,7 @@
     {
       "train": "9",
       "limit": "2",
-      "number": "2",
+      "number": "1",
       "tiles": "gray"
     },
     {
@@ -1800,7 +1822,7 @@
         "cities": [
           {
             "companies": [
-              "DMH"
+              "DME"
             ],
             "name": {
               "name": "Moria"
@@ -2101,7 +2123,7 @@
         },
         "tokens": [
           {
-            "company": "DMH",
+            "company": "DME",
             "destination": true,
             "angle": 90,
             "percent": 0.75
@@ -2177,7 +2199,6 @@
           "H12",
           "H14",
           "H16",
-          "H20",
           "I7",
           "I9",
           "I15",
@@ -2227,6 +2248,10 @@
           "Q19",
           "Q21"
         ]
+      },
+      {
+        "color": "water",
+        "hexes": ["H20"]
       }
     ],
     "borders": [

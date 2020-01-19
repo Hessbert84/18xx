@@ -11,7 +11,23 @@ import Currency from "./util/Currency";
 
 import is from "ramda/src/is";
 
-const Charter = ({ name, abbrev, logo, minor, token, tokens, phases, turns, charterStyle, game, halfWidthCharters, company }) => {
+const Charter = ({
+  name,
+  abbrev,
+  logo,
+  minor,
+  token,
+  tokens,
+  phases,
+  turns,
+  charterStyle,
+  game,
+  halfWidthCharters,
+  company,
+  blackBand,
+  backgroundColor,
+  variant
+}) => {
   let color = token;
   if(is(Object, token)) {
     color = token.colors[0];
@@ -64,17 +80,23 @@ const Charter = ({ name, abbrev, logo, minor, token, tokens, phases, turns, char
         {turn.optional && <dd>{optionalList}</dd>}
       </React.Fragment>
     );
-  }, turns);
+  }, turns || []);
 
   return (
     <Color context="companies">
-      {(c, t) => (
+      {(c, t, _, p) => (
         <div className={`cutlines${minor ? " cutlines--minor" : ""}${halfWidthCharters ? " cutlines--half" : ""}`}>
           <div className={`charter ${minor ? "charter--minor " : ""}charter--${charterStyle}${halfWidthCharters ? " charter--half" : ""}`}>
-            <div className="charter__bleed">
+            <div className="charter__bleed"
+                 style={{
+                   backgroundColor: p(backgroundColor || "white")
+                 }}>
               <div
                 className="charter__hr"
-                style={{ backgroundColor: c(charterStyle === "color" ? color : (color === "white" ? "black" : color)) }}
+                style={{
+                  backgroundColor: c(charterStyle === "color" ? color : (color === "white" ? "black" : color)),
+                  borderBottom: ((charterStyle === "color" && (color === "white" || blackBand)) ? "2px solid black" : null)
+                }}
               />
               <div className="charter__body">
                 <div style={{ color: t(c(charterStyle === "color" ? color : "white")),
@@ -106,7 +128,7 @@ const Charter = ({ name, abbrev, logo, minor, token, tokens, phases, turns, char
                   <div className="charter__trains">
                     Trains
                     <div className="charter__phase">
-                      <Phase phases={phases} minor={!!minor} />
+                      <Phase phases={phases} minor={!!minor} company={company.abbrev} />
                     </div>
                   </div>
                 )}
@@ -116,6 +138,7 @@ const Charter = ({ name, abbrev, logo, minor, token, tokens, phases, turns, char
                     <dl>{minor || turnNodes}</dl>
                   </div>
                 )}
+                {variant && <div className="charter__variant">{variant}</div>}
               </div>
             </div>
           </div>
@@ -127,7 +150,8 @@ const Charter = ({ name, abbrev, logo, minor, token, tokens, phases, turns, char
 
 const mapStateToProps = state => ({
   charterStyle: state.config.charters.style,
-  halfWidthCharters: state.config.charters.halfWidth
+  halfWidthCharters: state.config.charters.halfWidth,
+  blackBand: state.config.charters.blackBand
 });
 
 export default connect(mapStateToProps)(Charter);

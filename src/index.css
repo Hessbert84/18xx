@@ -1,4 +1,4 @@
-height {
+html {
   margin: 0px;  /* this affects the margin on the html before sending to printer */
 }
 
@@ -158,7 +158,6 @@ svg {
 
 .charter--color .charter__hr {
   top: 0;
-  border-bottom: 2px solid black;
 }
 
 .charter--color.charter--minor .charter__hr {
