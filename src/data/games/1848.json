@@ -435,8 +435,9 @@
     "market": [
       [
         {
-          "label": "Receivership",
-          "verticalAlign": "bottom",
+          "height": 6,
+          "subRotated": true,
+          "subLabel": "Receivership",
           "legend": 0
         },
         {
@@ -461,11 +462,7 @@
         450
       ],
       [
-        {
-          "label": "Receivership",
-          "verticalAlign": "bottom",
-          "legend": 0
-        },
+        null,
         {
           "label": 60,
           "legend": 1,
@@ -496,11 +493,7 @@
         }
       ],
       [
-        {
-          "label": "Receivership",
-          "verticalAlign": "bottom",
-          "legend": 0
-        },
+        null,
         {
           "label": 50,
           "legend": 1,
@@ -528,11 +521,7 @@
         }
       ],
       [
-        {
-          "label": "Receivership",
-          "verticalAlign": "bottom",
-          "legend": 0
-        },
+        null,
         {
           "label": 40,
           "legend": 1,
@@ -557,11 +546,7 @@
         }
       ],
       [
-        {
-          "label": "Receivership",
-          "verticalAlign": "bottom",
-          "legend": 0
-        },
+        null,
         {
           "label": 30,
           "legend": 1,
@@ -584,11 +569,7 @@
         }
       ],
       [
-        {
-          "label": "Receivership",
-          "verticalAlign": "bottom",
-          "legend": 0
-        },
+        null,
         {
           "label": 20,
           "legend": 1,

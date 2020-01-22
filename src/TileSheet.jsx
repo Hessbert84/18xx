@@ -9,6 +9,7 @@ import { getTileSheetContext } from "./tilesheet/util";
 import tileDefs from "./data/tiles";
 import { sidesFromTile } from "./atoms/Track";
 import Svg from "./Svg";
+import Page from "./util/Page";
 import PageSetup from "./PageSetup";
 import Hex from "./Hex";
 
@@ -31,7 +32,6 @@ import includes from "ramda/src/includes";
 import is from "ramda/src/is";
 import keys from "ramda/src/keys";
 import map from "ramda/src/map";
-import prop from "ramda/src/prop";
 import propOr from "ramda/src/propOr";
 import reduce from "ramda/src/reduce";
 import repeat from "ramda/src/repeat";
@@ -49,6 +49,9 @@ export const getTile = curry((tileDefs, tiles, id) => {
       // We aliased (in a game file) this tile to another tile)
       let aliasId = tiles[id].tile;
       tile = tileDefs[aliasId] || tileDefs[split("|", aliasId)][0];
+    } else if (!tiles[id].color) {
+      // This tile might have rotations or other such items but isn't a full tile
+      tile = tileDefs[id] || tileDefs[split("|", id)][0];
     } else {
       // This is actually the tile object
       tile = tiles[id];
@@ -139,7 +142,15 @@ const TileSheet = ({ paper, layout, hexWidth, gaps }) => {
   let c = getTileSheetContext(layout, paper, hexWidth);
 
   let tiles = gatherTiles(game.tiles);
-  let groupedByColor = groupBy(prop("color"), tiles);
+
+  // Let's group by color OR a group field you can provide
+  let groupedByColor = addIndex(groupBy)((tile, i) => {
+    if (tile.group === "individual") {
+      return `z-${i}`;
+    }
+
+    return tile.group || tile.color;
+  }, tiles);
 
   let separatedTiles = compose(
     reduce((tiles, color) => {
@@ -263,6 +274,15 @@ const TileSheet = ({ paper, layout, hexWidth, gaps }) => {
           sides.push(clone(currentSides));
         }
 
+        // Overrides from tile definitions
+        if (hex.mask) {
+          mask = hex.mask;
+        }
+
+        if (hex.rotation) {
+          rotation = hex.rotation;
+        };
+
         return (
           <g mask={`url(#${mask})`}
              transform={`translate(${c.getX(i)} ${c.getY(i)}) scale(${c.hexWidth/150})`}
@@ -281,6 +301,7 @@ const TileSheet = ({ paper, layout, hexWidth, gaps }) => {
     return (
       <div className="TileSheet--Page"
            key={`page-${pageIndex}`}>
+        <Page title={game.info.title} component="Tiles" current={pageIndex + 1} total={pagedTiles.length} />
         <Svg
           style={{
             width: `${c.pageWidth * 0.01}in`,

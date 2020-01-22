@@ -20,19 +20,19 @@
     "Round"
   ],
   "ipo": true,
-  "bank": 12000,
+  "bank": 4000,
   "rounds": [
     {
       "name": "OR1",
-      "color": "white"
+      "color": "yellow"
     },
     {
       "name": "OR2",
-      "color": "white"
+      "color": "yellow"
     },
     {
       "name": "SR",
-      "color": "white"
+      "color": "gray"
     }
   ],
   "players": [
@@ -176,6 +176,7 @@
         null,
         null,
         null,
+        null,
         {
           "value": 100,
           "label": 100,
@@ -194,10 +195,13 @@
           "color": "green",
           "value": 300,
           "label": 300,
+          "width": 2,
           "subLabel": "Game End"
-        }
+        },
+        null
       ],
       [
+        null,
         null,
         null,
         null,
@@ -230,6 +234,7 @@
         null,
         null,
         null,
+        null,
         {
           "value": 60,
           "label": 60,
@@ -256,6 +261,7 @@
       [
         null,
         null,
+        null,
         {
           "value": 40,
           "label": 40,
@@ -280,6 +286,7 @@
         }
       ],
       [
+        null,
         null,
         {
           "value": 20,
@@ -316,8 +323,10 @@
           "color": "offboard",
           "value": 0,
           "label": 0,
+          "width": 2,
           "subLabel": "Bankrupt"
         },
+        null,
         {
           "value": 10,
           "label": 10,
@@ -978,6 +987,16 @@
         "hexes": ["D14"]
       }
     ],
+    "players": {
+      "x": 790,
+      "y": 1065
+    },
+    "roundTracker": {
+      "type": "round",
+      "rotation": 30,
+      "x": 950,
+      "y": 675
+    },
     "borders": [{
       "color": "water",
       "coords": ["B6p1", "B8p2", "B8p3", "B8p4", "B8p5", "B10p4", "C11p3", "C11p4", "C11p5", "C13p4"]
