@@ -119,9 +119,9 @@ let all_games = {
   Harzbahn: game_Harzbahn,
   Powerrails: game_Powerrails,
   SteamOverHolland: game_SteamOverHolland,
-  "18Test": game_18Test
   "18Test": game_18Test,
-  "1830PL": game_1830PL,
+  "18Test": game_18Test,
+  "1830PL": game_1830PL
 };
 
 // These games will be available on the public version of the site. Please keep
