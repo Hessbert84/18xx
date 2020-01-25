@@ -17,35 +17,62 @@
     "Round"
   ],
   "ipo": true,
-  "bank": "£10,000",
+  "bank": 10000,
   "players": [
     {
       "number": 2,
       "certLimit": 32,
-      "capital": "£1000"
+      "capital": 1000
     },
     {
       "number": 3,
       "certLimit": 21,
-      "capital": "£670"
+      "capital": 670
     },
     {
       "number": 4,
       "certLimit": 16,
-      "capital": "£500"
+      "capital": 500
     }
   ],
+  "tokenTypes": {
+    "default": [
+      "Home",
+      40
+    ],
+    "three": [
+      "Home",
+      40,
+      100
+    ],
+    "four": [
+      "Home",
+      40,
+      100,
+      100
+    ]
+  },
+  "shareTypes": {
+    "default": [
+      {
+        "quantity": 1,
+        "label": "President's Certificate",
+        "percent": 20,
+        "shares": 2
+      },
+      {
+        "quantity": 8,
+        "percent": 10,
+        "shares": 1
+      }
+    ]
+  },
   "companies": [
     {
       "name": "Cowes & Newport",
       "abbrev": "C&N",
-      "tokens": [
-        "Home",
-        "£40",
-        "£100",
-        "£100"
-      ],
       "color": "cyan",
+      "tokens": "four",
       "shares": [
         {
           "quantity": 1,
@@ -69,13 +96,8 @@
     {
       "name": "Isle of Wight",
       "abbrev": "IOW",
-      "tokens": [
-        "Home",
-        "£40",
-        "£100",
-        "£100"
-      ],
       "color": "red",
+      "tokens": "four",
       "shares": [
         {
           "quantity": 1,
@@ -99,35 +121,14 @@
     {
       "name": "Isle of Wight, Newport Juntion",
       "abbrev": "IWNJ",
-      "tokens": [
-        "Home",
-        "£40",
-        "£100"
-      ],
       "color": "black",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "tokens": "three"
     },
     {
       "name": "Freshwater, Yarmouth & Newport",
       "abbrev": "FYN",
-      "tokens": [
-        "Home",
-        "£40",
-        "£100"
-      ],
       "color": "green",
+      "tokens": "three",
       "shares": [
         {
           "quantity": 1,
@@ -151,32 +152,11 @@
     {
       "name": "Newport, Godshill & St. Lawrence",
       "abbrev": "NGStL",
-      "tokens": [
-        "Home",
-        "£40"
-      ],
-      "color": "yellow",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "yellow"
     },
     {
       "name": "Brading Harbour Improvement & Railway",
       "abbrev": "BHI&R",
-      "tokens": [
-        "Home",
-        "£40"
-      ],
       "color": "pink",
       "shares": [
         {
@@ -201,53 +181,19 @@
     {
       "name": "Shanklin & Chale",
       "abbrev": "S&C",
-      "tokens": [
-        "Home",
-        "£40"
-      ],
-      "color": "purple",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "purple"
     },
     {
       "name": "Ventor, Yarmouth & South Coast",
       "abbrev": "VYSC",
-      "tokens": [
-        "Home",
-        "£40"
-      ],
-      "color": "lime",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "lime"
     }
   ],
   "trains": [
     {
       "name": "2+1",
       "quantity": 5,
-      "price": "£250",
+      "price": 250,
       "color": "yellow",
       "info": [
         {
@@ -259,7 +205,7 @@
     {
       "name": "3+2",
       "quantity": 4,
-      "price": "£300",
+      "price": 300,
       "color": "green",
       "info": [
         {
@@ -271,7 +217,7 @@
     {
       "name": "4+2",
       "quantity": 3,
-      "price": "£350",
+      "price": 350,
       "color": "green",
       "info": [
         {
@@ -283,7 +229,7 @@
     {
       "name": "5+3",
       "quantity": 2,
-      "price": "£400",
+      "price": 400,
       "color": "brown",
       "info": [
         {
@@ -295,7 +241,7 @@
     {
       "name": "6+3",
       "quantity": 2,
-      "price": "£500",
+      "price": 500,
       "color": "brown",
       "info": [
         {
@@ -307,7 +253,7 @@
     {
       "name": "7+4",
       "quantity": 1,
-      "price": "£600",
+      "price": 600,
       "color": "brown",
       "info": [
         {
@@ -319,7 +265,7 @@
     {
       "name": "8+4",
       "quantity": 1,
-      "price": "£700",
+      "price": 700,
       "color": "brown",
       "info": [
         {
@@ -331,7 +277,7 @@
     {
       "name": "9+5",
       "quantity": 6,
-      "price": "£800",
+      "price": 800,
       "color": "brown",
       "info": [
         {
@@ -344,32 +290,37 @@
   "privates": [
     {
       "name": "Brading Harbour Company",
-      "price": "£30",
-      "revenue": "£5",
+      "price": 30,
+      "revenue": 5,
+      "company": "BHI&R",
       "description": "Can be exchanged for a share in the BHI&R pubilc company."
     },
     {
       "name": "Yarmouth Harbour Company",
-      "price": "£50",
-      "revenue": "£10",
+      "price": 50,
+      "revenue": 10,
+      "company": "FYN",
       "description": "Can be exchanged for a share in the FYN public company."
     },
     {
       "name": "Cowes Marina and Harbour",
-      "price": "£90",
-      "revenue": "£20",
+      "price": 90,
+      "revenue": 20,
+      "company": "C&N",
       "description": "Can be exchanged for a share in the C&N public company."
     },
     {
       "name": "Ryde Pier & Shipping Company",
-      "price": "£130",
-      "revenue": "£30",
+      "price": 130,
+      "revenue": 30,
+      "company": "IOW",
       "description": "Can be exchanged for a share in the IOW public company."
     },
     {
       "name": "Fishbourne Ferry Company",
-      "price": "£200",
-      "revenue": "£25",
+      "price": 200,
+      "revenue": 25,
+      "icon": "boat",
       "description": "Not available until the first 6+3 train has been purchased. Closes all other private companies."
     }
   ],
@@ -501,6 +452,7 @@
     "type": "1Diag",
     "par": {
       "type": "double",
+      "color": "mountain",
       "values": [
         {
           "label": 100,
@@ -550,52 +502,54 @@
     },
     "market": [
       {
-        "label": "0",
-        "subLabel": "Bankrupt"
+        "color": "offboard",
+        "value": 0,
+        "subLabel": "Bankrupt",
+        "height": 2
+      },
+      {
+        "legend": 2,
+        "value": 7
+      },
+      {
+        "legend": 2,
+        "value": 14
+      },
+      {
+        "legend": 2,
+        "value": 20
+      },
+      {
+        "legend": 2,
+        "value": 26
+      },
+      {
+        "legend": 2,
+        "value": 31
+      },
+      {
+        "legend": 2,
+        "value": 36
       },
       {
         "legend": 1,
-        "label": "7"
+        "value": 40
       },
       {
         "legend": 1,
-        "label": "14"
+        "value": 44
       },
       {
         "legend": 1,
-        "label": "20"
+        "value": 47
       },
       {
         "legend": 1,
-        "label": "26"
+        "value": 50
       },
       {
         "legend": 1,
-        "label": "31"
-      },
-      {
-        "legend": 1,
-        "label": "36"
-      },
-      {
-        "par": true,
-        "label": "40"
-      },
-      {
-        "par": true,
-        "label": "44"
-      },
-      {
-        "par": true,
-        "label": "47"
-      },
-      {
-        "par": true,
-        "label": "50"
-      },
-      {
-        "par": true,
-        "label": "52"
+        "value": 52
       },
       {
         "legend": 0,
@@ -611,171 +565,167 @@
             "row": 8
           }
         ],
-        "label": "54"
+        "value": 54
       },
       {
-        "par": true,
-        "label": "56"
+        "legend": 1,
+        "value": 56
       },
       {
         "legend": 0,
         "companies": [
           {
-            "label": "NGStL",
-            "color": "yellow",
+            "abbrev": "NGStL",
             "row": 5
           },
           {
-            "label": "BHI&R",
-            "color": "pink",
+            "abbrev": "BHI&R",
             "row": 6
           },
           {
-            "label": "S&C",
-            "color": "purple",
+            "abbrev": "S&C",
             "row": 7
           },
           {
-            "label": "VYSC",
-            "color": "lime",
+            "abbrev": "VYSC",
             "row": 8
           }
         ],
-        "label": "58"
+        "value": 58
       },
       {
-        "par": true,
-        "label": "60"
+        "legend": 1,
+        "value": 60
       },
       {
         "legend": 0,
         "companies": [
           {
-            "label": "IWNJ",
-            "color": "black",
+            "abbrev": "IWNJ",
             "row": 3
           },
           {
-            "label": "FYN",
-            "color": "green",
+            "abbrev": "FYN",
             "row": 4
           },
           {
-            "label": "NGStL",
-            "color": "yellow",
+            "abbrev": "NGStL",
             "row": 5
           },
           {
-            "label": "BHI&R",
-            "color": "pink",
+            "abbrev": "BHI&R",
             "row": 6
           },
           {
-            "label": "S&C",
-            "color": "purple",
+            "abbrev": "S&C",
             "row": 7
           },
           {
-            "label": "VYSC",
-            "color": "lime",
+            "abbrev": "VYSC",
             "row": 8
           }
         ],
-        "label": "62"
+        "value": 62
       },
       {
-        "par": true,
-        "label": "65"
+        "legend": 1,
+        "value": 65
       },
       {
         "legend": 0,
         "companies": [
           {
-            "label": "IWNJ",
-            "color": "black",
+            "abbrev": "IWNJ",
             "row": 3
           },
           {
-            "label": "FYN",
-            "color": "green",
+            "abbrev": "FYN",
             "row": 4
           },
           {
-            "label": "NGStL",
-            "color": "yellow",
+            "abbrev": "NGStL",
             "row": 5
           },
           {
-            "label": "BHI&R",
-            "color": "pink",
+            "abbrev": "BHI&R",
             "row": 6
           }
         ],
-        "label": "68"
+        "value": 68
       },
       {
-        "par": true,
-        "label": "71"
+        "legend": 1,
+        "value": 71
       },
       {
         "legend": 0,
         "companies": [
           {
-            "label": "C&N",
-            "color": "cyan",
+            "abbrev": "C&N",
             "row": 1
           },
           {
-            "label": "IOW",
-            "color": "red",
+            "abbrev": "IOW",
             "row": 2
           },
           {
-            "label": "IWNJ",
-            "color": "black",
+            "abbrev": "IWNJ",
             "row": 3
           },
           {
-            "label": "FYN",
-            "color": "green",
+            "abbrev": "FYN",
             "row": 4
           }
         ],
-        "label": "74"
+        "value": 74
       },
       {
-        "par": true,
-        "label": "78"
+        "legend": 1,
+        "value": 78
       },
       {
         "legend": 0,
         "companies": [
           {
-            "label": "C&N",
-            "color": "cyan",
+            "abbrev": "C&N",
             "row": 1
           },
           {
-            "label": "IOW",
-            "color": "red",
+            "abbrev": "IOW",
             "row": 2
           },
           {
-            "label": "IWNJ",
-            "color": "black",
+            "abbrev": "IWNJ",
             "row": 3
           },
           {
-            "label": "FYN",
-            "color": "green",
+            "abbrev": "FYN",
             "row": 4
           }
         ],
-        "label": "82"
+        "value": 82
       },
       {
-        "par": true,
-        "label": "86"
+        "legend": 1,
+        "value": 86
+      },
+      {
+        "legend": 0,
+        "companies": [
+          {
+            "abbrev": "C&N",
+            "row": 1
+          },
+          {
+            "abbrev": "IOW",
+            "row": 2
+          }
+        ],
+        "value": 90
+      },
+      {
+        "legend": 1,
+        "value": 95
       },
       {
         "legend": 0,
@@ -791,121 +741,110 @@
             "row": 2
           }
         ],
-        "label": "90"
+        "value": 100
+      },
+      105,
+      110,
+      116,
+      122,
+      128,
+      134,
+      142,
+      150,
+      {
+        "legend": 2,
+        "value": 158
       },
       {
-        "par": true,
-        "label": "95"
+        "legend": 2,
+        "value": 166
       },
       {
-        "legend": 0,
-        "companies": [
-          {
-            "label": "C&N",
-            "color": "cyan",
-            "row": 1
-          },
-          {
-            "label": "IOW",
-            "color": "red",
-            "row": 2
-          }
-        ],
-        "label": "100"
-      },
-      "105",
-      "110",
-      "116",
-      "122",
-      "128",
-      "134",
-      "142",
-      "150",
-      {
-        "legend": 1,
-        "label": "158"
+        "legend": 2,
+        "value": 174
       },
       {
-        "legend": 1,
-        "label": "166"
+        "legend": 2,
+        "value": 182
       },
       {
-        "legend": 1,
-        "label": "174"
+        "legend": 2,
+        "value": 191
       },
       {
-        "legend": 1,
-        "label": "182"
+        "legend": 2,
+        "value": 200
       },
       {
-        "legend": 1,
-        "label": "191"
+        "legend": 2,
+        "value": 210
       },
       {
-        "legend": 1,
-        "label": "200"
+        "legend": 2,
+        "value": 220
       },
       {
-        "legend": 1,
-        "label": "210"
+        "legend": 2,
+        "value": 230
       },
       {
-        "legend": 1,
-        "label": "220"
+        "legend": 2,
+        "value": 240
       },
       {
-        "legend": 1,
-        "label": "230"
+        "legend": 2,
+        "value": 250
       },
       {
-        "legend": 1,
-        "label": "240"
+        "legend": 2,
+        "value": 260
       },
       {
-        "legend": 1,
-        "label": "250"
+        "legend": 2,
+        "value": 270
       },
       {
-        "legend": 1,
-        "label": "260"
+        "legend": 2,
+        "value": 280
       },
       {
-        "legend": 1,
-        "label": "270"
+        "legend": 2,
+        "value": 290
       },
       {
-        "legend": 1,
-        "label": "280"
+        "legend": 2,
+        "value": 300
       },
       {
-        "legend": 1,
-        "label": "290"
+        "legend": 2,
+        "value": 310
       },
       {
-        "legend": 1,
-        "label": "300"
+        "legend": 2,
+        "value": 320
       },
       {
-        "legend": 1,
-        "label": "310"
+        "legend": 2,
+        "value": 330
       },
       {
-        "legend": 1,
-        "label": "320"
-      },
-      {
-        "legend": 1,
-        "label": "330"
-      },
-      {
-        "label": "340",
-        "subLabel": "End of Game"
+        "value": 340,
+        "color": "orange",
+        "subLabel": "End of Game",
+        "right": true,
+        "bottom": true,
+        "height": 2
       }
     ],
     "legend": [
       {
-        "color": "blue",
-        "description": "Company initial par values",
+        "color": "gray",
+        "description": "Initial company par values",
+        "icon": "money-bill-wave"
+      },
+      {
+        "color": "mountain",
+        "description": "Restarted company par values",
         "icon": "money-bill-wave"
       },
       {
@@ -999,6 +938,15 @@
     {
       "name": "2 Player",
       "print": "landscape",
+      "players": {
+        "x": 1300,
+        "y": 730
+      },
+      "roundTracker": {
+        "type": "row",
+        "x": 0,
+        "y": 630
+      },
       "hexes": [
         {
           "color": "plain",
@@ -1009,28 +957,12 @@
               }
             }
           ],
-          "borders": [
-            {
-              "side": 2,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "G1"
           ]
         },
         {
           "color": "plain",
-          "borders": [
-            {
-              "side": 5,
-              "color": "mountain"
-            },
-            {
-              "side": 6,
-              "color": "mountain"
-            }
-          ],
           "labels": [
             {
               "label": "C",
@@ -1045,12 +977,7 @@
               "name": {
                 "name": "Cowes"
               },
-              "companies": [
-                {
-                  "label": "C&N",
-                  "color": "cyan"
-                }
-              ]
+              "companies": ["C&N"]
             }
           ],
           "centerTowns": [
@@ -1130,16 +1057,6 @@
               }
             }
           ],
-          "borders": [
-            {
-              "side": 2,
-              "color": "mountain"
-            },
-            {
-              "side": 3,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "G3"
           ]
@@ -1152,12 +1069,7 @@
                 "name": "Ryde",
                 "reverse": true
               },
-              "companies": [
-                {
-                  "label": "IOW",
-                  "color": "red"
-                }
-              ]
+              "companies": ["IOW"]
             }
           ],
           "values": [
@@ -1190,12 +1102,7 @@
               "name": {
                 "name": "Yarmouth"
               },
-              "companies": [
-                {
-                  "label": "FYN",
-                  "color": "green"
-                }
-              ]
+              "companies": ["FYN"]
             }
           ],
           "hexes": [
@@ -1218,12 +1125,6 @@
               "name": {
                 "name": "Cement Mills"
               }
-            }
-          ],
-          "borders": [
-            {
-              "side": 5,
-              "color": "mountain"
             }
           ],
           "hexes": [
@@ -1396,12 +1297,6 @@
         },
         {
           "color": "plain",
-          "borders": [
-            {
-              "side": 1,
-              "color": "mountain"
-            }
-          ],
           "centerTowns": [
             {
               "name": {
@@ -1502,12 +1397,7 @@
               "name": {
                 "name": "Bembridge"
               },
-              "companies": [
-                {
-                  "label": "BHI&R",
-                  "color": "pink"
-                }
-              ]
+              "companies": ["BHI&R"]
             }
           ],
           "hexes": [
@@ -1596,12 +1486,7 @@
               "name": {
                 "name": "Merstone"
               },
-              "companies": [
-                {
-                  "label": "IWNJ",
-                  "color": "black"
-                }
-              ]
+              "companies": ["IWNJ"]
             }
           ],
           "track": [
@@ -1633,12 +1518,6 @@
               "percent": 0.4
             }
           ],
-          "borders": [
-            {
-              "side": 4,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "I7"
           ]
@@ -1658,12 +1537,7 @@
                 "name": "Shorwell",
                 "reverse": true
               },
-              "companies": [
-                {
-                  "label": "VYSC",
-                  "color": "lime"
-                }
-              ]
+              "companies": ["VYSC"]
             }
           ],
           "hexes": [
@@ -1685,12 +1559,7 @@
                 "name": "Godshill",
                 "reverse": true
               },
-              "companies": [
-                {
-                  "label": "NGStL",
-                  "color": "yellow"
-                }
-              ]
+              "companies": ["NGStL"]
             }
           ],
           "hexes": [
@@ -1704,12 +1573,6 @@
               "name": {
                 "name": "Shanklin"
               }
-            }
-          ],
-          "borders": [
-            {
-              "side": 1,
-              "color": "mountain"
             }
           ],
           "hexes": [
@@ -1743,12 +1606,6 @@
               "side": 3
             }
           ],
-          "borders": [
-            {
-              "side": 4,
-              "color": "mountain"
-            }
-          ],
           "hexes": [
             "I11"
           ]
@@ -1760,23 +1617,41 @@
               "name": {
                 "name": "Chale"
               },
-              "companies": [
-                {
-                  "label": "S&C",
-                  "color": "purple"
-                }
-              ]
+              "companies": ["S&C"]
             }
           ],
           "hexes": [
             "F12"
           ]
         }
+      ],
+      "borders": [
+        {
+          "color": "mountain",
+          "coords": ["F2p3", "F2p4", "F2p5", "F4p4"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["I7p2", "I7p3"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["I11p2", "I11p3"]
+        }
       ]
     },
     {
       "name": "3-4 Player",
       "print": "landscape",
+      "players": {
+        "x": 1300,
+        "y": 730
+      },
+      "roundTracker": {
+        "type": "row",
+        "x": 0,
+        "y": 630
+      },
       "copy": 0,
       "hexes": [
         {
@@ -1786,12 +1661,6 @@
               "name": {
                 "name": "Norton Green"
               }
-            }
-          ],
-          "borders": [
-            {
-              "side": 5,
-              "color": "mountain"
             }
           ],
           "hexes": [
@@ -1818,18 +1687,7 @@
               "name": {
                 "name": "Yarmouth"
               },
-              "companies": [
-                {
-                  "label": "FYN",
-                  "color": "green"
-                }
-              ]
-            }
-          ],
-          "borders": [
-            {
-              "side": 2,
-              "color": "mountain"
+              "companies": ["FYN"]
             }
           ],
           "hexes": [
@@ -1841,6 +1699,24 @@
           "hexes": [
             "E11"
           ]
+        }
+      ],
+      "borders": [
+        {
+          "color": "mountain",
+          "coords": ["F2p3", "F2p4", "F2p5", "F4p4"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["I7p2", "I7p3"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["I11p2", "I11p3"]
+        },
+        {
+          "color": "mountain",
+          "coords": ["A5p3", "A5p4"]
         }
       ]
     }

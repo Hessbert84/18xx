@@ -1,13 +1,16 @@
 {
   "black": "#110a0c",
   "blue": "#025aaa",
-  "brown": "#674420",
+  "brown": "#87421e",
   "cyan": "#8dd7f6",
-  "green": "#007617",
+  "green": "#068800",
   "lime": "rgb(110,192,55)",
-  "orange": "#f58121",
+  "orange": "#ed9121",
   "pink": "rgb(193,60,125)",
   "purple": "#7e4e9c",
-  "red": "#d1232a",
-  "yellow": "#ffe819"
+  "red": "#ff0000",
+  "yellow": "#ffef00",
+
+  "light_blue": "#87cefa",
+  "dark_blue": "#0247fe"
 }

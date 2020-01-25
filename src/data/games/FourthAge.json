@@ -8,7 +8,7 @@
     "titleY": 1440,
     "titleSize": 100,
     "orientation": "horizontal",
-    "currency": "XAU"
+    "currency": "#g"
   },
   "links": {
     "bgg": "https://www.boardgamegeek.com/boardgame/18291/unpublished-prototype",
@@ -17,270 +17,178 @@
   "tokens": [
     "Round",
     "+20",
-    "+20"
+    "+20",
+    { "color": "brown", "label": "+20" }
   ],
   "ipo": true,
-  "bank": "12,000g",
+  "bank": 12000,
   "players": [
     {
       "number": 2,
       "certLimit": "28 / 24",
-      "capital": "1050g"
+      "capital": 1050
     },
     {
       "number": 3,
       "certLimit": "20 / 17",
-      "capital": "700g"
+      "capital": 700
     },
     {
       "number": 4,
       "certLimit": "16 / 14",
-      "capital": "525g"
+      "capital": 525
     },
     {
       "number": 5,
       "certLimit": "13 / 11",
-      "capital": "420g"
+      "capital": 420
     },
     {
       "number": 6,
       "certLimit": "11 / 9",
-      "capital": "350g"
+      "capital": 350
     }
   ],
+  "shareTypes": {
+    "default": [
+      {
+        "quantity": 1,
+        "label": "President's Certificate",
+        "percent": 20,
+        "shares": 2
+      },
+      {
+        "quantity": 8,
+        "percent": 10,
+        "shares": 1
+      }
+    ]
+  },
   "companies": [
     {
       "name": "Bree and Points South",
       "abbrev": "BPS",
+      "logo": "lotr/BPS",
       "tokens": [
         "Free",
         "40g",
         "100g",
         "100g"
       ],
-      "color": "blue",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "blue"
     },
     {
       "name": "Shire and Westlands",
       "abbrev": "SWR",
+      "logo": "lotr/SWR",
       "tokens": [
         "Free",
         "$40"
       ],
-      "color": "green",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "green"
     },
     {
       "name": "Rivendell and Grey Havens",
       "abbrev": "RGH",
+      "logo": "lotr/RGH",
       "tokens": [
         "Free",
         "$40",
         "Bonus"
       ],
-      "color": "purple",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "purple"
     },
     {
       "name": "Dwarvish Mountain Express",
-      "abbrev": "DMH",
+      "abbrev": "DME",
+      "logo": "lotr/DME",
       "tokens": [
         "Free",
         "$40",
         "$100"
       ],
-      "color": "brown",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "brown"
     },
     {
       "name": "Elvish",
       "abbrev": "E",
+      "logo": "lotr/E",
       "tokens": [
         "Free",
         "$40",
         "$100"
       ],
-      "color": "pink",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "pink"
     },
     {
       "name": "Laketown and Lonely Mountain",
       "abbrev": "LLM",
+      "logo": "lotr/LLM",
       "tokens": [
         "Free",
         "$40",
         "$100"
       ],
-      "color": "black",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "black"
     },
     {
       "name": "Minas Tirith Railway",
       "abbrev": "MTR",
+      "logo": "lotr/MTR",
       "tokens": [
         "Free",
         "$40",
         "$100",
         "Bonus"
       ],
-      "color": "orange",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "orange"
     },
     {
       "name": "Orcish",
       "abbrev": "O",
+      "logo": "lotr/O",
       "tokens": [
         "Free",
         "$40",
         "$100"
       ],
-      "color": "lime",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "lime"
     },
     {
       "name": "Southern Excursion Railway",
       "abbrev": "SER",
+      "logo": "lotr/SER",
       "tokens": [
         "Free",
         "$40"
       ],
-      "color": "yellow",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "cyan"
     },
     {
       "name": "Far Harad Railway",
       "abbrev": "FHR",
+      "logo": "lotr/FHR",
       "tokens": [
         "Free",
         "$40",
         "Bonus"
       ],
-      "color": "red",
-      "shares": [
-        {
-          "quantity": 1,
-          "label": "President's Certificate",
-          "percent": 20,
-          "shares": 2
-        },
-        {
-          "quantity": 8,
-          "percent": 10,
-          "shares": 1
-        }
-      ]
+      "color": "red"
     }
   ],
   "trains": [
+    {
+      "name": "2",
+      "quantity": 1,
+      "color": "yellow",
+      "description": "Runs from Hobbiton.",
+      "info": [
+        {
+          "color": "yellow",
+          "note": "Shire and Westlands"
+        }
+      ]
+    },
     {
       "name": "2",
       "quantity": 4,
@@ -441,37 +349,46 @@
   "privates": [
     {
       "name": "The Hobbiton Teakettle",
-      "price": "$20",
-      "revenue": "$5",
+      "price": 20,
+      "revenue": 5,
+      "token": { "color": "yellow", "label": "g" },
       "description": ""
     },
     {
       "name": "The Great River Bridge Company",
-      "price": "$50",
-      "revenue": "$10",
+      "price": 50,
+      "revenue": 10,
+      "icon": "bridge",
       "description": "Owning railroad pays nothing for one tile lay across the Anduin; may be bought in during Phase 2 for up to face value."
     },
     {
       "name": "Mountain Guides, Inc",
-      "price": "$80",
-      "revenue": "$15",
+      "price": 80,
+      "revenue": 15,
+      "icon": "mountain",
       "description": "Owning railroad pays nothing for one tile lay in a mountain hex; may be bought in during Phase 2 for up to face value."
     },
     {
       "name": "Trollheim",
-      "price": "$120",
-      "revenue": "$20",
+      "price": 120,
+      "revenue": 20,
+      "token": {
+        "color": "white",
+        "label": "+20"
+      },
       "description": "Owning railroad may play a permanent +20 marker in any city or town. Bonus applies only to the owning railroad."
     },
     {
       "name": "Moria Mining Company",
-      "price": "$140",
-      "description": "This is the President's certificate of the Moria Mining Company. The purchaser sets the par value of the railway. Unlike other companies, this company may operate with just 20% sold. It may not be purchased by another public company."
+      "price": 140,
+      "company": "DME",
+      "description": "This comes with the President's certificate of the Dwarvish Mountain Express, this company may operate with just 20% sold. It may not be purchased by another public company."
     },
     {
       "name": "Lorien Border Railway",
-      "price": "$170",
-      "revenue": "$25",
+      "price": 170,
+      "revenue": 25,
+      "company": "E",
       "description": "Comes with a 10% share of the Elvish."
     }
   ],
@@ -554,7 +471,7 @@
     {
       "train": "9",
       "limit": "2",
-      "number": "2",
+      "number": "1",
       "tiles": "gray"
     },
     {
@@ -661,11 +578,32 @@
         "Paid dividends"
       ]
     },
+    "ledges": [
+      {
+        "color": "red",
+        "coords": [
+          "7 9",
+          "7 8",
+          "8 8",
+          "8 7",
+          "9 7",
+          "9 6",
+          "10 6",
+          "10 5",
+          "11 5",
+          "11 4",
+          "13 4",
+          "13 3",
+          "16 3",
+          "16 2",
+          "21 2"
+        ]
+      }
+    ],
     "market": [
       [
         {
           "value": 64,
-          "label": 64,
           "legend": 0,
           "arrow": "down"
         },
@@ -676,7 +614,6 @@
         90,
         {
           "value": 100,
-          "label": 100,
           "par": true
         },
         110,
@@ -697,13 +634,11 @@
       [
         {
           "value": 60,
-          "label": 60,
           "legend": 0,
           "arrow": "down"
         },
         {
           "value": 64,
-          "label": 64,
           "legend": 0
         },
         68,
@@ -712,7 +647,6 @@
         82,
         {
           "value": 90,
-          "label": 90,
           "par": true
         },
         100,
@@ -724,73 +658,27 @@
         200,
         225,
         250,
-        {
-          "value": 275,
-          "label": 275,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
-        {
-          "value": 300,
-          "label": 300,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
-        {
-          "value": 325,
-          "label": 325,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
-        {
-          "value": 350,
-          "label": 350,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
+        275,
+        300,
+        325,
+        350,
         {
           "value": 375,
-          "label": 375,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         }
       ],
       [
         {
           "value": 55,
-          "label": 55,
           "legend": 0,
           "arrow": "down"
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         {
           "value": 64,
-          "label": 64,
           "legend": 0
         },
         68,
@@ -798,7 +686,6 @@
         76,
         {
           "value": 82,
-          "label": 82,
           "par": true
         },
         90,
@@ -807,40 +694,11 @@
         120,
         140,
         160,
-        {
-          "value": 180,
-          "label": 180,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
-        {
-          "value": 200,
-          "label": 200,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
+        180,
+        200,
         {
           "value": 225,
-          "label": 225,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         250,
         275,
@@ -848,67 +706,41 @@
         325,
         {
           "value": 350,
-          "label": 350,
           "arrow": "up"
         }
       ],
       [
         {
           "value": 50,
-          "label": 50,
           "legend": 1,
           "arrow": "down"
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         {
           "value": 64,
-          "label": 64,
           "legend": 0
         },
         68,
         72,
         {
           "value": 76,
-          "label": 76,
           "par": true
         },
         82,
         90,
         100,
         110,
-        {
-          "value": 120,
-          "label": 120,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
+        120,
         {
           "value": 140,
-          "label": 140,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         160,
         180,
@@ -917,39 +749,30 @@
         250,
         275,
         300,
-        {
-          "value": 325,
-          "label": 325,
-          "arrow": "up"
-        }
+        325
       ],
       [
         {
           "value": 40,
-          "label": 40,
           "legend": 2,
           "arrow": "down"
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 1
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         64,
         68,
         {
           "value": 72,
-          "label": 72,
           "par": true
         },
         76,
@@ -957,18 +780,7 @@
         90,
         {
           "value": 100,
-          "label": 100,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         110,
         120,
@@ -976,180 +788,124 @@
         160,
         {
           "value": 180,
-          "label": 180,
           "arrow": "up"
         }
       ],
       [
         {
           "value": 30,
-          "label": 30,
           "legend": 2,
           "arrow": "down"
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 1
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         64,
         {
           "value": 68,
-          "label": 68,
           "par": true
         },
         72,
         76,
         {
           "value": 82,
-          "label": 82,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         90,
         100,
         {
           "value": 110,
-          "label": 110,
           "arrow": "up"
         }
       ],
       [
         {
           "value": 20,
-          "label": 20,
           "legend": 2,
           "arrow": "down"
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 1
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         64,
         68,
         {
           "value": 72,
-          "label": 72,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         76,
         {
           "value": 82,
-          "label": 82,
           "arrow": "up"
         }
       ],
       [
         {
           "value": 10,
-          "label": 10,
           "legend": 2,
           "arrow": "down"
         },
         {
           "value": 20,
-          "label": 20,
           "legend": 2
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 0
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         {
           "value": 64,
-          "label": 64,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         68,
         {
           "value": 72,
-          "label": 72,
           "arrow": "up"
         }
       ],
@@ -1159,45 +915,32 @@
         },
         {
           "value": 10,
-          "label": 10,
           "legend": 2
         },
         {
           "value": 20,
-          "label": 20,
           "legend": 2
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 0
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            }
-          ]
+          "arrow": "up"
         },
         60,
         {
           "value": 64,
-          "label": 64,
           "arrow": "up"
         }
       ],
@@ -1210,35 +953,29 @@
         },
         {
           "value": 10,
-          "label": 10,
           "legend": 2
         },
         {
           "value": 20,
-          "label": 20,
           "legend": 2
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 0,
           "arrow": "up"
         }
       ],
       [
         {
-          "label": "Closed",
-          "verticalAlign": "bottom",
+          "subLabel": "Closed",
           "color": "black"
         },
         {
@@ -1249,22 +986,18 @@
         },
         {
           "value": 10,
-          "label": 10,
           "legend": 2
         },
         {
           "value": 20,
-          "label": 20,
           "legend": 2
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1,
           "arrow": "up"
         }
@@ -1347,10 +1080,6 @@
         "water": {
           "cost": "100g"
         },
-        "borders": {
-          "side": 1,
-          "color": "water"
-        },
         "hexes": [
           "A3"
         ]
@@ -1359,10 +1088,6 @@
         "color": "plain",
         "water": {
           "cost": "100g"
-        },
-        "borders": {
-          "side": 4,
-          "color": "water"
         },
         "hexes": [
           "A5"
@@ -1460,16 +1185,14 @@
         ],
         "tokens": [
           {
-            "label": "RGH",
-            "width": 15,
-            "color": "purple",
+            "company": "RGH",
+            "destination": true,
             "angle": 270,
             "percent": 0.7
           },
           {
-            "label": "E",
-            "width": 15,
-            "color": "pink",
+            "company": "E",
+            "destination": true,
             "angle": 330,
             "percent": 0.7
           }
@@ -1516,12 +1239,6 @@
         "water": {
           "cost": "100g"
         },
-        "borders": [
-          {
-            "side": 6,
-            "color": "water"
-          }
-        ],
         "hexes": [
           "D12"
         ]
@@ -1576,12 +1293,6 @@
         "water": {
           "cost": "80g"
         },
-        "borders": [
-          {
-            "side": 3,
-            "color": "water"
-          }
-        ],
         "hexes": [
           "E13"
         ]
@@ -1624,12 +1335,6 @@
       },
       {
         "color": "plain",
-        "borders": [
-          {
-            "side": 6,
-            "color": "water"
-          }
-        ],
         "water": {
           "cost": "100g"
         },
@@ -1697,16 +1402,6 @@
       },
       {
         "color": "plain",
-        "borders": [
-          {
-            "side": 1,
-            "color": "water"
-          },
-          {
-            "side": 3,
-            "color": "water"
-          }
-        ],
         "water": {
           "cost": "100g"
         },
@@ -1716,12 +1411,6 @@
       },
       {
         "color": "plain",
-        "borders": [
-          {
-            "side": 4,
-            "color": "water"
-          }
-        ],
         "water": {
           "cost": "100g"
         },
@@ -1779,16 +1468,14 @@
         },
         "tokens": [
           {
-            "label": "SER",
-            "width": 15,
-            "color": "yellow",
+            "company": "SER",
+            "destination": true,
             "angle": 150,
             "percent": 0.7
           },
           {
-            "label": "FHR",
-            "width": 15,
-            "color": "red",
+            "company": "FHR",
+            "destination": true,
             "angle": 210,
             "percent": 0.7
           }
@@ -1816,9 +1503,8 @@
         ],
         "tokens": [
           {
-            "label": "E",
-            "width": 15,
-            "color": "pink",
+            "company": "E",
+            "destination": true,
             "angle": 210,
             "percent": 0.8
           }
@@ -1874,9 +1560,8 @@
         ],
         "tokens": [
           {
-            "label": "SWR",
-            "width": 15,
-            "color": "green",
+            "company": "SWR",
+            "destination": true,
             "angle": 90,
             "percent": 0.667
           }
@@ -1916,9 +1601,8 @@
         ],
         "tokens": [
           {
-            "label": "MTR",
-            "width": 15,
-            "color": "orange",
+            "company": "MTR",
+            "destination": true,
             "angle": 330,
             "percent": 0.7
           }
@@ -1954,7 +1638,7 @@
         "cities": [
           {
             "companies": [
-              "DMH"
+              "DME"
             ],
             "name": {
               "name": "Moria"
@@ -2002,9 +1686,8 @@
         ],
         "tokens": [
           {
-            "label": "LLM",
-            "width": 15,
-            "color": "black",
+            "company": "LLM",
+            "destination": true,
             "angle": 270,
             "percent": 0.667
           }
@@ -2040,9 +1723,8 @@
         ],
         "tokens": [
           {
-            "label": "BPS",
-            "width": 15,
-            "color": "blue",
+            "company": "BPS",
+            "destination": true,
             "angle": 150,
             "percent": 0.8
           }
@@ -2194,12 +1876,6 @@
         "centerTowns": [
           {}
         ],
-        "borders": [
-          {
-            "side": 1,
-            "color": "water"
-          }
-        ],
         "hexes": [
           "O17"
         ]
@@ -2209,12 +1885,6 @@
         "mountain": {
           "cost": "120g"
         },
-        "borders": [
-          {
-            "side": 4,
-            "color": "water"
-          }
-        ],
         "hexes": [
           "O19"
         ]
@@ -2269,9 +1939,8 @@
         },
         "tokens": [
           {
-            "label": "DMH",
-            "width": 15,
-            "color": "brown",
+            "company": "DME",
+            "destination": true,
             "angle": 90,
             "percent": 0.75
           }
@@ -2346,7 +2015,6 @@
           "H12",
           "H14",
           "H16",
-          "H20",
           "I7",
           "I9",
           "I15",
@@ -2396,7 +2064,43 @@
           "Q19",
           "Q21"
         ]
+      },
+      {
+        "color": "water",
+        "hexes": ["H20"]
       }
-    ]
+    ],
+    "borders": [
+      {
+        "color": "water",
+        "coords": ["A3p5", "A3p6"]
+      },
+      {
+        "color": "water",
+        "coords": ["E13p1", "E13p2"]
+      },
+      {
+        "color": "water",
+        "coords": ["G19p1", "G19p2"]
+      },
+      {
+        "color": "water",
+        "coords": ["G19p5", "G19p6"]
+      },
+      {
+        "color": "water",
+        "coords": ["O17p5", "O17p6"]
+      }
+    ],
+    "players": {
+      "x": 100,
+      "y": 1065
+    },
+    "roundTracker": {
+      "rotation": 45,
+      "type": "round",
+      "x": 200,
+      "y": 900
+    }
   }
 }

@@ -1,46 +1,73 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import games from "./data/games";
-import * as R from "ramda";
+import Config from "./data/Config";
 import Color from "./data/Color";
 import ColorContext from "./context/ColorContext";
 
-import Token from "./Token";
+import GameCompanyToken from "./tokens/GameCompanyToken";
 import Svg from "./Svg";
 import PageSetup from "./PageSetup";
 
-require("./IPO.css");
+import { compileCompanies, unitsToCss } from "./util";
+
+import filter from "ramda/src/filter";
+import is from "ramda/src/is";
+import map from "ramda/src/map";
+
+require("./IPO.scss");
 
 const IPO = () => {
-  let params = useParams();
-  let game = games[params.game];
-  let companies = game.companies;
-
   return (
-    <Color>
-      {c => (
-        <div className="ipo">
-          <h2>IPO</h2>
-          <div className="ipo__companies">
-            {R.map(
-              company => (
-                <div key={`ipo-${company.abbrev}`} className="ipo__company" style={{backgroundColor: c("plain")}}>
-                  <div className="ipo__token">
-                    <ColorContext.Provider value="companies">
-                      <Svg viewBox="-25 -25 50 50">
-                        <Token company={company.abbrev} />
-                      </Svg>
-                    </ColorContext.Provider>
-                  </div>
+    <Config>
+      {(config, game) => {
+        let companies = compileCompanies(game);
+
+        if (is(Array, game.ipo)) {
+          companies = filter(company => game.ipo.includes(company.shareType), companies);
+        }
+
+        return (
+          <Color context="companies">
+            {c => (
+              <div className="ipo"
+                   style={{
+                     width: unitsToCss(config.paper.width),
+                     height: unitsToCss(config.paper.height),
+                     margin: unitsToCss(config.paper.margins),
+                   }}>
+                <h2>{game.info.title} Initial Public Offering</h2>
+                <div className="ipo__companies">
+                  {map(
+                    company => (
+                      <div key={`ipo-${company.abbrev}`}
+                           className="ipo__company"
+                           style={{
+                             borderRadius: unitsToCss(config.ipo.borderRadius),
+                             width: unitsToCss(config.cards.width),
+                             height: unitsToCss(config.cards.height),
+                             backgroundColor: company.color ? c(company.color) : c("plain")
+                           }}>
+                        <div className="ipo__token"
+                             style={{
+                               margin: `${unitsToCss((config.cards.height - 60) / 2)} auto`
+                             }}>
+                          <ColorContext.Provider value="companies">
+                            <Svg viewBox="-25 -25 50 50">
+                              <GameCompanyToken abbrev={company.abbrev} outline="white" />
+                            </Svg>
+                          </ColorContext.Provider>
+                        </div>
+                      </div>
+                    ),
+                    companies
+                  )}
                 </div>
-              ),
-              companies
+                <PageSetup/>
+              </div>
             )}
-          </div>
-          <PageSetup landscape={true}/>
-        </div>
-      )}
-    </Color>
+          </Color>
+        );
+      }}
+    </Config>
   );
 };
 

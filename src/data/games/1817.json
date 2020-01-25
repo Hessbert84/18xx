@@ -3,47 +3,45 @@
     "title": "1817",
     "designer": "Craig Bartell, Tim Flowers",
     "background": "gray",
-    "width": 150,
-    "titleX": 1340,
-    "titleY": 1570,
+    "titleX": 1740,
+    "titleY": 620,
     "titleSize": 165,
     "subTitleSize": 17,
-    "extraMinors": 0,
-    "hexCoords": true,
     "currency": "USD"
   },
   "links": {
     "bgg": "https://boardgamegeek.com/boardgame/63170/1817",
     "rules": "https://drive.google.com/file/d/0B1SWz2pNe2eAbnI4NVhpQXV4V0k/view"
   },
+  "wip": true,
   "tokens": [],
   "ipo": false,
-  "bank": "Illimited",
+  "bank": "∞",
   "players": [
     {
       "number": 3,
       "certLimit": 21,
-      "capital": "$420"
+      "capital": 420
     },
     {
       "number": 4,
       "certLimit": 16,
-      "capital": "$315"
+      "capital": 315
     },
     {
       "number": 5,
       "certLimit": 13,
-      "capital": "$252"
+      "capital": 252
     },
     {
       "number": 6,
       "certLimit": 11,
-      "capital": "$210"
+      "capital": 210
     },
     {
       "number": 7,
       "certLimit": 9,
-      "capital": "$180"
+      "capital": 180
     }
   ],
   "companies": [],
@@ -51,7 +49,7 @@
     {
       "name": "2",
       "quantity": 16,
-      "price": "$100",
+      "price": 100,
       "color": "yellow",
       "info": [
         {
@@ -63,7 +61,7 @@
     {
       "name": "2+",
       "quantity": 4,
-      "price": "$100",
+      "price": 100,
       "color": "yellow",
       "info": [
         {
@@ -75,7 +73,7 @@
     {
       "name": "3",
       "quantity": 12,
-      "price": "$250",
+      "price": 250,
       "color": "green",
       "info": [
         {
@@ -87,7 +85,7 @@
     {
       "name": "4",
       "quantity": 8,
-      "price": "$400",
+      "price": 400,
       "color": "green",
       "info": [
         {
@@ -99,7 +97,7 @@
     {
       "name": "5",
       "quantity": 5,
-      "price": "$600",
+      "price": 600,
       "color": "brown",
       "info": [
         {
@@ -111,7 +109,7 @@
     {
       "name": "6",
       "quantity": 4,
-      "price": "$750",
+      "price": 750,
       "color": "brown",
       "info": [
         {
@@ -123,7 +121,7 @@
     {
       "name": "7",
       "quantity": 3,
-      "price": "$900",
+      "price": 900,
       "color": "gray",
       "info": [
         {
@@ -135,7 +133,7 @@
     {
       "name": "8",
       "quantity": 16,
-      "price": "$1100",
+      "price": 1100,
       "color": "gray",
       "info": [
         {
@@ -179,6 +177,21 @@
     "X30": 1
   },
   "map": {
+    "players": {
+      "x": 1750,
+      "y": 860
+    },
+    "roundTracker": {
+      "type": "row",
+      "x": 1700,
+      "y": 600
+    },
+    "borders": [
+      {
+        "color": "water",
+        "coords": ["D11p3", "D11p4"]
+      }
+    ],
     "hexes": [
       {
         "color": "offboard",
@@ -329,7 +342,7 @@
         ],
         "terrain": [
           {
-            "cost": "$20",
+            "cost": 20,
             "type": "water",
             "angle": 345,
             "percent": 0.7
@@ -362,16 +375,8 @@
         ]
       },
       {
-        "color": "plain",
-        "borders": [
-          {
-            "side": 5,
-            "color": "water"
-          }
-        ],
-        "hexes": [
-          "C10"
-        ]
+        "color": "water",
+        "hexes": ["C12"]
       },
       {
         "color": "plain",
@@ -484,7 +489,7 @@
         ],
         "terrain": [
           {
-            "cost": "$20",
+            "cost": 20,
             "type": "water",
             "percent": 0.7
           }
@@ -539,18 +544,6 @@
       },
       {
         "color": "plain",
-        "borders": [
-          {
-            "side": 2,
-            "color": "water"
-          }
-        ],
-        "hexes": [
-          "D11"
-        ]
-      },
-      {
-        "color": "plain",
         "cities": [
           {
             "name": {
@@ -560,7 +553,7 @@
         ],
         "terrain": [
           {
-            "cost": "$15",
+            "cost": 15,
             "type": "mountain",
             "percent": 0.7
           }
@@ -573,14 +566,14 @@
         "color": "yellow",
         "labels": [
           {
-            "angle": 120,
-            "percent": 0.8,
-            "label": "NYC"
+            "angle": 150,
+            "percent": 0.6,
+            "label": "NY"
           }
         ],
         "terrain": [
           {
-            "cost": "$20",
+            "cost": 20,
             "type": "water",
             "angle": 345,
             "percent": 0.7
@@ -673,7 +666,7 @@
         "color": "plain",
         "terrain": [
           {
-            "cost": "$10",
+            "cost": 10,
             "type": "water",
             "percent": 0.7
           }
@@ -769,7 +762,7 @@
         "color": "plain",
         "terrain": [
           {
-            "cost": "$10",
+            "cost": 10,
             "type": "water",
             "percent": 0.7
           }
@@ -789,7 +782,7 @@
         "color": "plain",
         "terrain": [
           {
-            "cost": "$10",
+            "cost": 10,
             "type": "water",
             "percent": 0.7
           }
@@ -809,7 +802,7 @@
         "color": "plain",
         "terrain": [
           {
-            "cost": "$15",
+            "cost": 15,
             "type": "mountain",
             "percent": 0.7
           }
@@ -916,7 +909,7 @@
         "color": "plain",
         "terrain": [
           {
-            "cost": "$15",
+            "cost": 15,
             "type": "mountain"
           }
         ],
@@ -940,7 +933,7 @@
         "color": "plain",
         "terrain": [
           {
-            "cost": "$10",
+            "cost": 10,
             "type": "water"
           }
         ],
@@ -957,7 +950,7 @@
         "color": "plain",
         "terrain": [
           {
-            "cost": "$20",
+            "cost": 20,
             "type": "water"
           }
         ],
@@ -982,10 +975,12 @@
           "B23",
           "C4",
           "C6",
+          "C10",
           "C16",
           "C18",
           "D3",
           "D5",
+          "D11",
           "D15",
           "D17",
           "D21",

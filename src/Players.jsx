@@ -1,9 +1,13 @@
 import React from "react";
 import * as R from "ramda";
 
+import Currency from "./util/Currency";
+
+import "./Players.scss";
+
 const Players = ({ players, bank, capital }) => {
   return (
-    <div className="players">
+    <div className="players" xmlns="http://www.w3.org/1999/xhtml">
       {(bank || capital) && (
         <table className="players__table players__table--static">
           <thead>
@@ -12,7 +16,7 @@ const Players = ({ players, bank, capital }) => {
                 <th>
                   <i className="fas fa-university" />
                 </th>
-                <td>{bank}</td>
+                <td><Currency value={bank} type="bank"/></td>
               </tr>
             )}
             {capital && (
@@ -20,7 +24,7 @@ const Players = ({ players, bank, capital }) => {
                 <th>
                   <i className="fas fa-coins" />
                 </th>
-                <td>{capital}</td>
+                <td><Currency value={capital} type="capital"/></td>
               </tr>
             )}
           </thead>
@@ -57,8 +61,8 @@ const Players = ({ players, bank, capital }) => {
               <tr key={p.number}>
                 <td>{p.number}</td>
                 {p.certLimit && <td>{p.certLimit}</td>}
-                {p.capital && <td>{p.capital}</td>}
-                {p.bank && <td>{p.bank}</td>}
+                {p.capital && <td><Currency value={p.capital} type="capital"/></td>}
+                {p.bank && <td><Currency value={p.bank} type="bank"/></td>}
               </tr>
             ),
             players || []

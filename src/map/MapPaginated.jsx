@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import games from "../data/games";
 import Map from "./Map";
 import Svg from "../Svg";
-import Title from "../Title";
 import HexContext from "../context/HexContext";
 import GameContext from "../context/GameContext";
 import { equalPages, maxPages, printableWidth, printableHeight } from "../util";
@@ -13,6 +12,7 @@ import { Redirect } from "react-router-dom";
 import PageSetup from "../PageSetup";
 import VariationSelect from "../nav/VariationSelect";
 import { getMapData } from "./util";
+import Page from "../util/Page";
 
 import map from "ramda/src/map";
 import prop from "ramda/src/prop";
@@ -48,10 +48,16 @@ const MapPaginated = ({ coords, pagination, paper, hexWidth }) => {
     pageHeight = tmp;
   }
 
+  let xPages = splitPages(data.totalWidth + 50, pageWidth);
+  let yPages = splitPages(data.totalHeight + 50, pageHeight);
+  let totalPages = xPages.length * yPages.length;
+  let currentPage = 0;
+
   let y = -25; // Start with room for margins
   let mapPages = map(height => {
     let x = -25; // Start with room for margins
     let pages = map(width => {
+      currentPage++;
       let page = (
         <div
           key={`page-${x}-${y}`}
@@ -60,10 +66,12 @@ const MapPaginated = ({ coords, pagination, paper, hexWidth }) => {
             width: `${(width + 25) / 100}in`,
             height: `${(height + 25) / 100}in`,
             float: "none",
-            margin: "auto auto"
+            margin: "auto auto",
+            boxSizing: "content-box"
           }}
         >
           <div className="MapPage">
+            <Page title={game.info.title} component="Map" current={currentPage} total={totalPages} />
             <svg
               style={{
                 width: `${(width + 25) / 100}in`,
@@ -79,15 +87,14 @@ const MapPaginated = ({ coords, pagination, paper, hexWidth }) => {
 
       x = x + width;
       return page;
-    }, splitPages(data.totalWidth + 50, pageWidth));
+    }, xPages);
 
     y = y + height;
     return pages;
-  }, splitPages(data.totalHeight + 50, pageHeight));
+  }, yPages);
 
   let defs = (
     <g id={`${game.info.abbrev || game.info.title}_map`}>
-      <Title game={game} variation={variation} />
       <Map name={params.game} game={game} variation={variation} />
     </g>
   );
