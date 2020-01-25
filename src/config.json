@@ -19,38 +19,51 @@
     "par": false,
     "private": true,
     "revenue": false,
-    "terrain": false,
+    "terrain": true,
     "token": true,
     "train": true,
+    "treasury": true,
     "value": false
   },
-  "companySvgLogos": "none",
+  "companySvgLogos": "main",
   "overrideCompanies": "none",
   "overrideSelection": [],
+  "maps": {
+    "players": true,
+    "roundTracker": true
+  },
   "plainMapCompanies": false,
   "straightCityNames": false,
-  "cards": {
-    "shareStyle": "gmt",
-    "width": 265.748,
-    "cutlines": 25,
-    "bleed": 12.5,
-    "border": 0
+  "theme": "galatolol",
+  "companiesTheme": "galatolol",
+  "ipo": {
+    "borderRadius": 11.811
   },
-    "layout": "free",
-    "height":  173.228,
   "charters": {
     "style": "color",
     "cutlines": 25,
-    "border": 0
-  },
     "bleed": 12.5,
     "halfWidth": false,
-  "tokenLayout": "gsp",
-  "theme": "galatolol",
-  "charterStyle": "carth",
-  "halfWidthCharters": false,
-  "shareStyle": "left",
-  "companiesTheme": "galatolol",
+    "border": 0,
+    "blackBand": false
+  },
+  "cards": {
+    "shareStyle": "gmt",
+    "layout": "miniEuroDie",
+    "width": 265.748,
+    "height":  173.228
+  },
+  "tokens": {
+    "layout": "free",
+    "marketTokenSize": 50,
+    "stationTokenSize": 37.5,
+    "bleed": true,
+    "reverseMarketTokens": "all"
+  },
+  "trains": {
+    "style": "color",
+    "images": false
+  },
   "tiles": {
     "layout": "offset",
     "width": 150,
@@ -64,14 +77,14 @@
     },
     "column": {
       "width": 70,
-      "height": 375
+      "height": 350
     },
     "diag": {
       "width": 70,
       "height": 175
     },
     "par": {
-      "width": 200,
+      "width": 300,
       "height": 85
     }
   }

@@ -158,7 +158,7 @@ const Charters = ({charters, paper, override, selection}) => {
           company ?
             <Charter
               game={game.info.title}
-              key={company.abbrev}
+              key={`${index}-${company.abbrev}`}
               name={company.name}
               abbrev={company.abbrev}
               logo={company.logo}
@@ -168,6 +168,7 @@ const Charters = ({charters, paper, override, selection}) => {
               turns={game.turns}
               minor={!!company.minor}
               company={company}
+              variant={company.variant}
             /> : <div key="spacer" className={`cutlines${charters.halfWidth ? " cutlines--half" : ""}`}><div className={`charter${charters.halfWidth ? " charter--half" : ""}`}></div></div>
         ), companies)}
         <PageSetup landscape={false}/>

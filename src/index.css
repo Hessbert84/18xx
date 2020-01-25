@@ -1,4 +1,4 @@
-height {
+html {
   margin: 0px;  /* this affects the margin on the html before sending to printer */
 }
 
@@ -158,7 +158,6 @@ svg {
 
 .charter--color .charter__hr {
   top: 0;
-  border-bottom: 2px solid black;
 }
 
 .charter--color.charter--minor .charter__hr {
@@ -309,6 +308,10 @@ svg {
 
 .charter--minor.charter--carth .charter__treasury {
   height: calc(100% - 0.9375in);
+}
+
+.charter__capital {
+  font-size: 0.25in;
 }
 
 .charter__phase {
@@ -604,49 +607,6 @@ svg {
   width: 0.5in;
 }
 
-
-.rounds {
-  position: relative;
-  height: 2.75in;
-  width: 1in;
-}
-
-.rounds--horizontal {
-  height: 1in;
-  width: 2.75in;
-}
-
-.rounds .tokens {
-  position: absolute;
-  bottom: 0.01in;
-  right: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column-reverse;
-  width: 100%;
-  margin: 0;
-}
-
-.rounds--horizontal .tokens {
-  justify-content: flex-end;
-  flex-direction: row;
-}
-
-.rounds svg {
-  height: 0.5in;
-  width: 0.5in;
-  top: 0;
-  left: 0;
-  padding-top: 0.15in;
-  position: relative;
-}
-
-.rounds--horizontal .tokens svg {
-  padding-top: 0;
-  padding-left: 0.15in;
-}
-
 .legend {
   position: absolute;
   bottom: -0.125in;
@@ -705,6 +665,20 @@ ul.notes li span {
   padding: 0.25in;
   page-break-inside: avoid;
   box-sizing: border-box;
+}
+
+.cutlines__page {
+  font-family: "sans-serif";
+  font-size: 0.15in;
+  position: absolute;
+  width: 100%;
+  height: 0.25in;
+  line-height: 0.15in;
+  top: -0.25in;
+  left: 0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.05in 0;
 }
 
 .cutlines-inner {
@@ -870,10 +844,6 @@ footer a:hover {
     padding: 0;
   }
 
-  .stock {
-    margin: 0;
-  }
-
   .tokens {
     margin: 0;
   }
@@ -881,4 +851,36 @@ footer a:hover {
   .TileManifest {
     margin: 0 auto;
   }
+}
+
+.ParPage,
+.RevenuePage,
+.MarketPage,
+.MapPage {
+  position: relative;
+}
+
+.ParPage svg,
+.RevenuePage svg,
+.MarketPage svg,
+.MapPage svg {
+  overflow: hidden;
+  display: block;
+}
+
+.FullMap,
+.FullMarket,
+.FullPar,
+.FullRevenue {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tiles {
+  margin: 0.25in;
+}
+
+.tiles label {
+  display: block;
 }

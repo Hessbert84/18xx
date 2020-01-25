@@ -6,19 +6,19 @@ import Currency from "./util/Currency";
 
 const formatCell = value => {
   if(Array.isArray(value)) {
-    return R.addIndex(R.chain)((v,i) => [v,<br key={`br-${i}`}/>], <Currency value={value} type="train"/>);
+    return R.addIndex(R.chain)((v,i) => [<Currency key={`currency-${i}`} value={v} type="train"/>,<br key={`br-${i}`}/>], value);
   } else {
     return <Currency value={value} type="train"/>;
   }
 }
 
-const Phase = ({ phases, minor }) => {
+const Phase = ({ phases, minor, company }) => {
   let includeName = !R.all(
     R.compose(
       R.isNil,
       R.prop("name")
     ),
-    phases
+    phases || []
   );
 
   let includePhase = !R.all(
@@ -26,7 +26,7 @@ const Phase = ({ phases, minor }) => {
       R.isNil,
       R.prop("phase")
     ),
-    phases
+    phases || []
   );
 
   let includeTrain = !R.all(
@@ -34,7 +34,7 @@ const Phase = ({ phases, minor }) => {
       R.isNil,
       R.prop("train")
     ),
-    phases
+    phases || []
   );
 
   let excludeRust = R.all(
@@ -42,7 +42,7 @@ const Phase = ({ phases, minor }) => {
       R.isNil,
       R.prop("rust")
     ),
-    phases
+    phases || []
   );
 
   let excludeTiles = R.all(
@@ -50,7 +50,7 @@ const Phase = ({ phases, minor }) => {
       R.isNil,
       R.prop("tiles")
     ),
-    phases
+    phases || []
   );
 
   let includePrice = !R.all(
@@ -58,10 +58,14 @@ const Phase = ({ phases, minor }) => {
       R.isNil,
       R.prop("price")
     ),
-    phases
+    phases || []
   );
 
-  let phaseRows = phases.map(phase => {
+  let phaseRows = (phases || []).filter(phase => {
+    return (phases || []).some(phase => phase.company === company)
+      ? phase.company === company
+      : !phase.company;
+  }).map(phase => {
     return (!!phase.minor === minor) && (
       <Color key={phase.phase || phase.name || phase.train}>
         {c => (
@@ -74,7 +78,11 @@ const Phase = ({ phases, minor }) => {
             <td>{phase.limit}</td>
             {!excludeTiles && <td style={{ backgroundColor: c(phase.tiles) }}>&nbsp;</td>}
             {!excludeRust && <td>{phase.rust}</td>}
-            <td className="phase__notes">{phase.notes}</td>
+            <td className="phase__notes">
+              {Array.isArray(phase.notes)
+                ? phase.notes.reduce((notes, note) => <>{notes}<br />{note}</>)
+                : phase.notes}
+            </td>
           </tr>
         )}
       </Color>

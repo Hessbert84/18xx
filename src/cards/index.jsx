@@ -70,7 +70,7 @@ const Cards = ({ override, selection }) => {
     return R.addIndex(R.map)(
       (share, i) => (
         <Share
-          key={`${company.abbrev}-${i}`}
+          key={`${index}-${company.abbrev}-${i}`}
           company={company}
           name={company.name}
           abbrev={company.abbrev}
@@ -78,6 +78,8 @@ const Cards = ({ override, selection }) => {
           color={company.color}
           token={company.token || company.color}
           {...share}
+          subtext={company.subtext || share.subtext}
+          variant={company.variant || share.variant}
         />
       ),
       shares
@@ -211,7 +213,7 @@ const Cards = ({ override, selection }) => {
 }
 
 .share--left .share__hr {
-    left: calc(0.2225in + ${data.css.bleed});
+    left: calc(0.2025in + ${data.css.bleed});
 }
 
 .share--gmt .share__hr {

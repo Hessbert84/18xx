@@ -192,6 +192,12 @@ const Config = ({config, setConfig, resetConfig}) => {
         <option value="gmt">GMT</option>
         <option value="galatolol">Galatolol</option>
         <option value="ps18xx">px18xx</option>
+        <option value="broggles18EU">B18EU</option>
+        <option value="broggles1817">B1817</option>
+        <option value="brogglesmex">B18mex</option>
+        <option value="broggles18TK">B18TK</option>
+        <option value="broggles1836jr">B1836jr</option>
+        <option value="broggles1849">B1849</option>
       </select>
       <ThemePreview/>
       <p className="description">The theme determines which colors are used for all of the elements on the maps and tiles.</p>
@@ -203,6 +209,8 @@ const Config = ({config, setConfig, resetConfig}) => {
         <option value="galatolol">Galatolol</option>
         <option value="ps18xx">px18xx</option>
         <option value="rob">Rails on Boards</option>
+        <option value="B18TK">B18TK</option>
+        <option value="broggles">broggles</option>
       </select>
       <CompaniesThemePreview/>
       <p className="description">The company theme determines which colors are used for all of the elements on the maps and tiles.</p>
@@ -213,9 +221,16 @@ const Config = ({config, setConfig, resetConfig}) => {
       <Input name="paper.height" label="Paper Height" dimension={true}/>
       <Input name="paper.margins" label="Paper Margins" dimension={true}/>
       <p>For reference US Letter size would be 8.5in by 11in. A4 is 210mm by 297mm.</p>
+      <h3>Tokens</h3>
+      <Input name="tokens.layout" label="Token Layout"
+             description="This lets you choose between different layouts when printing tokens. GSP matches the GarageSalePup AWE label sheets and overrides the values below."/>
+      <Input name="tokens.marketTokenSize" label="Market Token Size" dimension={true}
+             description="Size of the market tokens. 0.5 inches is the default. 12mm and 10mm are good sizes for the Rails on Boards tokens."/>
+      <Input name="tokens.stationTokenSize" label="Station Token Size" dimension={true}
+             description="Size of the station tokens. 0.5 inches is the default. 12mm and 10mm are good sizes for the Rails on Boards tokens."/>
+      <Input name="tokens.reverseMarketTokens" label="Reverse Market Tokens"
+             description="Whether to print token stickers for the reverse side of company market tokens. All will print a reverse token for all market tokens (normally 3 or 2 depending on the games settings)."/>
       <h3>Companies</h3>
-      <Input name="tokenLayout" label="Token Layout"
-             description="This lets you choose between different layouts when printing tokens. GSP matches the GarageSalePup AWE label sheets."/>
       <Input name="companySvgLogos" label="Company Logos"
              description="This lets you choose to use SVG logos (when available) for companies instead of only colors and text. The different settings are explained on the [logos doc](/docs/logos) page" />
       <Input name="overrideCompanies" label="Override Companies"
@@ -227,6 +242,10 @@ const Config = ({config, setConfig, resetConfig}) => {
              description="Draw city names straight instead of curved along the city. None of the games included with this tool are meant to be drawn this way so layout issues might be present." />
       <Input name="plainMapCompanies" label="Plain Map Company Spaces"
              description="This sets all home/destination/token spots on maps to be empty white cities with black company text instead of colored or using logos." />
+      <Input name="maps.roundTracker" label="Display Map Round Tracker"
+             description="Whether or not to show the round tracker on maps." />
+      <Input name="maps.players" label="Display Map Players Table"
+             description="Whether or not to show the player information table on maps. This includes bank and certificate limit information." />
       {/* This option isn't working yet, will add later */}
       {/* <Checkbox name="plainMapDestinations" label="Plain Map Destination Spaces" */}
       {/*           description="This sets all destination spots on maps to be empty white cities with black company text:" /> */}
@@ -251,6 +270,8 @@ const Config = ({config, setConfig, resetConfig}) => {
              description="Set to 0 to disable any bleed, or set to a value to have a margin of this amount used as the bleed amount for printing."/>
       <Input name="charters.border" label="Charter Border Size"
              description="Set to 0 to disable any border, or set to a value to have a border of that many pixels drawn around the charter."/>
+      <Input name="charters.blackBand" label="Charter Black Band"
+             description="Whether or not to put a black border against the color section of the charter. Only relevent to &quot;color&quot; charters. Always put on white color charters."/>
       <h3>Cards</h3>
       <Input name="cards.shareStyle" label="Share Style"
              description="This lets you choose between two styles for shares. One keeps the token in the center of the card, the other puts the tokens on the let (Simular to All Aboard Games and Deep Thought Games)."/>
@@ -264,6 +285,16 @@ const Config = ({config, setConfig, resetConfig}) => {
              description="Set to 0 to disable any bleed, or set to a value to have a margin of this amount used as the bleed amount for printing."/>
       <Input name="cards.border" label="Card Border Size"
              description="Set to 0 to disable any border, or set to a value to have a border of that many pixels drawn around the card."/>
+      <Input name="cards.blackBand" label="Card Black Band"
+             description="Whether or not to put a black border against the color section of the share. Only relevent to &quot;gmt&quot; and &quot;left&quot; shares as well as trains. Always put on white color cards."/>
+      <h3>Trains</h3>
+      <Input name="trains.style" label="Train Style"
+             description="Different styles of train cards. Color uses a large color band, while the number style uses a colored number for the train name." />
+      <Input name="trains.images" label="Train Images"
+             description="Whether or not to put some train images on the cards" />
+      <h3>IPO</h3>
+      <Input name="ipo.borderRadius" label="IPO Border Radius" dimension={true}
+             description="How much to round the corners, zero will disable rounded corners on the IPO cards" />
       <h3>Currency</h3>
       <p>This lets you turn on currency symbols for each item individually. Only works if the game file specificies values as numbers and not strings.</p>
       <Input name="currency.bank" label="Bank" description="Bank total on revenue page"/>
@@ -276,6 +307,7 @@ const Config = ({config, setConfig, resetConfig}) => {
       <Input name="currency.terrain" label="Terrain" description="Terrain costs on maps and track tiles"/>
       <Input name="currency.token" label="Token" description="Token costs on charters"/>
       <Input name="currency.train" label="Train" description="Train costs on cards and charters"/>
+      <Input name="currency.treasury" label="Treasury" description="Companies starting capital on charters"/>
       <Input name="currency.value" label="Value" description="Values on maps and track tiles"/>
       <h2>Reset</h2>
       <p>You can remove any custom settings and revert back to the defaults with this button.</p>

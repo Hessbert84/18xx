@@ -19,6 +19,7 @@ const atoms = [{
              {color: "green"},
              {color: "brown"},
              {color: "gray"},
+             {color: "grey"},
              {color: "orange", divides: [{side:2}]},
              {color: "yellow/green"},
              {color: "green/brown"},
@@ -63,17 +64,34 @@ const atoms = [{
   group: "Icons",
   examples: [{icons: [{type: "meat"}]},
              {icons: [{type: "coal"}]},
-             {icons: [{type: "steam"}]}]
+             {icons: [{type: "port"}]},
+             {icons: [{type: "tree"}]},
+             {icons: [{type: "home"}]},
+             {icons: [{type: "mail"}]},
+             {icons: [{type: "boat"}]},
+             {icons: [{type: "tracks"}]},
+             {icons: [{type: "share"}]},
+             {icons: [{type: "charter"}]},
+             {icons: [{type: "bridge"}]},
+             {icons: [{type: "swamp"}]},
+             {icons: [{type: "cactus"}]},
+             {icons: [{type: "water"}]},
+             {icons: [{type: "river"}]},
+             {icons: [{type: "mountain"}]},
+             {icons: [{type: "medium-city"}]}]
 },{
   group: "Tokens",
   examples: [
     {tokens: [{label:"AA", color:"orange"}]},
     {tokens: [{label:"BB", type:"square", colors:["blue", "orange"]}]},
+    {tokens: [{label:"BB2", type:"square", angle: 45, colors:["blue", "orange"]}]},
     {tokens: [{label:"CC", type:"quarters", colors:["blue", "orange"]}]},
+    {tokens: [{label:"CC2", type:"quarters", angle: 120, colors:["blue", "orange"]}]},
     {tokens: [{label:"DD", type:"halves", colors:["blue", "orange"]}]},
     {tokens: [{label:"EE", type:"stripes", colors:["blue", "orange"]}]},
     {tokens: [{label:"FF", type:"bar", colors:["blue", "orange"]}]},
     {tokens: [{label:"GG", type:"stripe", colors:["blue", "orange"]}]},
+    {tokens: [{label:"GG2", type:"stripe", angle: 45, colors:["blue", "orange"]}]},
     {tokens: [{label:"HH", type:"target", colors:["blue", "orange"]}]},
     {tokens: [{label:"Longer", color:"blue"}]},
     {tokens: [{label:"KO", color:"purple"}]},
@@ -96,7 +114,8 @@ const atoms = [{
                         companies: ["NYC"]
                        }]},
              {cities: [{size:4,
-                        companies: [{},
+                        icons: ["mail", null, null, "boat"],
+                        companies: [null,
                                     "B&M",
                                     { abbrev:"PRR", reserved: true }]
                        }]},
@@ -106,6 +125,9 @@ const atoms = [{
              {cities: [{size:2,
                         pass:true
                        }]},
+             {cities: [{size:3,
+                        icons: ["meat", null, "share"]
+                       }]}
             ]
 },{
   group: "Towns",
@@ -220,9 +242,10 @@ const atoms = [{
     {terrain: [{size:"medium",cost:"$60"}]},
     {terrain: [{type:"mountain",cost:"$100"}]},
     {terrain: [{type:"water",cost:"$40"}]},
-    {terrain: [{type:"stream",cost:"$20"}]},
-    {terrain: [{size:"tiny",type:"river",cost:"$10"}]},
+    {terrain: [{type:"river",cost:"$20"}]},
+    {terrain: [{type:"tree",cost:"$20"}]},
     {terrain: [{type:"cactus",cost:"$20"}]},
+    {terrain: [{size:"tiny",type:"river",cost:"$10"}]},
     {terrain: [{size:"large",type:"swamp",cost:"$120"}]}
   ]
 },{

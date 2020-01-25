@@ -15,10 +15,10 @@
   },
   "tokens": [
     "Round",
-    "#port",
-    "#port",
-    "#meat",
-    "#meat"
+    { "icon": "port" },
+    { "icon": "port" },
+    { "icon": "meat" },
+    { "icon": "meat" }
   ],
   "ipo": true,
   "bank": 12000,
@@ -274,35 +274,41 @@
       "name": "Great River Shipping Company",
       "price": 20,
       "revenue": 5,
+      "icon": "boat",
       "description": ""
     },
     {
       "name": "Mississippi River Bridge Company",
       "price": 40,
       "revenue": 10,
+      "icon": "bridge",
       "description": ""
     },
     {
       "name": "The Southern Cattle Company",
       "price": 50,
       "revenue": 10,
+      "icon": "meat",
       "description": "This company has a token that may be placed on any city west of the Mississippi River. Cities located in the same hex as any portion of the Mississippi are not eligible for this placement. This increases the value of that city by $10 for that company only. Placing the token does not close the company."
     },
     {
       "name": "The Gulf Shipping Company",
       "price": 80,
       "revenue": 15,
+      "icon": "water",
       "description": ""
     },
     {
       "name": "St. Louis-San Francisco Railway",
       "price": 140,
+      "company": "SLSF",
       "description": "This is the President's certificate of the St.Louis-San Francisco Railway. The purchaser sets the par value of the railway. Unlike other companies, this company may operate with just 20% sold. It may not be purchased by another public company."
     },
     {
       "name": "Missouri-Kansas-Texas Railroad",
       "price": 160,
       "revenue": 20,
+      "company": "MKT",
       "description": "Comes with a 10% share of the Missouri-Kansas-Texas Railroad."
     }
   ],
@@ -399,7 +405,7 @@
     },
     {
       "name": "SR",
-      "color": "gray"
+      "color": "white"
     }
   ],
   "turns": [
@@ -459,11 +465,32 @@
         "Paid dividends"
       ]
     },
+    "ledges": [
+      {
+        "color": "red",
+        "coords": [
+          "7 9",
+          "7 8",
+          "8 8",
+          "8 7",
+          "9 7",
+          "9 6",
+          "10 6",
+          "10 5",
+          "11 5",
+          "11 4",
+          "13 4",
+          "13 3",
+          "16 3",
+          "16 2",
+          "21 2"
+        ]
+      }
+    ],
     "market": [
       [
         {
           "value": 64,
-          "label": 64,
           "legend": 0,
           "arrow": "down"
         },
@@ -474,7 +501,6 @@
         90,
         {
           "value": 100,
-          "label": 100,
           "par": true
         },
         110,
@@ -495,13 +521,11 @@
       [
         {
           "value": 60,
-          "label": 60,
           "legend": 0,
           "arrow": "down"
         },
         {
           "value": 64,
-          "label": 64,
           "legend": 0
         },
         68,
@@ -510,7 +534,6 @@
         82,
         {
           "value": 90,
-          "label": 90,
           "par": true
         },
         100,
@@ -522,73 +545,27 @@
         200,
         225,
         250,
-        {
-          "value": 275,
-          "label": 275,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
-        {
-          "value": 300,
-          "label": 300,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
-        {
-          "value": 325,
-          "label": 325,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
-        {
-          "value": 350,
-          "label": 350,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
+        275,
+        300,
+        325,
+        350,
         {
           "value": 375,
-          "label": 375,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         }
       ],
       [
         {
           "value": 55,
-          "label": 55,
           "legend": 0,
           "arrow": "down"
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         {
           "value": 64,
-          "label": 64,
           "legend": 0
         },
         68,
@@ -596,7 +573,6 @@
         76,
         {
           "value": 82,
-          "label": 82,
           "par": true
         },
         90,
@@ -605,40 +581,11 @@
         120,
         140,
         160,
-        {
-          "value": 180,
-          "label": 180,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
-        {
-          "value": 200,
-          "label": 200,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
+        180,
+        200,
         {
           "value": 225,
-          "label": 225,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         250,
         275,
@@ -646,67 +593,41 @@
         325,
         {
           "value": 350,
-          "label": 350,
           "arrow": "up"
         }
       ],
       [
         {
           "value": 50,
-          "label": 50,
           "legend": 1,
           "arrow": "down"
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         {
           "value": 64,
-          "label": 64,
           "legend": 0
         },
         68,
         72,
         {
           "value": 76,
-          "label": 76,
           "par": true
         },
         82,
         90,
         100,
         110,
-        {
-          "value": 120,
-          "label": 120,
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
-        },
+        120,
         {
           "value": 140,
-          "label": 140,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         160,
         180,
@@ -715,39 +636,30 @@
         250,
         275,
         300,
-        {
-          "value": 325,
-          "label": 325,
-          "arrow": "up"
-        }
+        325
       ],
       [
         {
           "value": 40,
-          "label": 40,
           "legend": 2,
           "arrow": "down"
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 1
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         64,
         68,
         {
           "value": 72,
-          "label": 72,
           "par": true
         },
         76,
@@ -755,18 +667,7 @@
         90,
         {
           "value": 100,
-          "label": 100,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         110,
         120,
@@ -774,180 +675,124 @@
         160,
         {
           "value": 180,
-          "label": 180,
           "arrow": "up"
         }
       ],
       [
         {
           "value": 30,
-          "label": 30,
           "legend": 2,
           "arrow": "down"
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 1
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         64,
         {
           "value": 68,
-          "label": 68,
           "par": true
         },
         72,
         76,
         {
           "value": 82,
-          "label": 82,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         90,
         100,
         {
           "value": 110,
-          "label": 110,
           "arrow": "up"
         }
       ],
       [
         {
           "value": 20,
-          "label": 20,
           "legend": 2,
           "arrow": "down"
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 1
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         64,
         68,
         {
           "value": 72,
-          "label": 72,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         76,
         {
           "value": 82,
-          "label": 82,
           "arrow": "up"
         }
       ],
       [
         {
           "value": 10,
-          "label": 10,
           "legend": 2,
           "arrow": "down"
         },
         {
           "value": 20,
-          "label": 20,
           "legend": 2
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 0
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0
         },
         {
           "value": 60,
-          "label": 60,
           "legend": 0
         },
         {
           "value": 64,
-          "label": 64,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            },
-            {
-              "color": "offboard",
-              "side": "bottom"
-            }
-          ]
+          "arrow": "up"
         },
         68,
         {
           "value": 72,
-          "label": 72,
           "arrow": "up"
         }
       ],
@@ -957,45 +802,32 @@
         },
         {
           "value": 10,
-          "label": 10,
           "legend": 2
         },
         {
           "value": 20,
-          "label": 20,
           "legend": 2
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 0
         },
         {
           "value": 55,
-          "label": 55,
           "legend": 0,
-          "arrow": "up",
-          "borders": [
-            {
-              "color": "offboard",
-              "side": "right"
-            }
-          ]
+          "arrow": "up"
         },
         60,
         {
           "value": 64,
-          "label": 64,
           "arrow": "up"
         }
       ],
@@ -1008,35 +840,29 @@
         },
         {
           "value": 10,
-          "label": 10,
           "legend": 2
         },
         {
           "value": 20,
-          "label": 20,
           "legend": 2
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1
         },
         {
           "value": 50,
-          "label": 50,
           "legend": 0,
           "arrow": "up"
         }
       ],
       [
         {
-          "label": "Closed",
-          "verticalAlign": "bottom",
+          "subLabel": "Closed",
           "color": "black"
         },
         {
@@ -1047,22 +873,18 @@
         },
         {
           "value": 10,
-          "label": 10,
           "legend": 2
         },
         {
           "value": 20,
-          "label": 20,
           "legend": 2
         },
         {
           "value": 30,
-          "label": 30,
           "legend": 2
         },
         {
           "value": 40,
-          "label": 40,
           "legend": 1,
           "arrow": "up"
         }
@@ -1139,6 +961,15 @@
   },
   "map": {
     "print": "landscape",
+    "players": {
+      "x": 1035,
+      "y": 2050
+    },
+    "roundTracker": {
+      "type": "row",
+      "x": 600,
+      "y": 1910
+    },
     "hexes": [
       {
         "color": "offboard",

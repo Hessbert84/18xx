@@ -2,6 +2,7 @@ import React from "react";
 
 import Config from "../data/Config";
 import Token from "./Token";
+import ColorContext from "../context/ColorContext";
 
 const CompanyToken = (props) => {
   let { company } = props;
@@ -29,10 +30,19 @@ const CompanyToken = (props) => {
         // Set the main color
         passing.color = props.color || company.color;
 
+        if (passing.inverse && config.companySvgLogos !== "none") {
+          delete passing.inverse;
+          passing.reserved = true;
+        }
+
         // Anything that the company defined in it's "token" field should override
         passing = { ...passing, ...company.token };
 
-        return <Token {...passing}/>;
+        return (
+          <ColorContext.Provider value="companies">
+            <Token {...passing}/>
+          </ColorContext.Provider>
+        );
       }}
     </Config>
   );
