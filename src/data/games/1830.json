@@ -94,16 +94,16 @@
     },
     {
       "name": "Baltimore & Ohio Railroad",
-      "abbrev": "B&O",
+      "abbrev": "BO",
       "logo": "BO",
-      "color": "blue",
+      "color": "dark_blue",
       "tokens": "three"
     },
     {
       "name": "Chesapeake & Ohio Railroad",
-      "abbrev": "C&O",
+      "abbrev": "CO",
       "logo": "CO",
-      "color": "cyan",
+      "color": "light_blue",
       "tokens": "three"
     },
     {
@@ -115,16 +115,16 @@
     },
     {
       "name": "New York, New Haven & Hartford Railroad",
-      "abbrev": "NYNH",
+      "abbrev": "NYH",
       "logo": "NYNH",
       "color": "orange",
       "tokens": "two"
     },
     {
       "name": "Boston & Maine Railroad",
-      "abbrev": "B&M",
+      "abbrev": "BM",
       "logo": "BM",
-      "color": "lime",
+      "color": "brown",
       "tokens": "two"
     }
   ],
@@ -776,18 +776,18 @@
     "legend": [
       {
         "color": "yellow",
-        "description": "Shares of this corporation do not count toward the certificate limit",
-        "icon": "certificate"
+        "description": "Shares of this company do not count toward the certificate limit",
+        "icon": ""
       },
       {
         "color": "orange",
-        "description": "Players may own more than 60% of this corporation",
-        "icon": "percentage"
+        "description": "Players may own more than 60% of this company",
+        "icon": ""
       },
       {
         "color": "brown",
-        "description": "Players may purchase any number of shares of this corporation in one stock action",
-        "icon": "money-bill-wave"
+        "description": "Players may purchase any number of shares of this company in one stock action",
+        "icon": ""
       }
     ]
   },
@@ -840,14 +840,14 @@
     "70": 1
   },
   "map": {
-    "players": {
-      "x": 1230,
-      "y": 1270
-    },
     "roundTracker": {
       "type": "row",
-      "x": 40,
-      "y": 250
+      "x": 1540,
+      "y": 1020
+    },
+    "players": {
+      "x": 1550,
+      "y": 1100
     },
     "hexes": [
       {
@@ -1075,7 +1075,7 @@
               "name": "Cleveland"
             },
             "companies": [
-              "C&O"
+              "CO"
             ]
           }
         ],
@@ -1350,27 +1350,25 @@
             "label": "B&O",
             "angle": 90,
             "percent": 1.35,
-            "bottom": true,
-            "right": 40,
-            "color": "blue"
+            "bottom": false,
+            "right": 35,
+            "color": "dark_blue"
           }
         ],
         "values": [
           {
             "value": 30,
-            "angle": 210,
+            "angle": 330,
             "percent": 0.667
           }
         ],
         "cities": [
           {
             "name": {
-              "name": "Baltimore",
-              "reverse": true,
-              "rotation": -30
+              "name": "Baltimore"
             },
             "companies": [
-              "B&O"
+              "BO"
             ]
           }
         ],
@@ -1496,7 +1494,8 @@
             "x": -40,
             "y": 10,
             "name": {
-              "name": "Philadelphia"
+              "name": "Philadelphia",
+              "rotation": 25
             }
           },
           {
@@ -1570,7 +1569,7 @@
               "reverse": true
             },
             "companies": [
-              "NYNH"
+              "NYH"
             ]
           },
           {
@@ -1686,7 +1685,7 @@
               "rotation": -90
             },
             "companies": [
-              "B&M"
+              "BM"
             ]
           }
         ],

@@ -79,7 +79,7 @@ const Cell = ({ cell, data, par }) => {
                     <text
                       key={`arrow-${i}`}
                       fill={arrowColor}
-                      fontFamily="display"
+                      fontFamily="Libre Baskerville"
                       fontStyle="bold"
                       fontSize="15"
                       textAnchor={left ? "start" : "end"}
@@ -127,6 +127,7 @@ const Cell = ({ cell, data, par }) => {
                             <text
                               x={data.width / 2}
                               y={y + 9}
+                              fontFamily="Libre Baskerville"
                               fontSize="12"
                               textAnchor="middle"
                               dominantBaseline="middle"
@@ -158,14 +159,17 @@ const Cell = ({ cell, data, par }) => {
                       <text
                         transform={rotated ? "rotate(-90)" : null}
                         fill={labelColor}
-                        fontFamily="display"
-                        fontStyle="bold"
+                        fontFamily="Libre Baskerville"
+                        fontWeight="bold"
                         fontSize="15"
-                        textAnchor={rotated ? "end" : "state"}
+                        //textAnchor={rotated ? "end" : "state"}
                         textDecoration={cell.underline ? "underline" : null}
                         dominantBaseline="hanging"
-                        x={rotated ? -5 : 5}
-                        y="5"
+                        //x={rotated ? -5 : 5}
+                        //y="5"
+                        textAnchor="middle"
+                        x={width/2}
+                        y="60"
                       >
                         {text}
                       </text>
@@ -174,7 +178,7 @@ const Cell = ({ cell, data, par }) => {
                       <text
                         transform={subRotated ? "rotate(-90)" : null}
                         fill={labelColor}
-                        fontFamily="display"
+                        fontFamily="Libre Baskerville"
                         fontStyle="bold"
                         fontSize="15"
                         textAnchor="start"

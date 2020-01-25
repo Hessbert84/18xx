@@ -12,19 +12,17 @@ const Legend = ({ color, icon, description, right }) => {
                   stroke="none"
                   fill={c(color || "orange")}
           />
-          <SvgIcon name={icon || "info"}
+          {/* <SvgIcon name={icon || "info"}
                    style={{fill: t(c(color || "orange"))}}
                    x={right ? -30 : 0}
                    y={-15}
-          />
+          /> */}
           <text
-            fontFamily="sans-serif"
+            fontFamily="Libre Baskerville"
             fontSize="14"
             fontWeight="normal"
             textAnchor={right ? "end" : "start"}
             dominantBaseline="middle"
-            fill="black"
-            stroke="black"
             x={right ? -34 : 34}
             y="1"
           >
