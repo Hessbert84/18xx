@@ -54,13 +54,13 @@ const Title = ({ game, variation, hexWidth }) => {
             fill={c("black")}
             fontFamily="Libre Baskerville"
             fontWeight="regular"
-            fontSize={0.7*designerSize}
+            fontSize={designerSize}
             textAnchor="start"
             lengthAdjust="spacingAndGlyphs"
             x="0"
             y={designerSize + 10 + (game.info.subtitle ? (subSize + 10) : 0)}
           >
-            {game.info.designer}
+            by {game.info.designer}
             {mapName && ` ⋯ ${mapName}`}
           </text>
         </g>
