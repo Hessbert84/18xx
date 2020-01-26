@@ -1,5 +1,6 @@
 import game_1800 from "./1800";
 import game_1817 from "./1817";
+import game_1817NA from "./1817NA";
 import game_1825 from "./1825";
 import game_1825K1 from "./1825-K1";
 import game_1825K3 from "./1825-K3";
@@ -65,6 +66,7 @@ import game_1830PL from "./1830PL";
 let all_games = {
   "1800": game_1800,
   "1817": game_1817,
+  "1817NA": game_1817NA,
   "1825": game_1825,
   "1825-DB1": game_1925DB1,
   "1825-DB3": game_1925DB3,
