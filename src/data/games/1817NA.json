@@ -14,7 +14,6 @@
       "rules": ""
     },
     "wip": true,
-    "tokens": [],
     "ipo": false,
     "bank": "∞",
     "players": [
@@ -44,7 +43,129 @@
         "capital": 180
       }
     ],
-    "companies": [],
+    "tokens": [
+      {
+        "icon": "coal"
+      },      
+      {
+        "icon": "coal"
+      },      
+      {
+        "icon": "coal"
+      },     
+      {
+        "icon": "bridge"
+      },      
+      {
+        "icon": "bridge"
+      }
+    ],
+    "tokenTypes": {
+      "def": [
+        "Home",
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ]
+    },
+    "companies": [
+      {
+        "name": "URR",
+        "abbrev": "URR",
+        "color": "google_blue",
+        "tokens": "def"
+      },      
+      {
+        "name": "RRR",
+        "abbrev": "RRR",
+        "color": "google_green",
+        "tokens": "def"
+      },   
+      {
+        "name": "BA",
+        "abbrev": "BA",
+        "color": "red",
+        "tokens": "def"
+      },      
+      {
+        "name": "HR",
+        "abbrev": "HR",
+        "color": "google_light_blue",
+        "tokens": "def"
+      },      
+      {
+        "name": "ME",
+        "abbrev": "ME",
+        "color": "google_yellow",
+        "tokens": "def"
+      },      
+      {
+        "name": "PLE",
+        "abbrev": "PLE",
+        "color": "black",
+        "tokens": "def"
+      },      
+      {
+        "name": "GT",
+        "abbrev": "GT",
+        "logo": "false",
+        "color": "orange",
+        "tokens": "def"
+      },      
+      {
+        "name": "WC",
+        "abbrev": "WC",
+        "color": "google_brown",
+        "tokens": "def"
+      },        
+      {
+        "name": "ASR",
+        "abbrev": "ASR",
+        "color": "google_purple",
+        "tokens": "def"
+      },      
+      {
+        "name": "PWR",
+        "abbrev": "PWR",
+        "color": "google_natural",
+        "tokens": "def"
+      },      
+      {
+        "name": "PSN",
+        "abbrev": "PSN",
+        "color": "google_cyan",
+        "tokens": "def"
+      },   
+      {
+        "name": "BRC",
+        "abbrev": "BRC",
+        "color": "google_gold",
+        "tokens": "def"
+      },    
+      {
+        "name": "DLW",
+        "abbrev": "DLW",
+        "color": "google_gray",
+        "tokens": "def"
+      },   
+      {
+        "name": "SR",
+        "abbrev": "SR",
+        "color": "google_magenta",
+        "tokens": "def"
+      },      
+      {
+        "name": "NYS",
+        "abbrev": "NYS",
+        "color": "google_rotten_green",
+        "tokens": "def"
+      }
+
+    ],
     "trains": [
       {
         "name": "2",
@@ -168,9 +289,9 @@
       "544": 5,
       "545": 5,
       "546": 5,
-      "592": 4,
-      "593": 4,
-      "597": 4,
+      "592": 3,
+      "593": 3,
+      "597": 3,
       "611": 2,
       "619": 8,
       "X00": 1,

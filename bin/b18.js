@@ -15,7 +15,7 @@ const setup = util.setup;
 const setupB18 = util.setupB18;
 
 const config = require('../src/config.json');
-const mutil = require('../src/market-utils');
+// const mutil = require('../src/market-utils');
 
 const capitalize = R.compose(
   R.join(''),
@@ -198,12 +198,12 @@ const server = app.listen(9000);
   await page.screenshot({ path: `build/render/${bname}/${folder}/${id}/Map.png`});
 
   console.log(`Printing ${bname}/${folder}/${id}/Market.png`);
-  let marketWidth = (config.stock.cell.width + 1) * mutil.width(game.stock.market);
-  let marketHeight = 50 + ((config.stock.cell.height + 1) * mutil.height(game.stock.market));
-  await page.goto(`http://localhost:9000/${bname}/market`, {waitUntil: 'networkidle2'});
-  await page.addStyleTag({ content: '.stock {margin: 0.25in !important;}'});
-  await page.setViewport({ width: marketWidth + 1, height: marketHeight + 1 });
-  await page.screenshot({ path: `build/render/${bname}/${folder}/${id}/Market.png`});
+  // let marketWidth = (config.stock.cell.width + 1) * mutil.width(game.stock.market);
+  // let marketHeight = 50 + ((config.stock.cell.height + 1) * mutil.height(game.stock.market));
+  // await page.goto(`http://localhost:9000/${bname}/market`, {waitUntil: 'networkidle2'});
+  // await page.addStyleTag({ content: '.stock {margin: 0.25in !important;}'});
+  // await page.setViewport({ width: marketWidth + 1, height: marketHeight + 1 });
+  // await page.screenshot({ path: `build/render/${bname}/${folder}/${id}/Market.png`});
 
   console.log(`Printing ${bname}/${folder}/${id}/Tokens.png`);
   let tokenHeight = 30 * ((game.companies || []).length +

@@ -12,5 +12,19 @@
   "yellow": "#ffef00",
 
   "light_blue": "#87cefa",
-  "dark_blue": "#0247fe"
+  "dark_blue": "#0247fe",
+
+  "google_blue": "#1155cc",
+  "google_brown": "#a61c00",
+  "google_light_blue": "#ccffff",
+  "google_yellow": "#ffff00",
+  "google_orange": "#ff8100",
+  "google_green": "#38761d",
+  "google_purple": "#674ea7",
+  "google_natural": "#fce8b2",
+  "google_cyan": "#00ffff",
+  "google_gold": "#bf9000",
+  "google_gray": "#999999",
+  "google_magenta": "#ff00ff",
+  "google_rotten_green": "#b6d7a8"
 }
