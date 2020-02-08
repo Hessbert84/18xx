@@ -31,9 +31,15 @@ const atoms = [{
   group: "Values",
   examples: [{values: [{value: 20}]},
              {values: [{value: 60}]},
+             {values: [{value: 60, shape: "square"}]},
              {values: [{
-              "outerBorderColor": "green",
-              "value": 120
+               outerBorderColor: "green",
+               value: 120
+             }]},
+             {values: [{
+               outerBorderColor: "green",
+               shape: "square",
+               value: 120
              }]},
              {values: [{value: 1024}]},
              {values: [{value: "60/60"}]},
@@ -65,12 +71,17 @@ const atoms = [{
   examples: [{icons: [{type: "meat"}]},
              {icons: [{type: "coal"}]},
              {icons: [{type: "port"}]},
+             {icons: [{type: "fish"}]},
+             {icons: [{type: "tunnel"}]},
+             {icons: [{type: "token"}]},
+             {icons: [{type: "cylinder"}]},
              {icons: [{type: "tree"}]},
              {icons: [{type: "home"}]},
              {icons: [{type: "mail"}]},
              {icons: [{type: "boat"}]},
              {icons: [{type: "tracks"}]},
              {icons: [{type: "share"}]},
+             {icons: [{type: "share", color: "orange"}]},
              {icons: [{type: "charter"}]},
              {icons: [{type: "bridge"}]},
              {icons: [{type: "swamp"}]},
@@ -83,22 +94,31 @@ const atoms = [{
   group: "Tokens",
   examples: [
     {tokens: [{label:"AA", color:"orange"}]},
-    {tokens: [{label:"BB", type:"square", colors:["blue", "orange"]}]},
-    {tokens: [{label:"BB2", type:"square", angle: 45, colors:["blue", "orange"]}]},
-    {tokens: [{label:"CC", type:"quarters", colors:["blue", "orange"]}]},
-    {tokens: [{label:"CC2", type:"quarters", angle: 120, colors:["blue", "orange"]}]},
-    {tokens: [{label:"DD", type:"halves", colors:["blue", "orange"]}]},
-    {tokens: [{label:"EE", type:"stripes", colors:["blue", "orange"]}]},
-    {tokens: [{label:"FF", type:"bar", colors:["blue", "orange"]}]},
-    {tokens: [{label:"GG", type:"stripe", colors:["blue", "orange"]}]},
-    {tokens: [{label:"GG2", type:"stripe", angle: 45, colors:["blue", "orange"]}]},
-    {tokens: [{label:"HH", type:"target", colors:["blue", "orange"]}]},
-    {tokens: [{label:"Longer", color:"blue"}]},
-    {tokens: [{label:"KO", color:"purple"}]},
+    {tokens: [{label:"AA2", bar:true, color:"orange"}]},
+    {tokens: [{label:"AA3", bar:true, barHeight:30, color:"orange"}]},
+    {tokens: [{label:"BB", color:"orange", "square": "blue"}]},
+    {tokens: [{label:"BB2", color:"orange", "square": "blue", angle: 45}]},
+    {tokens: [{label:"CC", bar: true, quarters: ["blue", "orange", "orange", "blue"]}]},
+    {tokens: [{label:"CC2", angle: 120, bar: true, quarters: ["blue", "orange", "orange", "blue"]}]},
+    {tokens: [{label:"DD", halves: ["blue", "orange"], bar: true}]},
+    {tokens: [{label:"EE", bar: true, color: "blue", stripes: "orange"}]},
+    {tokens: [{label:"EE2", angle: -15, color: "blue", stripes: "orange"}]},
+    {tokens: [{label:"FF", color: "orange", bar: "blue"}]},
+    {tokens: [{label:"GG", bar: true, stripe: "orange", color: "blue"}]},
+    {tokens: [{label:"GG2", bar: true, stripe: "orange", color: "blue", angle: 45}]},
+    {tokens: [{label:"HH", target: "orange", color: "blue", bar: true}]},
+    {tokens: [{label:"II", target: "orange", halves: ["purple", "blue"], bar: true}]},
+    {tokens: [{label:"KO", color: "purple"}]},
     {tokens: [{company:"CPR"}]},
     {tokens: [{company:"PRR", destination: true}]},
     {tokens: [{company:"C&O", reserved: true}]},
-    {tokens: [{logo:"dev/emacs"}]}
+    {tokens: [{logo:"dev/emacs"}]},
+    {tokens: [{icon:"coal"}]},
+    {tokens: [{icon:"port", iconColor:"red"}]},
+    {tokens: [{icon:"mail"}]},
+    {tokens: [{icon:"mail", iconColor:"orange"}]},
+    {tokens: [{icon:"tracks", label: "$100"}]},
+    {tokens: [{icon:"boat", iconColor:"red", label: "Free"}]}
   ]
 },{
   group: "Cities",
@@ -243,7 +263,7 @@ const atoms = [{
     {terrain: [{type:"mountain",cost:"$100"}]},
     {terrain: [{type:"water",cost:"$40"}]},
     {terrain: [{type:"river",cost:"$20"}]},
-    {terrain: [{type:"tree",cost:"$20"}]},
+    {terrain: [{type:"tree",cost:"$20",color:"green"}]},
     {terrain: [{type:"cactus",cost:"$20"}]},
     {terrain: [{size:"tiny",type:"river",cost:"$10"}]},
     {terrain: [{size:"large",type:"swamp",cost:"$120"}]}
@@ -262,18 +282,18 @@ const atoms = [{
 
 const examples = R.addIndex(R.chain)((h,id) => {
   return <dd key={`example-${id}`}>
-           <Svg width="175.205" height="152" viewBox="-87.6025 -76 175.205 152">
-             <Hex hex={h} id={`${id}`} border={true} bleed={true} />
-           </Svg>
-           <pre>{JSON.stringify(h, null, 2)}</pre>
-         </dd>;
+      <Svg width="175.205" height="152" viewBox="-87.6025 -76 175.205 152">
+        <Hex hex={h} id={`${id}`} border={true} bleed={true} />
+      </Svg>
+      <pre>{JSON.stringify(h, null, 2)}</pre>
+    </dd>;
 });
 
 const groups = R.addIndex(R.chain)((g,id) => {
   return <dl key={`group-${id}`}>
-           <dt>{g.group}</dt>
-           {examples(g.examples)}
-         </dl>;
+      <dt>{g.group}</dt>
+      {examples(g.examples)}
+    </dl>;
 });
 
 const Atoms = () => {

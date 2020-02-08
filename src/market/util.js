@@ -10,7 +10,8 @@ export const getMaxLength = reduce((acc, row) => {
 
 // Give the stock section of a game and the stock config.json section, compute
 // data that we need.
-export const getMarketData = (stock, config, paper, pagination) => {
+export const getMarketData = (stock, config) => {
+  let { paper, pagination, stock: { cell, column, diag } } = config;
   let { margins, width: pageWidth, height: pageHeight } = paper;
   let splitPages = pagination === "max" ? maxPages : equalPages;
 
@@ -29,20 +30,20 @@ export const getMarketData = (stock, config, paper, pagination) => {
 
   switch (stock.type) {
   case "1Diag":
-    width = config.diag.width;
-    height = config.diag.height;
+    width = cell.width;
+    height = diag * cell.height;
     rows = 2;
     columns = Math.ceil(length(stock.market) / 2);
     break;
   case "1D":
-    width = config.column.width;
-    height = config.column.height;
+    width = cell.width;
+    height = column * cell.height;
     rows = 1;
     columns = length(stock.market);
     break;
   case "2D":
-    width = config.cell.width;
-    height = config.cell.height;
+    width = cell.width;
+    height = cell.height;
     rows = length(stock.market);
     columns = getMaxLength(stock.market);
     break;
@@ -55,8 +56,18 @@ export const getMarketData = (stock, config, paper, pagination) => {
   let totalWidth = width * columns;
   let totalHeight = height * rows + 50; // Add space for the title
 
+  // Are we displaying par, if so does this add to the height or width?
+  if (stock.display && stock.display.par) {
+    let parData = getParData(stock, config);
+    let parTotalWidth = parData.totalWidth + (width * stock.display.par.x);
+    let parTotalHeight = parData.totalHeight + (height * stock.display.par.y + 50);
+
+    totalWidth = max(totalWidth, parTotalWidth);
+    totalHeight = max(totalHeight, parTotalHeight);
+  }
+
   if (stock.type === "1D" || stock.type === "1Diag") {
-    if (stock.legend && stock.legend.length > 0) {
+    if (config.stock.display.legend && stock.legend && stock.legend.length > 0) {
       // Add space for legend
       totalHeight += 50;
     }
@@ -85,6 +96,7 @@ export const getMarketData = (stock, config, paper, pagination) => {
     legend: stock.legend || [],
     market: stock.market || [],
     par: stock.par || {},
+    display: stock.display || {},
     splitPages,
     landscape,
     pages: landscape ? landscapePages : portraitPages,
@@ -106,6 +118,9 @@ export const getMarketData = (stock, config, paper, pagination) => {
     humanHeight,
     rows,
     columns,
+
+    stock,
+    config,
 
     margins,
 
@@ -130,7 +145,8 @@ export const getMarketData = (stock, config, paper, pagination) => {
 
 // Give the stock section of a game and the stock config.json section, compute
 // data that we need.
-export const getRevenueData = (revenue, config, paper, pagination) => {
+export const getRevenueData = (revenue, config) => {
+  let { paper, pagination, stock: { cell } } = config;
   let { margins, width: pageWidth, height: pageHeight } = paper;
 
   revenue = revenue || {};
@@ -148,8 +164,8 @@ export const getRevenueData = (revenue, config, paper, pagination) => {
   let usableWidth = printableWidth - 75;
   let usableHeight = printableHeight - 75;
 
-  let width = config.cell.width;
-  let height = config.cell.height;
+  let width = cell.width;
+  let height = cell.height;
   let rows = Math.ceil(max / perRow);
   let columns = perRow;
 
@@ -223,7 +239,8 @@ export const getRevenueData = (revenue, config, paper, pagination) => {
 
 // Give the stock section of a game and the stock config.json section, compute
 // data that we need.
-export const getParData = (stock, config, paper, pagination) => {
+export const getParData = (stock, config) => {
+  let { paper, stock: { cell, par }, pagination } = config;
   let { margins, width: pageWidth, height: pageHeight } = paper;
   let splitPages = pagination === "max" ? maxPages : equalPages;
 
@@ -237,8 +254,8 @@ export const getParData = (stock, config, paper, pagination) => {
   let usableWidth = printableWidth - 75;
   let usableHeight = printableHeight - 75;
 
-  let width = config.par.width;
-  let height = config.par.height;
+  let width = par * cell.width;
+  let height = cell.height;
   let rows = length(stock.par.values);
   let columns = Math.max(1, getMaxLength(stock.par.values));
 

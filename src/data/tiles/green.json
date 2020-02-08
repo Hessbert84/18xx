@@ -1774,7 +1774,112 @@
       }
     ]
   },
+  "441": {
+    "color": "green",
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.8,
+        "value": 30
+      }
+    ],
+    "cities": [
+      {
+        "size": 2
+      }
+    ],
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      },
+      {
+        "side": 4
+      }
+    ]
+  },
   "442": {
+    "color": "green",
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.8,
+        "value": 30
+      }
+    ],
+    "cities": [
+      {
+        "size": 2
+      }
+    ],
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 6
+      },
+      {
+        "side": 4
+      }
+    ]
+  },
+  "443": {
+    "color": "green",
+    "rotations": 2,
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.8,
+        "value": 30
+      }
+    ],
+    "cities": [
+      {
+        "size": 2
+      }
+    ],
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 3
+      },
+      {
+        "side": 5
+      }
+    ]
+  },
+  "444": {
+    "color": "green",
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.8,
+        "value": 30
+      }
+    ],
+    "cities": [
+      {
+        "size": 2
+      }
+    ],
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      },
+      {
+        "side": 3
+      }
+    ]
+  },
+  "442a": {
     "color": "green",
     "values": [
       {
@@ -1810,7 +1915,7 @@
       }
     ]
   },
-  "443": {
+  "443a": {
     "color": "green",
     "values": [
       {
@@ -2367,7 +2472,7 @@
   },
   "612": {
     "color": "green",
-    "cities": [{"size": 2, "name": {"offset": 72, "name": "Genova"}}],
+    "cities": [{"name": {"offset": 57, "name": "Genova"}}],
     "labels": [{"label": "G", "angle": 150, "percent": 0.75}],
     "values": [{"value": 40, "angle": 210, "percent": 0.75}],
     "track": [{"side":1},{"side":2},{"side":3},{"side":6}]
@@ -6049,7 +6154,7 @@
       }
     ]
   },
-  "80CLE": {
+  "80C": {
     "color": "green",
     "track": [
       {
@@ -6066,7 +6171,7 @@
       }
     ]
   },
-  "81CLE": {
+  "81C": {
     "color": "green",
     "track": [
       {
@@ -6083,7 +6188,7 @@
       }
     ]
   },
-  "82CLE": {
+  "82C": {
     "color": "green",
     "track": [
       {
@@ -6100,7 +6205,7 @@
       }
     ]
   },
-  "83CLE": {
+  "83C": {
     "color": "green",
     "track": [
       {
