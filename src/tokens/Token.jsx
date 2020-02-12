@@ -17,6 +17,7 @@ const Token = ({
   type, // What special type of token to render (for special shapes and patterns)
   bar, // Do we add a white bar around the text?
   barHeight, // Height override for white bar
+  barBorderColor, // Color of borders
 
   width, // Set the width directly, overrides the "destination" option
   destination, // Is this a destination token? Sets a smaller default width
@@ -29,7 +30,24 @@ const Token = ({
 
   target, // Colors for target shape
   stripe, // Colors for stripe shape
+  stripeWidth, // Width of the stripe
+
   stripes, // Colors for stripes shape
+  stripesWidth, // Width of the stripes
+  stripesDistance, // Distance from the middle for stripes
+
+  curvedStripes, // Colors for curved stripes shape
+  curvedStripesWidth, // Width of the curved stripes
+  curvedStripesDistance, // Distance from the middle for curved stripes
+
+  spiral, // Color of a spiral
+  spiralWidth, // Width of the spiral
+  spiralDistance, // How far each spiral is
+
+  circle, // Color of a middle circle
+  circleRadius, // Radius of the middle circle - 25 is full token radius
+  circleBorderColor, // Color of the border on the circle
+
   halves, // Colors for halves shape
   quarters, // Colors for quarters shape
   square, // Draw a square of a certain color on the token
@@ -148,24 +166,76 @@ const Token = ({
                         </g>);
           }
 
+          if (spiral) {
+            spiralWidth = (width / 25 * spiralWidth) || (width / 8);
+            spiralDistance = (width / 25 * spiralDistance) || (width * 0.33);
+
+            let quarterTurns = 25;
+            let pointsPerQuarter = 90;
+            let startRadius = spiralDistance / 4;
+            let endRadius = spiralDistance * 1.333;
+            let points = [];
+            let radiusStep = (endRadius - startRadius) / 4 / pointsPerQuarter;
+
+            for (let i=0; i < (quarterTurns * pointsPerQuarter); i++) {
+              let radius = startRadius + radiusStep * i;
+              let angle = i * Math.PI / 2 / pointsPerQuarter;
+              points.push(radius * Math.cos(angle));
+              points.push(radius * Math.sin(angle));
+            }
+
+            shapes.push(<g key="spiral" transform={`rotate(${angle || 0})`}>
+                          <polyline
+                            points={points.join(',')}
+                            fill="none"
+                            stroke={c(spiral)}
+                            strokeWidth={spiralWidth}
+                            strokeLinecap="round"
+                            clipPath={`url(#${clipId})`}
+                          />
+                        </g>);
+          }
+
+          if (curvedStripes) {
+            curvedStripesWidth = (width / 25 * curvedStripesWidth) || (width / 4);
+            curvedStripesDistance = (width / 25 * curvedStripesDistance) || (width * 0.66);
+            shapes.push(<g key="curvedStripes" transform={`rotate(${angle || 0})`}>
+                          <path
+                            d={`M ${-curvedStripesDistance} -${width} a ${width} ${1.5 * width} 0 0 1 0 ${2 * width}`}
+                            fill="none"
+                            stroke={c(curvedStripes)}
+                            strokeWidth={curvedStripesWidth}
+                            clipPath={`url(#${clipId})`}
+                          />
+                          <path
+                            d={`M ${curvedStripesDistance} -${width} a ${width} ${1.5 * width} 0 0 0 0 ${2 * width}`}
+                            fill="none"
+                            stroke={c(curvedStripes)}
+                            strokeWidth={curvedStripesWidth}
+                            clipPath={`url(#${clipId})`}
+                          />
+                        </g>);
+          }
+
           if (stripes) {
-            let stripeWidth = width / 4;
+            stripesWidth = (width / 25 * stripesWidth) || (width / 4);
+            stripesDistance = (width / 25 * stripesDistance) || (width * 0.5);
             shapes.push(<g key="stripes" transform={`rotate(${angle || 0})`}>
                           <rect key="upper"
-                                x="-50" y={-width * 0.5 - stripeWidth}
-                                width="100" height={stripeWidth}
+                                x="-50" y={-stripesDistance - stripesWidth}
+                                width="100" height={stripesWidth}
                                 fill={c(stripes)}
                                 clipPath={`url(#${clipId})`}/>
                           <rect key="lower"
-                                x="-50" y={width * 0.5}
-                                width="100" height={stripeWidth}
+                                x="-50" y={stripesDistance}
+                                width="100" height={stripesWidth}
                                 fill={c(stripes)}
                                 clipPath={`url(#${clipId})`}/>
                         </g>);
           }
 
           if (stripe) {
-            let stripeWidth = width / 2;
+            stripeWidth = (width / 25 * stripeWidth) || (width / 2);
             shapes.push(<g key="stripe" transform={`rotate(${angle || 0})`}>
                           <rect key="upper"
                                 x={-0.5 * stripeWidth} y="-50"
@@ -188,16 +258,31 @@ const Token = ({
           }
 
           if (bar) {
-            let height = barHeight || (width * 0.72);
+            barBorderColor = barBorderColor || "black";
+            let height = (width / 25 * barHeight) || (width * 0.72);
             let y = height * -0.5;
 
             shapes.push(
               <rect key="bar" x="-50" y={y} width="100" height={height}
                     fill={bar === true ? p("white") : c(bar)}
-                    stroke={p("black")}
+                    stroke={p(barBorderColor)}
                     clipPath={`url(#${clipId})`}/>
             );
             textFill = t(bar === true ? p("white") : c(bar));
+          }
+
+          if (circle) {
+            circleBorderColor = circleBorderColor || "black";
+            circleRadius = (width / 25 * circleRadius) || (width * 0.6);
+
+            shapes.push(
+              <circle key="circle" cx="0" cy="0"
+                      r={circleRadius}
+                      fill={circle === true ? p("white") : c(circle)}
+                      stroke={p(circleBorderColor)}
+                      clipPath={`url(#${clipId})`} />
+            );
+            textFill = t(circle === true ? p("white") : c(circle));
           }
 
           // If we specified a labelColor, use it
@@ -236,7 +321,7 @@ const Token = ({
                            stroke={textStroke}
                            fill={textFill}
                            x="0"
-                           y={(width * 0.12) + 12}
+                           y={(width * 0.12) + 9}
                          >
                            {label}
                          </text>
@@ -259,18 +344,18 @@ const Token = ({
             y = y * 0.8;
           }
           content.push(<text
-                          key="text"
-                          fontFamily="display"
-                          fontSize={fontSize}
-                          textAnchor="middle"
-                          strokeWidth="0.5"
-                          stroke={textStroke}
-                          fill={textFill}
-                          x="0"
-                          y={y}
-                     >
-                       {label}
-                     </text>
+                         key="text"
+                         fontFamily="display"
+                         fontSize={fontSize}
+                         textAnchor="middle"
+                         strokeWidth="0.5"
+                         stroke={textStroke}
+                         fill={textFill}
+                         x="0"
+                         y={y}
+                       >
+                         {label}
+                       </text>
                       );
         }
 

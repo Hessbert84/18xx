@@ -62,6 +62,7 @@ const server = app.listen(9000);
     board: {
       imgLoc: `images/${id}/Map.png`,
       xStart: 50,
+      orientation: game.info.orientation === "horizontal" ? "F" : "P",
       xStep: game.info.orientation === "horizontal" ? 87 : 50,
       yStart: 50,
       yStep: game.info.orientation === "horizontal" ? 50 : 87
@@ -184,7 +185,7 @@ const server = app.listen(9000);
   json.tray.push(btok);
   json.tray.push(mtok);
 
-  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox']});
+  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox', '--force-color-profile', 'srgb', '--force-raster-color-profile', 'srgb']});
   const page = await browser.newPage();
   await page.emulateMedia('print');
 

@@ -54,51 +54,66 @@
   ],
   "privates": [
     {
-      "id": "Concession #1",
+      "id": "#1",
       "name": "Società della Strada di Ferro da Napoli a Noeera e Castellamunare",
+      "note": "Concession",
+      "bid": 20,
       "price": 50,
-      "revenue": 20,
-      "icon": "tracks"
+      "revenue": 20
     },
     {
-      "id": "Concession #2",
+      "id": "#2",
       "name": "Società della Dtrada Ferrata da Lucca a Pistoia",
+      "note": "Concession",
+      "bid": 20,
       "price": 50,
       "company": "SFLP"
     },
     {
-      "id": "Concession #3",
+      "id": "#3",
       "name": "Strada di Ferro da Torino a Cuneo",
+      "note": "Concession",
+      "bid": 20,
       "price": 50,
       "company": "SFTC"
     },
     {
-      "id": "Concession #4",
+      "id": "#4",
       "name": "Società per la Strada Ferrata Maria Autonia",
+      "note": "Concession",
+      "bid": 20,
       "price": 50,
       "company": "SFMA"
     },
     {
-      "id": "Concession #5",
+      "id": "#5",
       "name": "Strada di Ferro da Torina a Novara",
+      "note": "Concession",
+      "bid": 20,
       "price": 50,
       "company": "SFTN"
     },
     {
-      "id": "Concession #6",
+      "id": "#6",
       "name": "Società per la Strada Ferrata Leopolda",
+      "note": "Concession",
+      "bid": 20,
       "price": 50,
       "company": "SSFL"
     },
     {
-      "id": "Concession #7",
+      "id": "#7",
       "name": "Strada Ferrata da Torino a Genova",
+      "note": "Concession",
+      "bid": 20,
       "price": 50,
       "company": "SFTG"
     },
     {
-      "id": "Concession #8",
+      "id": "#8",
       "name": "Imperial Regia Strada Ferrata Ferdinandea",
+      "note": "Concession",
+      "bid": 20,
       "price": 50,
       "company": "IRSFF"
     }
@@ -203,11 +218,6 @@
       "right": ["Paid out"]
     },
     "display": {
-      "roundTracker": {
-        "type": "row-reverse",
-        "x": 14,
-        "y": 4
-      },
       "legend": {
         "reverse": true,
         "x": 16,
@@ -216,12 +226,12 @@
     },
     "ledges": [
       {
-        "color": "yellow",
+        "color": "water",
         "border": true,
         "coords": ["11 0", "11 7"]
       },
       {
-        "color": "water",
+        "color": "orange",
         "border": true,
         "coords": ["16 0", "16 3"]
       },
@@ -281,7 +291,6 @@
         },
         {
           "value": 340,
-          "par": true,
           "legend": 0
         },
         {
@@ -318,11 +327,10 @@
         {
           "value": 195,
           "arrow": "up",
-          "arrowColor": "yellow"
+          "arrowColor": "water"
         },
         {
           "value": 216,
-          "par": true,
           "legend": 0
         },
         {
@@ -341,7 +349,7 @@
           "value": 328,
           "legend": 0,
           "arrow": "up",
-          "arrowColor": "water"
+          "arrowColor": "orange"
         },
         {
           "value": 365,
@@ -370,14 +378,13 @@
         117,
         129,
         {
-          "value": 144,
-          "par": true
+          "value": 144
         },
         159,
         {
           "value": 177,
           "arrow": "up",
-          "arrowColor": "yellow"
+          "arrowColor": "water"
         },
         {
           "value": 196,
@@ -399,7 +406,7 @@
           "value": 298,
           "legend": 0,
           "arrow": "up",
-          "arrowColor": "water"
+          "arrowColor": "orange"
         },
         {
           "value": 331,
@@ -425,8 +432,7 @@
         80,
         90,
         {
-          "value": 100,
-          "par": true
+          "value": 100
         },
         111,
         123,
@@ -435,7 +441,7 @@
         {
           "value": 169,
           "arrow": "up",
-          "arrowColor": "yellow"
+          "arrowColor": "water"
         },
         {
           "value": 187,
@@ -466,8 +472,7 @@
         },
         59,
         {
-          "value": 68,
-          "par": true
+          "value": 68
         },
         77,
         86,
@@ -479,7 +484,7 @@
         {
           "value": 160,
           "arrow": "up",
-          "arrowColor": "yellow"
+          "arrowColor": "water"
         },
         {
           "value": 178,
@@ -512,7 +517,7 @@
         {
           "value": 146,
           "arrow": "up",
-          "arrowColor": "yellow"
+          "arrowColor": "water"
         },
         {
           "value": 162,
@@ -541,7 +546,7 @@
         {
           "value": 127,
           "arrow": "up",
-          "arrowColor": "yellow"
+          "arrowColor": "water"
         },
         {
           "value": 141,
@@ -651,12 +656,12 @@
     ],
     "legend": [
       {
-        "color": "yellow",
+        "color": "water",
         "description": "Major companies only",
         "icon": "certificate"
       },
       {
-        "color": "water",
+        "color": "orange",
         "description": "Phase 8 only"
       }
     ]
@@ -1413,7 +1418,7 @@
           "offBoardRevenue": {
             "angle": 180,
             "percent": 0.2,
-            "name": {"name": "Lausanne / Lotschberg"},
+            "name": {"name": "Lausanne / Lötschberg"},
             "revenues": [
               {
                 "color": "gray",
@@ -1592,14 +1597,14 @@
         },
         {
           "color": "plain",
-          "centerTowns": [{"angle": 60, "percent": 0.5, "name": {"name": "Forli"}},
+          "centerTowns": [{"angle": 60, "percent": 0.5, "name": {"name": "Forlí"}},
                           {"angle": 240, "percent": 0.5, "name": {"name": "Cesena", "reverse": true}}],
           "hexes": ["P15"]
         },
         {
           "color": "plain",
           "centerTowns": [{"angle": 60, "percent": 0.5, "name": {"name": "Vercelli"}},
-                          {"angle": 240, "percent": 0.5, "name": {"name": "Navara", "reverse": true}}],
+                          {"angle": 240, "percent": 0.5, "name": {"name": "Novara", "reverse": true}}],
           "hexes": ["F7"]
         },
         {
@@ -1822,7 +1827,7 @@
         },
         {
           "color": "plain",
-          "cities": [{"name": {"name": "Reggio Emilia"}}],
+          "cities": [{"name": {"name": "Reggio nell'Emilia"}}],
           "hexes": ["L13"]
         },
         {
