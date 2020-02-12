@@ -3,7 +3,7 @@
   "companies": [
     {
       "abbrev": "NWR",
-      "color": "offboard",
+      "color": "salmon",
       "labelColor": "white",
       "logo": "NWR",
       "name": "Northwest Rebellion",
@@ -149,13 +149,6 @@
           "I7p3",
           "I5p4"
         ]
-      },
-      {
-        "color": "water",
-        "coords": [
-          "B4p2",
-          "B4p3"
-        ]
       }
     ],
     "borderTexts": [
@@ -167,7 +160,7 @@
         "coord": "B4s4"
       },
       {
-        "cost": 40,
+        "cost": 20,
         "circle": 16,
         "bgColor": "offboard",
         "color": "white",
@@ -579,6 +572,7 @@
           {
             "angle": -90,
             "name": {
+              "rotation": 25,
               "name": "Lethbridge"
             },
             "percent": 0.57735,
@@ -682,6 +676,7 @@
           {
             "angle": 0,
             "percent": 0.6,
+            "size": "large",
             "type": "mountain"
           },
           {
@@ -759,6 +754,7 @@
           {
             "angle": 60,
             "name": {
+              "rotation": 15,
               "name": "North Battleford"
             },
             "percent": 0.55,
@@ -782,6 +778,7 @@
         "labels": [
           {
             "label": "OO",
+            "angle": 330,
             "percent": 0.667
           }
         ]
@@ -824,6 +821,14 @@
         "color": "water",
         "hexes": [
           "F2"
+        ],
+        "names": [
+          {
+            "y": -8,
+            "name": "doesn't count as stop",
+            "fontStyle": "Italic",
+            "fontFamily": "Libre Baskerville"
+          }
         ],
         "offBoardRevenue": {
           "revenues": [
@@ -1345,15 +1350,16 @@
       {
         "cities": [
           {
-            "angle": 125,
+            "angle": 60,
             "name": {
               "name": "Wayburn"
             },
             "percent": 0.45
           },
           {
-            "angle": 295,
+            "angle": 240,
             "name": {
+              "reverse": true,
               "name": "Estevan"
             },
             "percent": 0.5
@@ -1366,6 +1372,7 @@
         "labels": [
           {
             "label": "OO",
+            "angle": 330,
             "percent": 0.667
           }
         ]
@@ -1405,6 +1412,9 @@
         "routeBonus": [
           {
             "value": "+$100",
+            "fillColor": "black",
+            "strokeColor": "white",
+            "textColor": "white",
             "angle": 180,
             "percent": 0.8
           }
