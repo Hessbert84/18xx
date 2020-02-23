@@ -753,7 +753,7 @@
               "side": 3
             }
           ], 
-          "removeBorders": [1,2,5,6],
+          "removeBorders": [1,4,5,6],
           "hexes": ["I8"]
         },       
         {
@@ -856,11 +856,11 @@
             "revenues": [
               {
                 "color": "yellow",
-                "cost": "30"
+                "cost": "20"
               },
               {
                 "color": "green",
-                "cost": "40"
+                "cost": "30"
               },
               {
                 "color": "brown",
@@ -884,7 +884,17 @@
             }
           ],
           "hexes": ["I20"]
-        },        
+        },   
+        {
+          "color": "white",
+          "offBoardTrack": [
+            {
+              "side": 3
+            }
+          ], 
+          "removeBorders": [1,2,5,6],
+          "hexes": ["J11"]
+        },         
         {
           "cities": [
             {

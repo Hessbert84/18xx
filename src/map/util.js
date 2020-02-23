@@ -14,6 +14,7 @@ import min from "ramda/src/min";
 import nth from "ramda/src/nth";
 import prop from "ramda/src/prop";
 import reduce from "ramda/src/reduce";
+import reject from "ramda/src/reject";
 import splitEvery from "ramda/src/splitEvery";
 import zipWith from "ramda/src/zipWith";
 
@@ -332,6 +333,8 @@ export const getMapHex = (game, hex, variation) => {
          hexes);
 }
 
+const squashRatio = 87/86.6025;
+
 export const getMapData = (game, coords, hexWidth, variation) => {
   variation = variation || 0;
 
@@ -363,15 +366,37 @@ export const getMapData = (game, coords, hexWidth, variation) => {
   // Find all hexes
   let hexes = map(assoc("variation", variation), gameMap.hexes || []);
   let borders = gameMap.borders || [];
+  let borderTexts = gameMap.borderTexts || [];
+  let lines = gameMap.lines || [];
   if (gameMap.copy !== undefined) {
     hexes = concat(
       map(assoc("variation", gameMap.copy), game.map[gameMap.copy].hexes),
       hexes
     );
 
+    // Remove any hexes set to be removed
+    if (gameMap.remove !== undefined) {
+      hexes = map(hex => {
+        return assoc("hexes",
+                reject(coord => (gameMap.remove || []).includes(coord),
+                       hex.hexes),
+                hex);
+      }, hexes);
+    }
+
+    borderTexts = concat(
+      game.map[gameMap.copy].borderTexts || [],
+      borderTexts
+    );
+
     borders = concat(
       game.map[gameMap.copy].borders || [],
       borders
+    );
+
+    lines = concat(
+      game.map[gameMap.copy].lines || [],
+      lines
     );
   }
   hexes = map(resolveHex(hexes), hexes);
@@ -381,8 +406,10 @@ export const getMapData = (game, coords, hexWidth, variation) => {
 
   let totalWidth = getTotalWidth(maxX, hexWidth, game.info.extraTotalWidth, coordSpace);
   let totalHeight = getTotalHeight(maxY, hexWidth, game.info.extraTotalHeight, coordSpace);
+  let b18TotalHeight = totalHeight * squashRatio;
   let printWidth = `${(50 + totalWidth) / 100.0}in`;
   let printHeight = `${(50 + totalHeight) / 100.0}in`;
+  let b18PrintHeight = `${(50 + b18TotalHeight) / 100.0}in`;
   let humanWidth = `${Math.ceil((50 + totalWidth) / 100.0)}in`;
   let humanHeight = `${Math.ceil((50 + totalHeight) / 100.0)}in`;
 
@@ -411,6 +438,9 @@ export const getMapData = (game, coords, hexWidth, variation) => {
     scale,
     a1Valid,
 
+    // Title options
+    title: gameMap.title,
+
     // Coords choice
     coords,
 
@@ -425,10 +455,14 @@ export const getMapData = (game, coords, hexWidth, variation) => {
     // Total height and width in svg units
     totalWidth: horizontal ? totalHeight : totalWidth,
     totalHeight: horizontal ? totalWidth : totalHeight,
+    b18TotalWidth : horizontal ? b18TotalHeight : totalWidth,
+    b18TotalHeight : horizontal ? totalWidth : b18TotalHeight,
 
     // Print height and width in CSS units
     printWidth: horizontal ? printHeight : printWidth,
     printHeight: horizontal ? printWidth : printHeight,
+    b18PrintWidth: horizontal ? b18PrintHeight : printWidth,
+    b18PrintHeight: horizontal ? printWidth : b18PrintHeight,
 
     // Human readable width and height
     humanWidth: horizontal ? humanHeight : humanWidth,
@@ -451,7 +485,8 @@ export const getMapData = (game, coords, hexWidth, variation) => {
     hexes,
 
     // Borders and Lines
+    borderTexts,
     borders,
-    lines : gameMap.lines
+    lines
   };
 };
