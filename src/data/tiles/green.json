@@ -5254,35 +5254,26 @@
       {
         "label": "RE",
         "angle": -30,
-        "percent": 0.667
+        "percent": 0.75
       }
     ],
     "cities": [
       {
-        "angle": 60,
-        "percent": 0.45,
-        "name": {
-          "name": "Pile o' Bones"
-        },
-        "rotation": -20
+        "angle": 270,
+        "percent": 0.5
       },
       {
-        "angle": -120,
-        "percent": 0.4,
-        "rotation": -30,
-        "name": {
-          "name": "Lumsden",
-          "reverse": true
-        }
+        "angle": 90,
+        "percent": 0.5
       }
     ],
     "track": [
       {
-        "type": "stop",
+        "type": "sharp",
         "side": 2
       },
       {
-        "type": "stop",
+        "type": "sharp",
         "side": 5
       }
     ]

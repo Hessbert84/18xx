@@ -5274,8 +5274,8 @@
     "labels": [
       {
         "label": "RE",
-        "angle": -40,
-        "percent": 0.7
+        "angle": -30,
+        "percent": 0.75
       }
     ],
     "values": [
@@ -5287,11 +5287,7 @@
     ],
     "cities": [
       {
-        "size": 2,
-        "name": {
-          "name": "Regina",
-          "offset": 75
-        }
+        "size": 2
       }
     ],
     "track": [

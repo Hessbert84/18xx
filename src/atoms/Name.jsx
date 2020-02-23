@@ -23,7 +23,7 @@ const Name = ({ name, strokeColor, strokeWidth, color, bgColor, path, doRotation
       {(c,t,s,p) => (
         <text
           dy={y}
-          transform={`rotate(${((doRotation && rotation) || 0) + 360})`}
+          transform={`rotate(${((rotation) || 0) + 360})`}
           fill={color ? p(color) : (bgColor ? t(c(bgColor)) : p("black"))}
           strokeWidth={strokeWidth || 0}
           stroke={c(strokeColor || "black")}

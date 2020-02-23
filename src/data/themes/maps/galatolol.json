@@ -12,6 +12,8 @@
     "offboard": "#EC2126",
     "mountain": "#795138",
     "water": "#67A7C4",
+    "water_dark": "#2e5f76",
+    "water_light": "#b3d3e2",
     "land": "#59B578",
 
     "orange": "#F58121",
