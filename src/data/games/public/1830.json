@@ -357,6 +357,23 @@
   ],
   "stock": {
     "type": "2D",
+    "display": {
+      "par": {
+        "x": 15,
+        "y": 5
+      },
+      "roundTracker": {
+        "type": "col-reverse",
+        "x": 13,
+        "y": 5
+      },
+      "legend": {
+        "reverse": true,
+        "verticalAlign": "bottom",
+        "x": 7,
+        "y": 11
+      }
+    },
     "par": {
       "values": [
         100,
@@ -840,11 +857,6 @@
     "70": 1
   },
   "map": {
-    "roundTracker": {
-      "type": "row",
-      "x": 1540,
-      "y": 1020
-    },
     "players": {
       "x": 1550,
       "y": 1100

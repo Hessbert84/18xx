@@ -64,17 +64,35 @@
     "currency": "USD",
     "designer": "Marc Voyer",
     "orientation": "horizontal",
-    "extraTotalWidth": 40,
+    "extraTotalWidth": 0,
     "subtitle": "",
     "title": "1882",
-    "titleX": 80,
-    "titleY": 1040
+    "titleX": 850,
+    "titleY": -70
   },
   "ipo": true,
   "links": {
     "bgg": "https://www.boardgamegeek.com/boardgame/boardgame/282435/1882",
     "rules": "https://www.boardgamegeek.com/filepage/189409/1882-rules"
   },
+  "rounds": [
+    {
+      "name": "OR3",
+      "color": "brown"
+    },
+    {
+      "name": "OR2",
+      "color": "green"
+    },
+    {
+      "name": "OR1",
+      "color": "yellow"
+    },
+    {
+      "name": "SR",
+      "color": "white"
+    }
+  ],
   "map": {
     "borders": [
       {

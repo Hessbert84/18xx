@@ -1,7 +1,7 @@
 {
   "coords": "outside",
   "font": {
-    "family": "display",
+    "family": "Libre Baskerville",
     "size": "0.15in",
     "weight": "bold"
   },
@@ -81,7 +81,7 @@
   "stock": {
     "cell": {
       "width": 70,
-      "height": 85
+      "height": 100
     },
     "column": 4,
     "diag": 2,
