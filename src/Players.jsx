@@ -45,7 +45,7 @@ const Players = ({ players, bank, capital }) => {
             )}
             {players && players[0].capital && (
               <th>
-                Starting capital
+                <i className="fas fa-coins" />
               </th>
             )}
             {players && players[0].bank && (
