@@ -61,7 +61,7 @@ const Value = ({ value, shape, fixed, outerBorderColor }) => {
                         transform={fixed ? null : `rotate(-${rotation})`}
                         fontWeight="bold"
                         fontSize={size}
-                        fontFamily="Libre Baskerville"
+                        fontFamily="sans-serif"
                         fill={p("black")}
                         dominantBaseline="central"
                         textAnchor="middle"
