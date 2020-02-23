@@ -16,15 +16,15 @@ const RouteBonus = ({ value, size, fillColor, strokeColor, textColor }) => {
         <g>
           <polygon
             points={`${-width - 10},0 ${-width},${height*0.5} ${width},${height*0.5} ${width+10},0 ${width},${height*-0.5} ${-width},${height*-0.5}`}
-            fill={fillColor}
-            stroke={strokeColor}
+            fill={c(fillColor)}
+            stroke={c(strokeColor)}
             strokeWidth="1"
           />
           <text
             fontWeight="bold"
             fontSize={size}
-            fontFamily="Libre Baskerville"
-            fill={textColor}
+            fontFamily="sans-serif"
+            fill={c(textColor)}
             dominantBaseline="central"
             textAnchor="middle"
             x="0"
