@@ -18,7 +18,6 @@ const Legend = ({ color, borderColor, borderWidth, description, right, bottom })
             textAnchor={right ? "end" : "start"}
             dominantBaseline="middle"
             fill="black"
-            stroke="black"
             x={right ? -39 : 39}
             y={bottom ? -20 : 20}
           >

@@ -29,7 +29,7 @@ const resolveColor = curry((theme, companiesTheme, phase, context, game, name) =
     name = colorAliases[name];
   }
 
-  let colors = (themes[theme || "gmt"] || themes["gmt"]).colors;
+  let colors = (themes[theme || "galatolol"] || themes["galatolol"]).colors;
 
   // Add in company colors
   colors["companies"] = mergeDeepRight(companies["rob"].colors,

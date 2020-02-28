@@ -64,17 +64,35 @@
     "currency": "USD",
     "designer": "Marc Voyer",
     "orientation": "horizontal",
-    "extraTotalWidth": 40,
+    "extraTotalWidth": 0,
     "subtitle": "",
     "title": "1882",
-    "titleX": 80,
-    "titleY": 1040
+    "titleX": 860,
+    "titleY": -65
   },
   "ipo": true,
   "links": {
     "bgg": "https://www.boardgamegeek.com/boardgame/boardgame/282435/1882",
     "rules": "https://www.boardgamegeek.com/filepage/189409/1882-rules"
   },
+  "rounds": [
+    {
+      "name": "OR3",
+      "color": "brown"
+    },
+    {
+      "name": "OR2",
+      "color": "green"
+    },
+    {
+      "name": "OR1",
+      "color": "yellow"
+    },
+    {
+      "name": "SR",
+      "color": "white"
+    }
+  ],
   "map": {
     "borders": [
       {
@@ -156,315 +174,316 @@
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
-        "coord": "B4s4"
+        "color": "black",
+        "coord": "B4s4",
+        "x": 200
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "B4s5"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "B10s5"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "C5s4"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "C5s5"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "C11s1"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "C11a60p0.9"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "C11s4"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "C11s5"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "C11s6"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "D6s4"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "D10s3"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "D10s4"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "E5s3"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "E5a180p1.1"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "E5s5"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "E9s3"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "E9s4"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "E9s5"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "F6s4"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "F6s5"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "F8s1"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "G7s4"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "G7s6"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "G9s1"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "G9s2"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "G9s5"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "G9s6"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "H6s3"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "H6s4"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "H6s6"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "H6s1"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "I5s4"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "I5s5"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "I5s6"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "I5s1"
       },
       {
         "cost": 60,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "black",
+        "bgColor": "water_dark",
+        "color": "white",
         "coord": "J4s1"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "J4s6"
       },
       {
         "cost": 60,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "black",
+        "bgColor": "water_dark",
+        "color": "white",
         "coord": "J10s3"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "J10s4"
       },
       {
         "cost": 40,
         "circle": 16,
         "bgColor": "water",
-        "color": "white",
+        "color": "black",
         "coord": "J10a240p1.1"
       },
       {
         "cost": 60,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "black",
+        "bgColor": "water_dark",
+        "color": "white",
         "coord": "K3s1"
       },
       {
         "cost": 60,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "black",
+        "bgColor": "water_dark",
+        "color": "white",
         "coord": "K3s6"
       },
       {
         "cost": 20,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "white",
+        "bgColor": "water_light",
+        "color": "black",
         "coord": "K9s1"
       },
       {
         "cost": 60,
         "circle": 16,
-        "bgColor": "offboard",
-        "color": "black",
+        "bgColor": "water_dark",
+        "color": "white",
         "coord": "L2a0p1"
       }
     ],
@@ -536,7 +555,8 @@
         },
         "offBoardTrack": [
           {
-            "side": 1
+            "side": 1,
+            "y": -10
           },
           {
             "side": 6
@@ -1436,7 +1456,8 @@
         },
         "offBoardTrack": [
           {
-            "side": 1
+            "side": 1,
+            "y": -10
           },
           {
             "side": 2
@@ -1581,12 +1602,7 @@
         ]
       }
     ],
-    "print": "landscape",
-    "roundTracker": {
-      "type": "row",
-      "x": 860,
-      "y": 40
-    }
+    "print": "landscape"
   },
   "phases": [
     {
@@ -1749,6 +1765,34 @@
     ]
   },
   "stock": {
+    "type": "2D",
+    "display": {
+      "par": {
+        "x": 12,
+        "y": 5
+      },
+      "roundTracker": {
+        "type": "col-reverse",
+        "x": 9,
+        "y": 5
+      },
+      "legend": {
+        "reverse": true,
+        "verticalAlign": "bottom",
+        "x": 4,
+        "y": 11
+      }
+    },
+    "par": {
+      "values": [
+        100,
+        90,
+        82,
+        76,
+        71,
+        67
+      ]
+    },
     "legend": [
       {
         "color": "yellow",
@@ -2017,18 +2061,7 @@
       "up": [
         "Sold out"
       ]
-    },
-    "par": {
-      "values": [
-        100,
-        90,
-        82,
-        76,
-        71,
-        67
-      ]
-    },
-    "type": "2D"
+    }
   },
   "tiles": {
     "1": 1,

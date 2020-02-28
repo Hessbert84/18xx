@@ -81,7 +81,7 @@ const Cell = ({ cell, data, par }) => {
                       fill={arrowColor}
                       stroke={c("black")}
                       strokeWidth={0.5}
-                      fontFamily="display"
+                      fontFamily="Libre Baskerville"
                       fontStyle="bold"
                       fontSize="15"
                       textAnchor={left ? "start" : "end"}

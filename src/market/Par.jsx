@@ -52,7 +52,7 @@ const Par = ({data, title}) => {
     <g>
       {title && (
         <text
-          fontFamily="display"
+          fontFamily="Libre Baskerville"
           fontStyle="bold"
           fontSize="25"
           dominantBaseline="hanging"
