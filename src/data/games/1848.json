@@ -14,7 +14,11 @@
     "rules": "https://docs.google.com/document/d/1quWp3ZS2kzMirB4bwwT11wjJTFN9y9-1JMANRjzY564/edit"
   },
   "wip": true,
-  "tokens": ["Round"],
+  "tokens": [      
+    {
+    "icon": "tracks"
+    }
+  ], 
   "ipo": true,
   "bank": 10000,
   "players": [
@@ -1281,9 +1285,9 @@
     ],
     "borders": [
       {
-        "color": "gray",
-        "width": 4,
-        "dashed": true,
+        "color": "offboard",
+        "width": 10,
+        "dashed": false,
         "dashArray": 20,
         "offset": 22,
         "coords": [
@@ -1303,10 +1307,10 @@
         ]
       },
       {
-        "color": "gray",
+        "color": "offboard",
         "width": 4,
-        "dashed": true,
-        "dashArray": 20,
+        "width": 10,
+        "dashed": false,
         "offset": 22,
         "offset": 21,
         "coords": [
@@ -1324,10 +1328,10 @@
         ]
       },
       {
-        "color": "gray",
+        "color": "offboard",
         "width": 4,
-        "dashed": true,
-        "dashArray": 20,
+        "width": 10,
+        "dashed": false,
         "offset": 22,
         "offset": -12,
         "coords": [

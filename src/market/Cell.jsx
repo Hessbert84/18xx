@@ -81,7 +81,7 @@ const Cell = ({ cell, data, par }) => {
                       fill={arrowColor}
                       stroke={c("black")}
                       strokeWidth={0.5}
-                      fontFamily="Libre Baskerville"
+                      fontFamily="sans-serif"
                       fontStyle="bold"
                       fontSize="15"
                       textAnchor={left ? "start" : "end"}
@@ -135,7 +135,7 @@ const Cell = ({ cell, data, par }) => {
                             <text
                               x={data.width / 2}
                               y={y + 9}
-                              fontFamily="Libre Baskerville"
+                              fontFamily="sans-serif"
                               fontSize="12"
                               textAnchor="middle"
                               dominantBaseline="middle"
@@ -167,7 +167,7 @@ const Cell = ({ cell, data, par }) => {
                       <text
                         transform={rotated ? "rotate(-90)" : null}
                         fill={labelColor}
-                        fontFamily="Libre Baskerville"
+                        fontFamily="sans-serif"
                         fontWeight="bold"
                         fontSize="15"
                         //textAnchor={rotated ? "end" : "state"}
@@ -177,7 +177,7 @@ const Cell = ({ cell, data, par }) => {
                         //y="5"
                         textAnchor="middle"
                         x={width/2}
-                        y="60"
+                        y="115"
                       >
                         {text}
                       </text>
@@ -186,9 +186,9 @@ const Cell = ({ cell, data, par }) => {
                       <text
                         transform={subRotated ? "rotate(-90)" : null}
                         fill={labelColor}
-                        fontFamily="Libre Baskerville"
-                        fontStyle="bold"
-                        fontSize="15"
+                        fontFamily="sans-serif"
+                        fontWeight="bold"
+                        fontSize="24"
                         textAnchor="start"
                         dominantBaseline={subRotated ? (cell.right ? "baseline" : "hanging") : "baseline"}
                         x={subRotated ? (-height + 5) : 5}

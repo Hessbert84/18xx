@@ -316,7 +316,7 @@ const Token = ({
                                     height={size} width={size} />);
             content.push(<text
                            key="text"
-                           fontFamily="Libre Baskerville"
+                           fontFamily="sans-serif"
                            fontSize={width * 0.48}
                            textAnchor="middle"
                            strokeWidth="0.5"
@@ -350,10 +350,11 @@ const Token = ({
           }
           content.push(<text
                          key="text"
-                         fontFamily="Libre Baskerville"
-                         fontSize={fontSize}
+                         fontFamily="sans-serif"
+                         fontSize={fontSize + 4}
                          textAnchor="middle"
-                         strokeWidth="0.5"
+                         strokeWidth="1"
+                         fontWeight="bold"
                          stroke={textStroke}
                          fill={textFill}
                          x="0"
