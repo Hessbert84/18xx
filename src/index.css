@@ -1,5 +1,6 @@
 html {
   margin: 0px;  /* this affects the margin on the html before sending to printer */
+  -webkit-print-color-adjust: exact;
 }
 
 body {
@@ -16,6 +17,7 @@ p {
 .tokens {
   position: relative;
   margin: 2em auto;
+  page-break-inside: avoid;
 }
 
 .background {
@@ -673,12 +675,11 @@ ul.notes li span {
   position: absolute;
   width: 100%;
   height: 0.25in;
-  line-height: 0.15in;
+  line-height: 1;
   top: -0.25in;
   left: 0;
   text-align: center;
   box-sizing: border-box;
-  padding: 0.05in 0;
 }
 
 .cutlines-inner {
@@ -851,27 +852,22 @@ footer a:hover {
   .TileManifest {
     margin: 0 auto;
   }
+
+  .b18 .tiles {
+    margin: 0;
+  }
 }
 
-.ParPage,
-.RevenuePage,
-.MarketPage,
-.MapPage {
+.paginated__page {
   position: relative;
 }
 
-.ParPage svg,
-.RevenuePage svg,
-.MarketPage svg,
-.MapPage svg {
+.paginated__page svg {
   overflow: hidden;
   display: block;
 }
 
-.FullMap,
-.FullMarket,
-.FullPar,
-.FullRevenue {
+.paginated-svg {
   position: absolute;
   top: 0;
   left: 0;
