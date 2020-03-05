@@ -472,7 +472,10 @@
         320,
         360,
         400,
-        450
+        {
+          "label": "450",
+          "legend": 2
+        }
       ],
       [
         null,
@@ -604,6 +607,13 @@
         "color": "orange",
         "description": "Companies entering this zone are in Receivership and are operated by the Bank of England.",
         "icon": "certificate"
+      },
+      {
+        "color": "plain"
+      },
+      {
+        "color": "offboard",
+        "description": "Game end"
       }
     ]
   },
