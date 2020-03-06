@@ -4,7 +4,8 @@
     "yellow": "#FFEB00",
     "green": "#71BF44",
     "brown": "#BF8156",
-    "gray": "#A9AFB2",
+    "gray": "#EC2126",
+    "gray_real": "#A9AFB2", 
 
     "par_gray": "#d4d7d8",
 

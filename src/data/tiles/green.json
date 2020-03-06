@@ -5341,8 +5341,8 @@
     "values": [
       {
         "value": 10,
-        "angle": 210,
-        "percent": 0.8
+        "angle": 60,
+        "percent": 0.6
       }
     ],
     "labels": [
@@ -5352,21 +5352,54 @@
         "percent": 0.8
       }
     ],
-    "centerTowns": [
-      {}
+    "towns": [
+      {
+        "angle": 180,
+        "percent": -0.6
+      }
     ],
     "track": [
       {
-        "side": 1
+        "side": 1,
+        "type": "straight"
       },
       {
-        "side": 3
+        "side": 4,
+        "type": "gentle"
+      }
+    ]
+  },
+  "IPL15": {
+    "color": "green",
+    "rotations": 3,
+    "values": [
+      {
+        "value": 10,
+        "angle": 300,
+        "percent": 0.6
+      }
+    ],
+    "labels": [
+      {
+        "label": "R",
+        "angle": 150,
+        "percent": 0.8
+      }
+    ],
+    "towns": [
+      {
+        "angle": 180,
+        "percent": -0.6
+      }
+    ],
+    "track": [
+      {
+        "side": 1,
+        "type": "straight"
       },
       {
-        "side": 4
-      },
-      {
-        "side": 6
+        "side": 2,
+        "type": "gentle"
       }
     ]
   },

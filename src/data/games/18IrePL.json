@@ -629,6 +629,7 @@
 
     "IPL1": 1,
     "IPL2": 1,
+    "IPL15": 1,
     "IPL3": 1,
     "IPL4": 1,
     "IPL5": 1,
@@ -747,38 +748,12 @@
         "centerTowns": [
           {
             "name": {
-              "name": "Jelenia Góra"
-            }
-          }
-        ],
-        "hexes": [
-          "B12"
-        ]
-      },
-      {
-        "color": "plain",
-        "centerTowns": [
-          {
-            "name": {
               "name": "Wałbrzych"
             }
           }
         ],
         "hexes": [
           "B14"
-        ]
-      },
-      {
-        "color": "plain",
-        "centerTowns": [
-          {
-            "name": {
-              "name": "Koszalin"
-            }
-          }
-        ],
-        "hexes": [
-          "B4"
         ]
       },
       {
@@ -1152,6 +1127,36 @@
         ]
       },
       {
+        "color": "gray_real",
+        "towns": [
+          {
+            "angle": 150,
+            "rotation": 60,
+            "percent": 0.6,
+            "name": {
+              "name": "Przemyśl",
+              "reverse": true
+            }
+          }
+        ],
+        "track": [
+          {
+            "type": "sharp",
+            "side": 3
+          }
+        ],
+        "values": [
+          {
+            "value": 10,
+            "angle": 300,
+            "percent": 0.2
+          }
+        ],
+        "hexes": [
+          "J18"
+        ]
+      },      
+      {
         "color": "plain",
         "cities": [
           {
@@ -1347,9 +1352,11 @@
         "hexes": [
           "A9",
           "A11",
+          "B4",
           "B6",
           "B8",
           "B10",
+          "B12",
           "C3",
           "C5",
           "C7",
