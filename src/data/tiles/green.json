@@ -5297,6 +5297,18 @@
   },
   "R861": {
     "color": "green",
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.667,
+        "value": 60
+      },
+      {
+        "angle": 90,
+        "percent": 0.667,
+        "value": 60
+      }
+    ],
     "labels": [
       {
         "label": "RE",
@@ -5310,14 +5322,14 @@
         "percent": 0.5
       },
       {
-        "angle": 90,
+        "angle": 30,
         "percent": 0.5
       }
     ],
     "track": [
       {
         "type": "sharp",
-        "side": 2
+        "side": 1
       },
       {
         "type": "sharp",

@@ -11,7 +11,7 @@
     },
     {
       "abbrev": "CN",
-      "color": "green",
+      "color": "gray",
       "logo": "CN",
       "name": "Canadian National",
       "tokens": "zero"
@@ -25,13 +25,13 @@
     },
     {
       "abbrev": "HB",
-      "color": "yellow",
+      "color": "orange",
       "logo": "HB",
       "name": "Hudson Bay Railway",
       "tokens": "three"
     },
     {
-      "abbrev": "CPR",
+      "abbrev": "CP",
       "color": "red",
       "logo": "CPR",
       "name": "Canadian Pacific Railway",
@@ -39,7 +39,7 @@
     },
     {
       "abbrev": "GT",
-      "color": "purple",
+      "color": "black",
       "logo": "GT",
       "name": "Grand Trunk Pacific",
       "tokens": "three"
@@ -52,8 +52,8 @@
       "tokens": "one"
     },
     {
-      "abbrev": "QLL",
-      "color": "tan",
+      "abbrev": "QL",
+      "color": "yellow",
       "logo": "QLL",
       "name": "Qu'Appelle, Long Lake Railroad Co.",
       "tokens": "two"
@@ -172,7 +172,7 @@
     "borderTexts": [
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "B4s4",
@@ -180,308 +180,308 @@
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "B4s5"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "B10s5"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "C5s4"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "C5s5"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "C11s1"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "C11a60p0.9"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "C11s4"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "C11s5"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "C11s6"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "D6s4"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "D10s3"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "D10s4"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "E5s3"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "E5a180p1.1"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "E5s5"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "E9s3"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "E9s4"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "E9s5"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "F6s4"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "F6s5"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "F8s1"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "G7s4"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "G7s6"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "G9s1"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "G9s2"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "G9s5"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "G9s6"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "H6s3"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "H6s4"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "H6s6"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "H6s1"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "I5s4"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "I5s5"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "I5s6"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "I5s1"
       },
       {
         "cost": 60,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_dark",
         "color": "white",
         "coord": "J4s1"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "J4s6"
       },
       {
         "cost": 60,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_dark",
         "color": "white",
         "coord": "J10s3"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "J10s4"
       },
       {
         "cost": 40,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water",
         "color": "black",
         "coord": "J10a240p1.1"
       },
       {
         "cost": 60,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_dark",
         "color": "white",
         "coord": "K3s1"
       },
       {
         "cost": 60,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_dark",
         "color": "white",
         "coord": "K3s6"
       },
       {
         "cost": 20,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_light",
         "color": "black",
         "coord": "K9s1"
       },
       {
         "cost": 60,
-        "circle": 16,
+        "circle": 10,
         "bgColor": "water_dark",
         "color": "white",
         "coord": "L2a0p1"
@@ -816,7 +816,7 @@
               "name": "Swift Current"
             },
             "companies": [
-              "CPR"
+              "CP"
             ]
           }
         ],
@@ -1218,7 +1218,7 @@
         ],
         "tokens": [
           {
-            "company": "QLL",
+            "company": "QL",
             "width": 20,
             "angle": 150,
             "percent": 0.6
@@ -2112,10 +2112,24 @@
       "Free",
       40,
       40
+    ],
+    "zero": [],
+    "two": [
+      "Home", 
+      40
+    ],
+    "four": [
+      "Home", 
+      40, 
+      100,
+      100
     ]
   },
   "tokens": [
-    "Round"
+    {
+      "icon": "tracks",
+      "color": "gray"
+    }
   ],
   "trains": [
     {
