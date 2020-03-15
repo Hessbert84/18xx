@@ -23,7 +23,7 @@ const RouteBonus = ({ value, size, fillColor, strokeColor, textColor }) => {
           <text
             fontWeight="bold"
             fontSize={size}
-            fontFamily="Libre Baskerville"
+            fontFamily="sans-serif"
             fill={c(textColor)}
             dominantBaseline="central"
             textAnchor="middle"

@@ -80,8 +80,8 @@
   },
   "stock": {
     "cell": {
-      "width": 70,
-      "height": 130
+      "width": 60,
+      "height": 80
     },
     "column": 4,
     "diag": 2,

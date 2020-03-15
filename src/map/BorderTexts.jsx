@@ -11,8 +11,8 @@ const BorderText = ({ text, data }) => {
   let coord = mapCoord(text.coord, data);
   let color = text.color || "black";
   let fontSize = text.fontSize || 13;
-  let fontWeight = text.fontWeight || "normal";
-  let fontFamily = text.fontFamily || "Libre Baskerville";
+  let fontWeight = text.fontWeight || "bold";
+  let fontFamily = text.fontFamily || "sans-serif";
   let rotation = text.rotation || 0;
 
   let bgColor = text.bgColor || "white";
@@ -38,7 +38,7 @@ const BorderText = ({ text, data }) => {
             fontFamily={fontFamily}
             dominantBaseline="middle"
             textAnchor="middle">
-            {textNode}
+            {text.cost}
           </text>
         </g>
       )}

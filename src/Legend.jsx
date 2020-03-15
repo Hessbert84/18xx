@@ -13,7 +13,7 @@ const Legend = ({ color, borderColor, borderWidth, description, right, bottom })
           />
           <text
             fontFamily="Libre Baskerville"
-            fontSize="14"
+            fontSize="10"
             fontWeight="normal"
             textAnchor={right ? "end" : "start"}
             dominantBaseline="middle"

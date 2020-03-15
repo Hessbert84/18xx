@@ -62,8 +62,8 @@ const ParCell = ({ cell, data }) => {
                   <text
                     transform={rotated ? "rotate(-90)" : null}
                     fill={labelColor}
-                    fontFamily="Libre Baskerville"
-                    fontStyle="bold"
+                    fontFamily="sans-serif"
+                    fontWeight="bold"
                     fontSize="15"
                     textAnchor={rotated ? "end" : "state"}
                     textDecoration={cell.underline ? "underline" : null}
@@ -78,8 +78,8 @@ const ParCell = ({ cell, data }) => {
                   <text
                     transform={subRotated ? "rotate(-90)" : null}
                     fill={labelColor}
-                    fontFamily="Libre Baskerville"
-                    fontStyle="bold"
+                    fontFamily="sans-serif"
+                    fontWeight="bold"
                     fontSize="15"
                     textAnchor="start"
                     dominantBaseline={subRotated ? "hanging" : "baseline"}
