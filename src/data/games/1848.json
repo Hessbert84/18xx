@@ -102,7 +102,7 @@
     },
     {
       "name": "Commonwealth Railways",
-      "abbrev": "CR",
+      "abbrev": "COM",
       "logo": "1848/CR",
       "tokens": ["Home (Free)", "Home (Free)", 100, 100, 100],
       "color": "gray"
