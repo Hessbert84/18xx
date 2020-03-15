@@ -370,11 +370,11 @@
     ],
     "track": [
       {
-        "type": "offboard",
+        "type": "gray",
         "side": 3
       },
       {
-        "type": "offboard",
+        "type": "gray",
         "side": 4
       }
     ]
@@ -925,27 +925,27 @@
     "borders": [
       {
         "side": 1,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 2,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 3,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 4,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 5,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 6,
-        "color": "offboard"
+        "color": "gray"
       }
     ],
     "track": [
@@ -998,27 +998,27 @@
     "borders": [
       {
         "side": 1,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 2,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 3,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 4,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 5,
-        "color": "offboard"
+        "color": "gray"
       },
       {
         "side": 6,
-        "color": "offboard"
+        "color": "gray"
       }
     ],
     "track": [
@@ -1760,6 +1760,274 @@
       },
       {
         "side": 5
+      },
+      {
+        "side": 6
+      }
+    ]
+  },
+  "IPL4": {
+    "color": "gray",
+    "rotations": 1,
+    "cities": [
+      {
+        "name": {
+          "name": "Germany"
+        },
+        "percent": 0.1
+      }
+    ],
+    "offBoardRevenue": {
+      "revenues": [
+        {
+          "cost": "30",
+          "color": "yellow"
+        },
+        {
+          "cost": "40",
+          "color": "green"
+        },
+        {
+          "cost": "50",
+          "color": "brown"
+        }
+      ],
+      "percent": 0.65
+    },
+    "offBoardTrack": [
+      {
+        "side": 4
+      },
+      {
+        "side": 5
+      },
+      {
+        "side": 6
+      }
+    ]
+  },
+  "IPL5": {
+    "color": "gray",
+    "rotations": 1,
+    "cities": [
+      {
+        "name": {
+          "name": "Czechia"
+        },
+        "percent": 0.1
+      }
+    ],
+    "offBoardRevenue": {
+      "revenues": [
+        {
+          "cost": "30",
+          "color": "yellow"
+        },
+        {
+          "cost": "40",
+          "color": "green"
+        },
+        {
+          "cost": "50",
+          "color": "brown"
+        }
+      ],
+      "percent": 0.65
+    },
+    "offBoardTrack": [
+      {
+        "side": 4
+      },
+      {
+        "side": 5
+      }
+    ]
+  },
+  "IPL6": {
+    "color": "gray",
+    "rotations": 1,
+    "cities": [
+      {
+        "name": {
+          "name": "Slovakia"
+        },
+        "percent": 0.1
+      }
+    ],
+    "offBoardRevenue": {
+      "revenues": [
+        {
+          "cost": "30",
+          "color": "yellow"
+        },
+        {
+          "cost": "40",
+          "color": "green"
+        },
+        {
+          "cost": "50",
+          "color": "brown"
+        }
+      ],
+      "percent": 0.65
+    },
+    "offBoardTrack": [
+      {
+        "side": 3
+      },
+      {
+        "side": 4
+      }
+    ]
+  },
+  "IPL7": {
+    "color": "gray",
+    "rotations": 1,
+    "cities": [
+      {
+        "name": {
+          "name": "Ukraine"
+        },
+        "percent": 0.1
+      }
+    ],
+    "offBoardRevenue": {
+      "revenues": [
+        {
+          "cost": "30",
+          "color": "yellow"
+        },
+        {
+          "cost": "40",
+          "color": "green"
+        },
+        {
+          "cost": "50",
+          "color": "brown"
+        }
+      ],
+      "percent": 0.65
+    },
+    "offBoardTrack": [
+      {
+        "side": 3
+      },
+      {
+        "side": 4
+      }
+    ]
+  },
+  "IPL8": {
+    "color": "gray",
+    "rotations": 1,
+    "cities": [
+      {
+        "name": {
+          "name": "Belarus"
+        }
+      }
+    ],
+    "offBoardRevenue": {
+      "revenues": [
+        {
+          "cost": "30",
+          "color": "yellow"
+        },
+        {
+          "cost": "40",
+          "color": "green"
+        },
+        {
+          "cost": "50",
+          "color": "brown"
+        }
+      ],
+      "percent": -0.7
+    },
+    "offBoardTrack": [
+      {
+        "side": 3
+      },
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      }
+    ]
+  },
+  "IPL9": {
+    "color": "gray",
+    "rotations": 1,
+    "cities": [
+      {
+        "name": {
+          "name": "Lithuania"
+        }
+      }
+    ],
+    "offBoardRevenue": {
+      "revenues": [
+        {
+          "cost": "30",
+          "color": "yellow"
+        },
+        {
+          "cost": "40",
+          "color": "green"
+        },
+        {
+          "cost": "50",
+          "color": "brown"
+        }
+      ],
+      "percent": -0.7
+    },
+    "offBoardTrack": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      },
+      {
+        "side": 6
+      }
+    ]
+  },
+  "IPL10": {
+    "color": "gray",
+    "rotations": 1,
+    "cities": [
+      {
+        "name": {
+          "name": "Russia"
+        }
+      }
+    ],
+    "offBoardRevenue": {
+      "revenues": [
+        {
+          "cost": "30",
+          "color": "yellow"
+        },
+        {
+          "cost": "40",
+          "color": "green"
+        },
+        {
+          "cost": "50",
+          "color": "brown"
+        }
+      ],
+      "percent": -0.7
+    },
+    "offBoardTrack": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
       },
       {
         "side": 6

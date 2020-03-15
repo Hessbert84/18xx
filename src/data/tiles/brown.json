@@ -4964,25 +4964,29 @@
       }
     ]
   },
-  "R862": {
+  "IPL3": {
     "color": "brown",
-    "labels": [
-      {
-        "label": "RE",
-        "angle": -30,
-        "percent": 0.75
-      }
-    ],
+    "rotations": 1,
     "values": [
       {
+        "value": 60,
         "angle": 210,
-        "percent": 0.8,
-        "value": 70
+        "percent": 0.8
+      }
+    ],
+    "labels": [
+      {
+        "label": "W",
+        "angle": 150,
+        "percent": 0.8
       }
     ],
     "cities": [
       {
-        "size": 2
+        "size": 2,
+        "name": {
+          "reverse": true
+        }
       }
     ],
     "track": [
@@ -4997,6 +5001,12 @@
       },
       {
         "side": 4
+      },
+      {
+        "side": 5
+      },
+      {
+        "side": 6
       }
     ]
   }

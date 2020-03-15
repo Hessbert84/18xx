@@ -1,0 +1,265 @@
+{
+    "info": {
+      "title": "18Ireland",
+      "designer": "Ian Scrivins",
+      "background": "gray",
+      "width": 150,
+      "titleX": 1340,
+      "titleY": 1570,
+      "titleSize": 165,
+      "subTitleSize": 17,
+      "extraMinors": 0,
+      "hexCoords": true,
+      "currency": "GBP"
+    },
+    "links": {
+      "bgg": "https://boardgamegeek.com/boardgame/196217/18ireland",
+      "rules": "https://boardgamegeek.com/filepage/140342/18ireland-rules"
+    },
+    "tokens": [],
+    "ipo": false,
+    "bank": "£4000",
+    "players": [],
+    "companies": [],
+    "trains": [],
+    "phases": [],
+    "pools": [],
+    "rounds": [
+      {
+        "name": "MR",
+        "color": "gray"
+      },
+      {
+        "name": "OR2",
+        "color": "gray"
+      },
+      {
+        "name": "OR1",
+        "color": "gray"
+      },
+      {
+        "name": "SR",
+        "color": "white"
+      }
+    ],
+    "turns": [],
+    "stock": {
+      "type": "2D",
+      "movement": {
+        "up": [
+          "Sold out"
+        ],
+        "down": [
+          "Every share sold"
+        ],
+        "left": [
+          "Withheld revenue"
+        ],
+        "right": [
+          "Paid dividends higher than current value"
+        ]
+      },
+      "market": [
+        [
+          {
+            "value": 62,
+            "label": 62,
+            "arrow": "down"
+          },
+          68,
+          76,
+          84,
+          92,
+          {
+            "value": 100,
+            "label": 100,
+            "par": true
+          },
+          110,
+          122,
+          134,
+          148,
+          170,
+          196,
+          225,
+          {
+            "value": 260,
+            "label": "260 Game end"
+          }
+        ],
+        [
+          {
+            "value": 58,
+            "label": 58,
+            "arrow": "down"
+          },
+          64,
+          70,
+          78,
+          {
+            "value": 85,
+            "label": 85,
+            "par": true
+          },
+          94,
+          102,
+          112,
+          124,
+          136,
+          150,
+          172,
+          {
+            "value": 198,
+            "label": 198,
+            "arrow": "up"
+          }
+        ],
+        [
+          {
+            "value": 55,
+            "label": 55,
+            "arrow": "down"
+          },
+          60,
+          65,
+          {
+            "value": 70,
+            "label": 70,
+            "par": true
+          },
+          78,
+          86,
+          95,
+          104,
+          114,
+          125,
+          {
+            "value": 138,
+            "label": 138,
+            "arrow": "up"
+          }
+        ],
+        [
+          {
+            "value": 50,
+            "label": 50,
+            "arrow": "down"
+          },
+          55,
+          {
+            "value": 60,
+            "label": 60,
+            "par": true
+          },
+          66,
+          72,
+          80,
+          88,
+          96,
+          {
+            "value": 106,
+            "label": 106,
+            "arrow": "up"
+          }
+        ],
+        [
+          {
+            "value": 38,
+            "label": 38,
+            "legend": 0,
+            "arrow": "down"
+          },
+          {
+            "value": 50,
+            "label": 50,
+            "par": true
+          },
+          55,
+          60,
+          66,
+          72,
+          {
+            "value": 80,
+            "label": 80,
+            "arrow": "up"
+          }
+        ],
+        [
+          {
+            "value": 30,
+            "label": 30,
+            "legend": 0,
+            "arrow": "down"
+          },
+          {
+            "value": 38,
+            "label": 38,
+            "legend": 0
+          },
+          50,
+          {
+            "value": 66,
+            "label": 66,
+            "arrow": "up"
+          }
+        ],
+        [
+          {
+            "value": 24,
+            "label": 24,
+            "legend": 0,
+            "arrow": "down"
+          },
+          {
+            "value": 30,
+            "label": 30,
+            "legend": 0
+          },
+          {
+            "value": 38,
+            "label": 38,
+            "legend": 0
+          },
+          {
+            "value": 50,
+            "label": 50,
+            "arrow": "up"
+          }
+        ],
+        [
+          {
+            "value": 20,
+            "label": 20,
+            "legend": 0,
+            "arrow": "left"
+          },
+          {
+            "value": 24,
+            "label": 24,
+            "legend": 0
+          },
+          {
+            "value": 30,
+            "label": 30,
+            "legend": 0
+          },
+          {
+            "value": 38,
+            "label": 38,
+            "legend": 0,
+            "arrow": "up"
+          }
+        ]
+      ],
+      "legend": [
+        {
+          "color": "yellow",
+          "description": "Shares of this corporation do not count toward the certificate limit",
+          "icon": "certificate"
+        }
+      ]
+    },
+    "tiles": {},
+    "map": {}
+  }
+  
