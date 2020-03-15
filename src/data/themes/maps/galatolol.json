@@ -13,7 +13,7 @@
     "mountain": "#795138",
     "water": "#67A7C4",
     "water_dark": "#2e5f76",
-    "water_light": "#b3d3e2",
+    "water_light": "#D1E4ED",
     "land": "#59B578",
 
     "orange": "#F58121",
@@ -36,6 +36,8 @@
     "blue_light": "#0375dc",
     "red_light": "#e0474e",
     "black_light": "#4d4d4d",
-    "gray_light": "#dcdfe0"
+    "gray_light": "#dcdfe0",
+
+    "red": "#ff0000"
   }
 }
