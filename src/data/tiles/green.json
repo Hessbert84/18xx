@@ -5297,18 +5297,6 @@
   },
   "IPL1": {
     "color": "green",
-    "values": [
-      {
-        "angle": 210,
-        "percent": 0.667,
-        "value": 60
-      },
-      {
-        "angle": 90,
-        "percent": 0.667,
-        "value": 60
-      }
-    ],
     "rotations": 3,
     "values": [
       {
@@ -5337,8 +5325,6 @@
         "side": 1
       },
       {
-        "angle": 30,
-        "percent": 0.5
         "side": 3
       },
       {
@@ -5351,7 +5337,7 @@
   },
   "IPL2": {
     "color": "green",
-    "rotations": 3,
+    "rotations": 1,
     "values": [
       {
         "value": 10,
@@ -5374,8 +5360,6 @@
     ],
     "track": [
       {
-        "type": "sharp",
-        "side": 1
         "side": 1,
         "type": "straight"
       },
@@ -5387,7 +5371,7 @@
   },
   "IPL15": {
     "color": "green",
-    "rotations": 3,
+    "rotations": 1,
     "values": [
       {
         "value": 10,
