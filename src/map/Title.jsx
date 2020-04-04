@@ -5,15 +5,15 @@ import Color from "../data/Color";
 const Title = ({ game, variation, hexWidth }) => {
   let scale = hexWidth / 150.0;
 
-  let titleFont = game.info.titleFontFamily || "display";
+  let titleFont = game.info.titleFontFamily || "Adamina";
   let titleWeight = game.info.titleFontWeight || "bold";
   let titleSize = (game.info.titleSize || 200) * scale;
 
-  let subFont = game.info.subFontFamily || game.info.titleFontFamily || "display";
+  let subFont = game.info.subFontFamily || game.info.titleFontFamily || "Libre Baskerville";
   let subWeight = game.info.subFontWeight || game.info.titleFontWeight || "bold";
   let subSize = (game.info.subTitleSize || 30) * scale;
 
-  let designerFont = game.info.designerFontFamily || game.info.titleFontFamily || "display";
+  let designerFont = game.info.designerFontFamily || game.info.titleFontFamily || "Libre Baskerville";
   let designerWeight = game.info.designerFontWeight || game.info.titleFontWeight || "bold";
   let designerSize = (game.info.designerSize || 20) * scale;
 
