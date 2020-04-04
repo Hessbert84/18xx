@@ -4,8 +4,17 @@ import Color from "../data/Color";
 
 const Title = ({ game, variation, hexWidth }) => {
   let scale = hexWidth / 150.0;
-  let size = (game.info.titleSize || 200) * scale;
+
+  let titleFont = game.info.titleFontFamily || "display";
+  let titleWeight = game.info.titleFontWeight || "bold";
+  let titleSize = (game.info.titleSize || 200) * scale;
+
+  let subFont = game.info.subFontFamily || game.info.titleFontFamily || "display";
+  let subWeight = game.info.subFontWeight || game.info.titleFontWeight || "bold";
   let subSize = (game.info.subTitleSize || 30) * scale;
+
+  let designerFont = game.info.designerFontFamily || game.info.titleFontFamily || "display";
+  let designerWeight = game.info.designerFontWeight || game.info.titleFontWeight || "bold";
   let designerSize = (game.info.designerSize || 20) * scale;
 
   let mapName = null;
@@ -26,9 +35,9 @@ const Title = ({ game, variation, hexWidth }) => {
         >
           <text
             fill={c("black")}
-            fontFamily="Adamina"
-            fontWeight="bold"
-            fontSize={0.6*size}
+            fontFamily={titleFont}
+            fontWeight={titleWeight}
+            fontSize={titleSize}
             textAnchor="start"
             lengthAdjust="spacingAndGlyphs"
             x="0"
@@ -39,9 +48,9 @@ const Title = ({ game, variation, hexWidth }) => {
           {game.info.subtitle && (
             <text
               fill={c("black")}
-              fontSize={0.6*subSize}
-              fontStyle="italic"
-              fontFamily="Libre Baskerville"
+              fontFamily={subFont}
+              fontWeight={subWeight}
+              fontSize={subSize}
               textAnchor="start"
               lengthAdjust="spacingAndGlyphs"
               x="0"
@@ -52,8 +61,8 @@ const Title = ({ game, variation, hexWidth }) => {
           )}
           <text
             fill={c("black")}
-            fontFamily="Libre Baskerville"
-            fontWeight="regular"
+            fontFamily={designerFont}
+            fontWeight={designerWeight}
             fontSize={designerSize}
             textAnchor="start"
             lengthAdjust="spacingAndGlyphs"
