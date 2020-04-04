@@ -3,7 +3,7 @@ import Color from "../data/Color";
 import PhaseContext from "../context/PhaseContext";
 import Currency from "../util/Currency";
 
-const Tunnel = ({ cost, fillColor, strokeColor, strokeWidth, textColor }) => {
+const Diamond = ({ cost, fillColor, strokeColor, strokeWidth, textColor }) => {
   fillColor = fillColor || "mountain";
   strokeColor = strokeColor || "black";
   strokeWidth = strokeWidth || "2";
@@ -14,7 +14,7 @@ const Tunnel = ({ cost, fillColor, strokeColor, strokeWidth, textColor }) => {
         {(c,t) => (
           <g>
             <path
-              d="M -22 13 L 0 -24 L 22 13 Z"
+              d="M -22 0 L 0 -22 L 22 0 L 0 22 L -22 0"
               fill={c(fillColor)}
               stroke={c(strokeColor)}
               strokeWidth={strokeWidth}
@@ -27,8 +27,8 @@ const Tunnel = ({ cost, fillColor, strokeColor, strokeWidth, textColor }) => {
               fontSize="12"
               dominantBaseline="hanging"
               textAnchor="middle"
-              x="0"
-              y="-3"
+              x="-2"
+              y="-5"
             >
               <Currency value={cost} type="terrain" />
             </text>
@@ -39,4 +39,4 @@ const Tunnel = ({ cost, fillColor, strokeColor, strokeWidth, textColor }) => {
   );
 };
 
-export default Tunnel;
+export default Diamond;
