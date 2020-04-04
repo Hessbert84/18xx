@@ -1317,13 +1317,11 @@
   "480": {
     "color": "brown",
     "rotations": 1,
-    "names": [
+    "labels": [
       {
-        "angle": 210,
-        "percent": 0.8,
-        "rotation": 15,
-        "name": "Guadalajara",
-        "fontSize": 8
+        "label": "G",
+        "angle": 215,
+        "percent": 0.9
       }
     ],
     "values": [

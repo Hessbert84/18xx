@@ -1424,6 +1424,13 @@
       },
       {
         "color": "plain",
+        "labels": [
+          {
+            "label": "G",
+            "angle": 215,
+            "percent": 0.8
+          }
+        ],
         "cities": [
           {
             "name": {
