@@ -5,7 +5,7 @@
       "background": "gray",
       "titleX": 1500,
       "titleY": 0,
-      "titleSize": 165,
+      "titleSize": 110,
       "subTitleSize": 17,
       "currency": "USD"
     },
@@ -399,15 +399,15 @@
             "revenues": [
               {
                 "color": "yellow",
-                "cost": "70"
+                "cost": "50"
               },
               {
                 "color": "green",
-                "cost": "10"
+                "cost": "20"
               },
               {
                 "color": "brown",
-                "cost": "30"
+                "cost": "40"
               }
             ]
           },
@@ -776,13 +776,6 @@
               "name": {
                 "name": "Guadalajara"
               }
-            }
-          ],
-          "terrain": [
-            {
-              "cost": "$20",
-              "color": "red",
-              "percent": 0.5
             }
           ],
           "hexes": ["I12"]

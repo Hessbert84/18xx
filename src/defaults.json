@@ -74,7 +74,7 @@
     "images": false
   },
   "tiles": {
-    "layout": "die",
+    "layout": "offset",
     "width": 150,
     "mapWidth": 150,
     "gaps": true

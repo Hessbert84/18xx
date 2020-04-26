@@ -65,6 +65,7 @@
     "designer": "Marc Voyer",
     "orientation": "horizontal",
     "extraTotalWidth": 0,
+    "titleFontFamily": "Times",
     "subtitle": "",
     "title": "1882",
     "titleX": 860,
@@ -1682,12 +1683,12 @@
       "notes": [
         {
           "color": "white",
-          "note": "Shares in the market pay dividends to the corporation"
+          "note": "Shares in the market pay dividends to the company"
         },
         {
           "color": "purple",
           "icon": "exclamation",
-          "note": "No more than 50% of a corporation's shares may be in the market at any time"
+          "note": "No more than 50% of a company's shares may be in the market at any time"
         },
         {
           "color": "red",
@@ -1746,7 +1747,7 @@
       "name": "OR1"
     },
     {
-      "color": "white",
+      "color": "gray",
       "name": "SR"
     }
   ],
@@ -1797,12 +1798,12 @@
     "legend": [
       {
         "color": "yellow",
-        "description": "Shares of this corporation do not count toward the certificate limit",
+        "description": "Shares of this company do not count toward the certificate limit",
         "icon": "certificate"
       },
       {
         "color": "orange",
-        "description": "Players may own more than 60% of this corporation",
+        "description": "Players may own more than 60% of this company",
         "icon": "percentage"
       },
       {
