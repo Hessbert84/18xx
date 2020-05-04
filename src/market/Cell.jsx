@@ -177,7 +177,7 @@ const Cell = ({ cell, data, par }) => {
                         //y="5"
                         textAnchor="middle"
                         x={width/2}
-                        y="60"
+                        y="70"
                       >
                         {text}
                       </text>

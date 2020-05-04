@@ -3,7 +3,7 @@ import Color from "../data/Color";
 
 import RotateContext from "../context/RotateContext";
 
-const Label = ({ label, size, length, fixed, bgColor }) => {
+const Label = ({ label, size, length, fixed, bgColor, fontFamily, fontWeight }) => {
   let fontSize = label.length > 2 ? 20 : 30;
   if (label.length > 8) {
     fontSize = 18;
@@ -27,9 +27,9 @@ const Label = ({ label, size, length, fixed, bgColor }) => {
             <text
               transform={fixed ? null : `rotate(-${rotation})`}
               fill={bgColor ? t(c(bgColor)) : p("black")}
-              fontFamily="Libre Baskerville"
-              fontWeight="bold"
-              fontSize={0.8*fontSize}
+              fontFamily={fontFamily || "Libre Baskerville"}
+              fontWeight={fontWeight || "bold"}
+              fontSize={fontSize}
               dominantBaseline="central"
               textAnchor="middle"
               textLength={length}

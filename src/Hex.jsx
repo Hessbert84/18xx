@@ -15,6 +15,7 @@ import City from "./atoms/City";
 import Company from "./atoms/Company";
 import Divide from "./atoms/Divide";
 import Good from "./atoms/Good";
+import BgShapes from "./atoms/BgShapes";
 import Hex from "./atoms/Hex";
 import HexBorder from "./atoms/HexBorder";
 import Icon from "./atoms/Icon";
@@ -28,6 +29,7 @@ import RouteBonus from "./atoms/RouteBonus";
 import Terrain from "./atoms/Terrain";
 import Town from "./atoms/Town";
 import Track from "./atoms/Track";
+import Diamond from "./atoms/Diamond";
 import Tunnel from "./atoms/Tunnel";
 import TunnelEntrance from "./atoms/TunnelEntrance";
 import Value from "./atoms/Value";
@@ -71,6 +73,12 @@ const HexTile = ({ hex, id, mask, border, transparent, map }) => {
     R.compose(
       R.map(makeTrack),
       R.filter(t => t.cross !== "under")
+    ),R.compose(
+      R.map(makeBorder),
+      R.filter(t => t.cross === "top")
+    ),R.compose(
+      R.map(makeTrack),
+      R.filter(t => t.cross === "top")
     )
   ]);
 
@@ -169,6 +177,9 @@ const HexTile = ({ hex, id, mask, border, transparent, map }) => {
   let bridges = (
     <Position data={hex.bridges}>{b => <Bridge {...b} />}</Position>
   );
+  let diamonds = (
+    <Position data={hex.diamonds}>{t => <Diamond {...t} />}</Position>
+  );
   let tunnels = (
     <Position data={hex.tunnels}>{t => <Tunnel {...t} />}</Position>
   );
@@ -193,7 +204,8 @@ const HexTile = ({ hex, id, mask, border, transparent, map }) => {
   let industries = (
     <Position data={hex.industries}>{i => <Industry {...i} />}</Position>
   );
-  let goods = <Position data={hex.goods}>{g => <Good {...g} />}</Position>;
+  let bgShapes = <Position data={hex.bgShapes}>{g => <BgShapes {...g} />}</Position>;
+  let goods = <Position data={hex.good}>{g => <Good {...g} />}</Position>;
   let companies = (
     <Position data={hex.companies}>{c => <Company {...c} />}</Position>
   );
@@ -230,8 +242,8 @@ const HexTile = ({ hex, id, mask, border, transparent, map }) => {
               />
 
               <g transform={`rotate(-${hx.rotation})`}>
+                {bgShapes}
                 {goods}
-                {icons}
                 {tunnelEntranceBorders}
                 {cityBorders}
                 {mediumCityBorders}
@@ -247,6 +259,7 @@ const HexTile = ({ hex, id, mask, border, transparent, map }) => {
                 {labels}
                 {tokens}
                 {terrain}
+                {icons}
                 {divides}
                 {borders}
               </g>
@@ -268,6 +281,7 @@ const HexTile = ({ hex, id, mask, border, transparent, map }) => {
         {industries}
         {companies}
         {names}
+        {diamonds}
         {tunnels}
         {bridges}
         {offBoardRevenue}

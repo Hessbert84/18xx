@@ -65,6 +65,7 @@
     "layout": "free",
     "marketTokenSize": 50,
     "stationTokenSize": 37.5,
+    "generalTokenSize": 50,
     "bleed": true,
     "reverseMarketTokens": "all"
   },
@@ -73,15 +74,15 @@
     "images": false
   },
   "tiles": {
-    "layout": "die",
+    "layout": "offset",
     "width": 150,
     "mapWidth": 150,
     "gaps": true
   },
   "stock": {
     "cell": {
-      "width": 70,
-      "height": 100
+      "width": 63,
+      "height": 90
     },
     "column": 4,
     "diag": 2,
