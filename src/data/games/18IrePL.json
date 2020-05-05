@@ -8,7 +8,7 @@
     "titleY": -50,
     "titleX": 950,
     "currency": "EUR",
-    "titleSize": 200
+    "titleSize": 120
   },
   "links": {
   },
@@ -731,12 +731,30 @@
         ]
       },
       {
-        "color": "plain",
-        "centerTowns": [
+        "color": "gray_real",
+        "names": [
           {
-            "name": {
-              "name": "Gorzów Wielkopolski"
-            }
+            "name": "Gorzów Wielkopolski",
+            "reverse": true,
+            "rotation": 135,
+            "y": -2,
+            "x": 25
+          }
+        ],
+        "towns": [
+          {}
+        ],
+        "values": [
+          {
+            "value": 30,
+            "angle": 90,
+            "percent": 0.67
+          }
+        ],
+        "track": [
+          {
+            "type": "straight",
+            "side": 1
           }
         ],
         "hexes": [
@@ -754,6 +772,18 @@
         ],
         "hexes": [
           "B14"
+        ]
+      },
+      {
+        "color": "yellow",
+        "track": [
+          {
+            "type": "straight",
+            "side": 6
+          }
+        ],
+        "hexes": [
+          "C5"
         ]
       },
       {
@@ -903,12 +933,12 @@
         "centerTowns": [
           {
             "name": {
-              "name": "Elbląg"
+              "name": "Ciechanów"
             }
           }
         ],
         "hexes": [
-          "F4"
+          "G7"
         ]
       },
       {
@@ -1255,6 +1285,13 @@
             "side": 6
           }
         ],
+        "values": [
+          {
+            "value": 10,
+            "angle": 90,
+            "percent": 0.5
+          }
+        ],
         "icons": [
           {
             "type": "port",
@@ -1276,6 +1313,13 @@
         "offBoardTrack": [
           {
             "side": 6
+          }
+        ],
+        "values": [
+          {
+            "value": 10,
+            "angle": 90,
+            "percent": 0.5
           }
         ],
         "icons": [
@@ -1302,6 +1346,13 @@
           },
           {
             "side": 2
+          }
+        ],
+        "values": [
+          {
+            "value": 10,
+            "angle": 90,
+            "percent": 0.5
           }
         ],
         "icons": [
@@ -1358,7 +1409,6 @@
           "B10",
           "B12",
           "C3",
-          "C5",
           "C7",
           "C11",
           "C15",
@@ -1371,10 +1421,10 @@
           "E13",
           "E15",
           "E17",
+          "F4",
           "F6",
           "F10",
           "F14",
-          "G7",
           "G13",
           "H8",
           "H14",
