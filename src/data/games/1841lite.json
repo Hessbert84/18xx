@@ -1,15 +1,15 @@
 {
   "info": {
     "title": "1841 Lite",
-    "subtitle": "Railways in Northern Italy",
+    "subtitle": "",
     "designer": "Federico Vellani and Manlio Manzini",
     "background": "water",
     "orientation": "horizontal",
     "marketTokens": 2,
     "currency": "L.#",
-    "titleY": 1500,
-    "titleX": 50,
-    "titleSize": 130
+    "titleY": -90,
+    "titleX": 1700,
+    "titleSize": 100
   },
   "links": {
     "bgg": "https://www.boardgamegeek.com/boardgame/1447/1841",
@@ -1223,14 +1223,6 @@
   "map": [
     {
       "name": "Version 2",
-      "roundTracker": {
-        "x": 700,
-        "y": 1500
-      },
-      "players": {
-        "x": 650,
-        "y": 1600
-      },
       "hexes": [
         {
           "color": "plain",
@@ -1834,9 +1826,9 @@
       ],
       "borders": [
         {
-          "color": "gray",
+          "color": "green",
           "dashed": true,
-          "dashArray": "12",
+          "dashArray": "12 24",
           "offset": 4,
           "width": 8,
           "coords": ["G4p4", "G4p5", "G4p6"]

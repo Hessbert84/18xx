@@ -72,6 +72,7 @@ const makeNode = (x, y, reverse, revenue, size) => {
         {c => (
           <text
             fill={c(revenue.phaseColor) || c(revenue.color) || c("white")}
+            fontFamily="sans-serif"
             strokeWidth="0.5"
             stroke={c("black")}
             fontSize={size}
