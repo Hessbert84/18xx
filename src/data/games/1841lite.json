@@ -1381,11 +1381,13 @@
               {
                 "color": "gray",
                 "value": 140,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 200,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1398,16 +1400,18 @@
           "offBoardRevenue": {
             "angle": 180,
             "percent": 0.2,
-            "name": {"name": "Lausanne/Lötschberg"},
+            "name": {"name": "Lausanne"},
             "revenues": [
               {
                 "color": "gray",
                 "value": 90,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 150,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1425,16 +1429,19 @@
               {
                 "color": "white",
                 "value": 20,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 30,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 150,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1456,16 +1463,19 @@
               {
                 "color": "white",
                 "value": 60,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 100,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 150,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1493,21 +1503,24 @@
           "offBoardRevenue": {
             "angle": 180,
             "percent": 0.333,
-            "name": {"name": "Trento/Brennero"},
+            "name": {"name": "Trento - Brennero"},
             "revenues": [
               {
                 "color": "white",
                 "value": 20,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 70,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 140,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1532,16 +1545,19 @@
               {
                 "color": "white",
                 "value": 50,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 80,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 120,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1559,16 +1575,19 @@
               {
                 "color": "white",
                 "value": 10,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 70,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 150,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1819,14 +1838,14 @@
           "dashed": true,
           "dashArray": "12",
           "offset": 4,
-          "width": 4,
+          "width": 8,
           "coords": ["G4p4", "G4p5", "G4p6"]
         },
         {
           "color": "blue",
           "dashed": true,
           "dashArray": "12 24",
-          "width": 4,
+          "width": 8,
           "coords": ["G6p2", "G6p1", "G8p2", "G8p1", "G10p2", "G10p1", "G10p6", "G10p5", "H11p6", "H11p5", "I12p6"]
         },
         {
@@ -1834,7 +1853,7 @@
           "dashed": true,
           "dashArray": "12 24",
           "offset": -1,
-          "width": 4,
+          "width": 8,
           "coords": ["J17p2", "J17p3"]
         },
         {
@@ -1842,21 +1861,21 @@
           "dashed": true,
           "dashArray": "12 24",
           "offset": -2,
-          "width": 4,
+          "width": 8,
           "coords": ["J17p4"]
         },
         {
           "color": "blue",
           "dashed": true,
           "dashArray": "12 24",
-          "width": 4,
+          "width": 8,
           "coords": ["L17p3", "M16p2", "M16p3", "M16p4", "O16p1", "O16p2", "O16p3", "P17p2", "P17p3"]
         },
         {
           "color": "blue",
           "dashed": true,
           "dashArray": "12 24",
-          "width": 4,
+          "width": 8,
           "coords": ["I12p1", "I12p2", "I10p1", "I10p2", "I10p3", "I10p4", "K10p1", "K10p6", "K10p5", "K10p4", "L9p5", "M10p2", "M10p3", "N9p6", "N9p5", "O10p6", "O10p5", "O10p4", "P9p5"]
         },
         {
@@ -1864,7 +1883,7 @@
           "dashed": true,
           "dashArray": "12 24",
           "offset": -2,
-          "width": 4,
+          "width": 8,
           "coords": ["L7p1", "L9p2", "L9p1", "L9p6", "L9p5", "M10p2", "M10p3", "N9p6", "N9p5", "O10p6", "O10p5", "O10p4", "P9p5"]
         },
         {
