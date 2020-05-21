@@ -227,16 +227,6 @@
     },
     "ledges": [
       {
-        "color": "water",
-        "border": true,
-        "coords": ["11 0", "11 7"]
-      },
-      {
-        "color": "orange",
-        "border": true,
-        "coords": ["16 0", "16 3"]
-      },
-      {
         "color": "red",
         "border": true,
         "coords": ["2 4", "2 5", "3 5", "3 4", "2 4"]
@@ -642,8 +632,7 @@
       ],
       [
         {
-          "label": 8,
-          "arrow": "down"
+          "label": 8
         },
         9,
         10,
@@ -1834,9 +1823,9 @@
       ],
       "borders": [
         {
-          "color": "gray",
+          "color": "green",
           "dashed": true,
-          "dashArray": "12",
+          "dashArray": "12 24",
           "offset": 4,
           "width": 8,
           "coords": ["G4p4", "G4p5", "G4p6"]
