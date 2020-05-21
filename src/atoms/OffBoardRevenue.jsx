@@ -76,6 +76,7 @@ const makeNode = (x, y, reverse, revenue, size) => {
             strokeWidth="0.5"
             stroke={c("black")}
             fontSize={size}
+            fontWeight="bold"
             dominantBaseline="central"
             textAnchor="middle"
             textLength={phaseLength}

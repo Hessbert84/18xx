@@ -470,7 +470,7 @@ const Token = ({
           }
           content.push(<text
                          key="text"
-                         fontFamily="Libre Baskerville"
+                         fontFamily="sans-serif"
                          fontSize={fontSize + 1}
                          textAnchor="middle"
                          strokeWidth="1"
