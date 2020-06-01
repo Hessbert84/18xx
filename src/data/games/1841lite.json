@@ -1,6 +1,6 @@
 {
   "info": {
-    "title": "1841",
+    "title": "1841 Lite",
     "subtitle": "Railways in Northern Italy",
     "designer": "Federico Vellani and Manlio Manzini",
     "background": "water",
@@ -8,7 +8,8 @@
     "marketTokens": 2,
     "currency": "L.#",
     "titleY": 1500,
-    "titleX": 50
+    "titleX": 50,
+    "titleSize": 130
   },
   "links": {
     "bgg": "https://www.boardgamegeek.com/boardgame/1447/1841",
@@ -226,16 +227,6 @@
     },
     "ledges": [
       {
-        "color": "water",
-        "border": true,
-        "coords": ["11 0", "11 7"]
-      },
-      {
-        "color": "orange",
-        "border": true,
-        "coords": ["16 0", "16 3"]
-      },
-      {
         "color": "red",
         "border": true,
         "coords": ["2 4", "2 5", "3 5", "3 4", "2 4"]
@@ -307,7 +298,7 @@
         },
         {
           "value": 516,
-          "legend": 1
+          "legend": 2
         }
       ],
       [
@@ -641,8 +632,7 @@
       ],
       [
         {
-          "label": 8,
-          "arrow": "down"
+          "label": 8
         },
         9,
         10,
@@ -663,6 +653,10 @@
       {
         "color": "orange",
         "description": "Phase 8 only"
+      },
+      {
+        "color": "offboard",
+        "description": "Game end"
       }
     ]
   },
@@ -978,57 +972,12 @@
   },
   "companies": [
     {
-      "name": "Strada Ferrata Maria Antonia",
-      "minor": true,
-      "abbrev": "SFMA",
-      "token": { "stripes": "white", "bar": true },
-      "tokens": [
-        "Firenze",
-        ""
-      ],
-      "color": "red"
-    },
-    {
-      "name": "Strada Ferrata da Lucca a Pistoia",
-      "minor": true,
-      "abbrev": "SFLP",
-      "token": { "stripes": "white", "bar": true },
-      "tokens": [
-        "Lucca",
-        ""
-      ],
-      "color": "brightGreen"
-    },
-    {
-      "name": "Società per la Strada Ferrata Leopolda",
-      "abbrev": "SSFL",
-      "color": "violet",
-      "token": { "bar": true },
-      "tokens": [
-        "Pisa",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "name": "Imperial Regia Strada Ferrata Ferdinandea",
-      "abbrev": "IRSFF",
-      "token": { "bar": true },
-      "tokens": [
-        "Milano",
-        "Venezia",
-        "",
-        "",
-        ""
-      ],
-      "color": "orange"
-    },
-    {
       "name": "Strada Ferrata da Torina a Genova",
       "abbrev": "SFTG",
-      "token": { "bar": true },
+      "token": {       
+        "bar": true,
+        "stripe": "light_blue",
+        "color": "blue" },
       "tokens": [
         "Torino (S)",
         "Alessandria",
@@ -1041,7 +990,10 @@
     {
       "name": "Strada di Ferro da Torina a Novara",
       "abbrev": "SFTN",
-      "token": { "bar": true },
+      "token": {       
+        "bar": true,
+        "stripe": "light_pink",
+        "color": "pink" },
       "tokens": [
         "Torino (N)",
         "",
@@ -1054,7 +1006,10 @@
     {
       "name": "Strada di Ferro da Torino a Cuneo",
       "abbrev": "SFTC",
-      "token": { "bar": true },
+      "token": {       
+        "bar": true,
+        "stripe": "black",
+        "color": "yellow" },
       "variant": "V2",
       "tokens": [
         "Cuneo",
@@ -1066,48 +1021,29 @@
       "color": "yellow"
     },
     {
-      "name": "Strada di Ferro da Torino a Cuneo",
-      "abbrev": "SFTC",
-      "minor": true,
-      "color": "yellow",
-      "variant": "V1",
-      "token": { "bar": true, "stripes": "white" },
+      "name": "Imperial Regia Strada Ferrata Ferdinandea",
+      "abbrev": "IRSFF",
+      "token": {       
+        "bar": true,
+        "stripe": "light_orange",
+        "color": "dark_orange" },
       "tokens": [
-        "Cuneo",
-        ""
-      ]
-    },
-    {
-      "name": "Strade Ferrate Livornesi",
-      "abbrev": "SFLi",
-      "token": { "bar": true },
-      "tokens": [
-        "Pisa",
-        "Firenze",
-        "",
-        "",
-        ""
-      ],
-      "color": "brown"
-    },
-    {
-      "name": "Strade Ferrate del Sud dell'Austria",
-      "abbrev": "SB",
-      "token": { "bar": true },
-      "variant": "V2",
-      "tokens": [
+        "Milano",
         "Venezia",
         "",
         "",
-        "",
         ""
       ],
-      "color": "gold"
+      "color": "orange"
     },
     {
       "name": "Strade Ferrate della Lombardia & dell'Italia Centrale",
       "abbrev": "SFL",
-      "token": { "bar": true },
+      "token": {       
+        "target": "light_turquoise",
+        "color": "turquoise",
+        "bar": true
+      },
       "variant": "V2",
       "tokens": [
         "Milano",
@@ -1119,104 +1055,163 @@
       "color": "lightBlue"
     },
     {
-      "name": "Strade di Ferro Venete",
-      "abbrev": "SFV",
-      "minor": true,
-      "color": "gold",
-      "variant": "V1",
-      "token": { "bar": true, "stripes": "white" },
+      "name": "Strade Ferrate del Sud dell'Austria",
+      "abbrev": "SB",
+      "token": {       
+        "target": "yellow",
+        "color": "orange",
+        "bar": true
+      },
+      "variant": "V2",
       "tokens": [
         "Venezia",
+        "",
+        "",
+        "",
         ""
-      ]
+      ],
+      "color": "gold"
     },
-    {
-      "name": "Strade Ferrate Lombarde",
-      "abbrev": "SFL",
-      "minor": true,
-      "color": "lightBlue",
-      "variant": "V1",
-      "token": { "bar": true, "stripes": "white" },
-      "tokens": [
-        "Milano",
-        ""
-      ]
-    },
+
+
     {
       "name": "Azienda Ferroviaria Italica",
       "abbrev": "AFI",
+      "token": {       
+        "color": "dark_red",
+        "bar": "black"
+      },
       "color": "red"
-    },
-    {
-      "name": "Azienda Trasporti Ferroviari Ausonia",
-      "abbrev": "ATFA",
-      "color": "orange"
-    },
-    {
-      "name": "Compagnia Ferroviaria Conte di Cavour",
-      "abbrev": "CFCC",
-      "color": "brightGreen"
-    },
-    {
-      "name": "Compagnia Garibaldi per i Trasporti Ferroviari",
-      "abbrev": "CGTF",
-      "color": "green"
-    },
-    {
-      "name": "Compagnia Trasporti Dante Alighieri",
-      "abbrev": "CTDA",
-      "color": "lime"
-    },
-    {
-      "name": "Compagnia Trasporti Subalpini",
-      "abbrev": "CTS",
-      "color": "turquoise"
-    },
-    {
-      "name": "Impresa Centrale Strade Ferrate",
-      "abbrev": "ICSF",
-      "color": "navy"
-    },
-    {
-      "name": "Impresa Ferroviaria Alta Italia",
-      "abbrev": "IFAI",
-      "color": "violet"
     },
     {
       "name": "Impresa Latina Trasporti su Ferro",
       "abbrev": "ILTF",
-      "color": "pink"
+      "token": {       
+        "color": "green",
+        "bar": "black"
+      },
+      "color": "green"
+    },
+    {
+      "name": "Compagnia Trasporti Subalpini",
+      "abbrev": "CTS",
+      "token": {       
+        "color": "lavender",
+        "bar": "black"
+      },
+      "color": "lavender"
     },
     {
       "name": "Regia Azienda Trasporti Ferroviari",
       "abbrev": "RATF",
-      "color": "lavender"
+      "token": {       
+        "color": "dark_gray",
+        "bar": "black"
+      },
+      "color": "dark_gray"
+    },
+    {
+      "name": "Compagnia Ferroviaria Conte di Cavour",
+      "abbrev": "CFCC",
+      "token": {       
+        "color": "white",
+        "barColor": "black",
+        "bar": "black"
+      },
+      "color": "white"
+    },
+    {
+      "name": "Impresa Centrale Strade Ferrate",
+      "abbrev": "ICSF",
+      "token": {       
+        "color": "dark_orange",
+        "barColor": "black",
+        "bar": "black"
+      },
+      "color": "navy"
+    },
+    {
+      "name": "Azienda Trasporti Ferroviari Ausonia",
+      "abbrev": "ATFA",
+      "token": {       
+        "color": "light_blue",
+        "barColor": "black",
+        "bar": "black"
+      },
+      "color": "orange"
+    },
+    {
+      "name": "Compagnia Trasporti Dante Alighieri",
+      "abbrev": "CTDA",
+      "token": {       
+        "color": "light_orange",
+        "barColor": "black",
+        "bar": "black"
+      },
+      "color": "lime"
+    },
+    {
+      "name": "Impresa Ferroviaria Alta Italia",
+      "abbrev": "IFAI",
+      "token": {       
+        "color": "blue",
+        "barColor": "black",
+        "bar": "black"
+      },
+      "color": "violet"
+    },
+    {
+      "name": "Compagnia Garibaldi per i Trasporti Ferroviari",
+      "abbrev": "CGTF",
+      "token": {       
+        "color": "fluo_green",
+        "barColor": "black",
+        "bar": "black"
+      },
+      "color": "green"
     },
     {
       "name": "Reale Società Ferroviaria Sabauda",
       "abbrev": "RSFS",
+      "token": {       
+        "color": "dark_turquoise",
+        "barColor": "black",
+        "bar": "black"
+      },
       "color": "natural"
-    },
-    {
-      "name": "Compagnia Trasporti La Patria",
-      "abbrev": "CTLP",
-      "minor": true,
-      "color": "white",
-      "token": { "stripes": "black" }
     },
     {
       "name": "Ferrovie Trans Padane",
       "abbrev": "FTP",
       "minor": true,
       "color": "gray",
-      "token": { "stripes": "white" }
+      "token": {     
+        "color": "dark_gray",
+        "square": "white",
+        "bar": "black"
+      }
     },
     {
       "name": "Società Leonardo Da Vinci",
       "abbrev": "SLDV",
       "minor": true,
       "color": "black",
-      "token": { "stripes": "white" }
+      "token": {     
+        "color": "brown",
+        "square": "light_brown",
+        "bar": "black"
+      }
+    },
+    {
+      "name": "Compagnia Trasporti La Patria",
+      "abbrev": "CTLP",
+      "minor": true,
+      "color": "white",
+      "token": {     
+        "color": "light_gray",
+        "square": "dark_gray",
+        "bar": "black"
+      }
     }
   ],
   "map": [
@@ -1233,7 +1228,7 @@
       "hexes": [
         {
           "color": "plain",
-          "hexes": ["C8", "C10", "C12", "D5", "D7", "D11", "D13", "E6", "E8", "E12", "F3", "F5", "F9", "G8", "G10", "H3", "I2", "I4", "I8", "J3", "J7", "J11", "J13", "K4", "K8", "K10", "L7", "L11", "L19", "L21", "M6", "M10", "M20", "N9", "N11", "N15", "O6", "O14", "P9"]
+          "hexes": ["C8", "C10", "C12", "D5", "D7", "D11", "D13", "E6", "E8", "E12", "F3", "F5", "F9", "G8", "G10", "H3", "I2", "I4", "I8", "J3", "J7", "J11", "J13", "K4", "K8", "K10", "L7", "L11", "M6", "M10", "N9", "N11", "N15", "O6", "O14", "P9"]
         },
         {
           "color": "plain",
@@ -1301,13 +1296,6 @@
         },
         {
           "color": "water",
-          "values": [{ "value": 20 }],
-          "icons": [{ "type": "port", "angle": 60, "percent": 0.6 }],
-          "track": [{ "type": "offboard", "side": 5 }],
-          "hexes": ["J21"]
-        },
-        {
-          "color": "water",
           "values": [{ "value": 40 }],
           "icons": [{ "type": "port", "angle": 300, "percent": 0.6 }],
           "track": [{ "type": "offboard", "side": 3 }],
@@ -1349,46 +1337,32 @@
         },
         {
           "color": "offboard",
-          "removeBorders": [5],
-          "track": [{"type": "offboard", "side": 4}],
-          "hexes": ["L23"]
-        },
-        {
-          "color": "offboard",
-          "removeBorders": [2,6],
+          "removeBorders": [3, 4, 5],
           "offBoardRevenue": {
-            "name": {"name": "Roma"},
+            "name": {"name": "Toscana - Roma"},
             "revenues": [
               {
                 "color": "white",
-                "value": 10,
+                "phaseColor": "black",
+                "value": 50,
                 "phase": 2
               },
               {
                 "color": "gray",
-                "value": 40,
+                "phaseColor": "black",
+                "textColor": "black",
+                "value": 100,
                 "phase": 4
               },
               {
                 "color": "white",
-                "value": 200,
+                "phaseColor": "black",
+                "value": 250,
                 "phase": 6
               }
             ]
           },
-          "hexes": ["M22"]
-        },
-        {
-          "color": "offboard",
-          "removeBorders": [3,5],
-          "track": [{"type": "offboard", "side": 4}],
-          "hexes": ["N23"]
-        },
-        {
-          "color": "offboard",
-          "removeBorders": [2],
-          "track": [{"type": "offboard", "side": 4}],
-          "hexes": ["O22"]
+          "hexes": ["L19"]
         },
         {
           "color": "offboard",
@@ -1401,11 +1375,13 @@
               {
                 "color": "gray",
                 "value": 140,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 200,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1418,16 +1394,18 @@
           "offBoardRevenue": {
             "angle": 180,
             "percent": 0.2,
-            "name": {"name": "Lausanne/Lötschberg"},
+            "name": {"name": "Lausanne"},
             "revenues": [
               {
                 "color": "gray",
                 "value": 90,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 150,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1445,16 +1423,19 @@
               {
                 "color": "white",
                 "value": 20,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 30,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 150,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1476,16 +1457,19 @@
               {
                 "color": "white",
                 "value": 60,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 100,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 150,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1513,21 +1497,24 @@
           "offBoardRevenue": {
             "angle": 180,
             "percent": 0.333,
-            "name": {"name": "Trento/Brennero"},
+            "name": {"name": "Trento - Brennero"},
             "revenues": [
               {
                 "color": "white",
                 "value": 20,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 70,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 140,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1552,16 +1539,19 @@
               {
                 "color": "white",
                 "value": 50,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 80,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 120,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1579,16 +1569,19 @@
               {
                 "color": "white",
                 "value": 10,
+                "phaseColor": "black",
                 "phase": 2
               },
               {
                 "color": "gray",
                 "value": 70,
+                "phaseColor": "black",
                 "phase": 4
               },
               {
                 "color": "white",
                 "value": 150,
+                "phaseColor": "black",
                 "phase": 6
               }
             ]
@@ -1608,20 +1601,16 @@
           "hexes": ["F7"]
         },
         {
-          "color": "plain",
-          "centerTowns": [{"angle": 60, "percent": 0.5, "name": {"name": "Pistoia"}},
-                          {"angle": 240, "percent": 0.5, "name": {"name": "Prato", "reverse": true}}],
+          "color": "offboard",
+          "removeBorders": [2, 3, 6],
+          "track": [{"type": "offboard", "side": 4},
+            {"type": "offboard", "side": 5}],
           "hexes": ["M18"]
         },
         {
           "color": "plain",
           "centerTowns": [{"name": {"name": "Asti"}}],
           "hexes": ["E10"]
-        },
-        {
-          "color": "plain",
-          "centerTowns": [{"name": {"name": "Siena"}}],
-          "hexes": ["N21"]
         },
         {
           "color": "plain",
@@ -1632,11 +1621,6 @@
           "color": "plain",
           "centerTowns": [{"name": {"name": "Rovigo"}}],
           "hexes": ["O10"]
-        },
-        {
-          "color": "plain",
-          "centerTowns": [{"name": {"name": "Arezzo"}}],
-          "hexes": ["O20"]
         },
         {
           "color": "plain",
@@ -1724,60 +1708,25 @@
           "hexes": ["F11"]
         },
         {
-          "color": "yellow",
-          "values": [{
-            "value": 30,
-            "angle": 215,
-            "percent": 0.667
-          }],
-          "labels": [{
-            "label": "Y",
-            "angle": 90,
-            "percent": 0.667
-          }],
-          "names": [{"name": "FIRENZE", "percent": 0.85}],
-          "cities": [{
-            "angle": 300,
-            "percent": 0.5,
-            "companies": ["SFMA"]
-          },{
-            "angle": 150,
-            "percent": 0.5,
-            "companies": ["SFMA"]
-          }],
-          "track": [{"side": 6, "type": "gentle"}, {"side": 3, "type": "sharpStop"}],
+          "color": "offboard",
+          "track": [{"type": "offboard", "side": 4},
+            {"type": "offboard", "side": 5}],
+          "removeBorders": [3],
           "hexes": ["N19"]
         },
         {
-          "color": "plain",
-          "cities": [{"name": {"name": "Livorno"}}],
-          "hexes": ["K20"]
-        },
-        {
-          "color": "yellow",
-          "values": [{
-            "angle": 90,
-            "percent": 0.667,
-            "value": 20
-          }],
-          "cities": [{
-            "companies": ["SSFL"],
-            "name": {"name": "Pisa"}
-          }],
-          "track": [{"side": 1},{"side": 5},{"side": 6}],
+          "color": "offboard",
+          "track": [{"type": "offboard", "side": 4},
+                    {"type": "offboard", "side": 3}],
+          "removeBorders": [5, 6],
           "hexes": ["K18"]
         },
         {
-          "color": "yellow",
-          "values": [{
-            "percent": 0.667,
-            "value": 20
-          }],
-          "cities": [{
-            "companies": ["SFLP"],
-            "name": {"name": "Lucca"}
-          }],
-          "track": [{"side": 2},{"side": 6}],
+          "color": "offboard",
+          "track": [{"type": "offboard", "side": 3},
+            {"type": "offboard", "side": 4},
+            {"type": "offboard", "side": 5}],
+          "removeBorders": [1, 2, 6],
           "hexes": ["L17"]
         },
         {
@@ -1879,18 +1828,18 @@
       ],
       "borders": [
         {
-          "color": "gray",
+          "color": "green",
           "dashed": true,
-          "dashArray": "12",
+          "dashArray": "12 24",
           "offset": 4,
-          "width": 4,
+          "width": 8,
           "coords": ["G4p4", "G4p5", "G4p6"]
         },
         {
           "color": "blue",
           "dashed": true,
           "dashArray": "12 24",
-          "width": 4,
+          "width": 8,
           "coords": ["G6p2", "G6p1", "G8p2", "G8p1", "G10p2", "G10p1", "G10p6", "G10p5", "H11p6", "H11p5", "I12p6"]
         },
         {
@@ -1898,7 +1847,7 @@
           "dashed": true,
           "dashArray": "12 24",
           "offset": -1,
-          "width": 4,
+          "width": 8,
           "coords": ["J17p2", "J17p3"]
         },
         {
@@ -1906,21 +1855,21 @@
           "dashed": true,
           "dashArray": "12 24",
           "offset": -2,
-          "width": 4,
-          "coords": ["J17p4", "J17p5"]
+          "width": 8,
+          "coords": ["J17p4"]
         },
         {
           "color": "blue",
           "dashed": true,
           "dashArray": "12 24",
-          "width": 4,
-          "coords": ["L17p1", "L17p2", "L17p3", "M16p2", "M16p3", "M16p4", "O16p1", "O16p2", "O16p3", "P17p2", "P17p3"]
+          "width": 8,
+          "coords": ["L17p3", "M16p2", "M16p3", "M16p4", "O16p1", "O16p2", "O16p3", "P17p2", "P17p3"]
         },
         {
           "color": "blue",
           "dashed": true,
           "dashArray": "12 24",
-          "width": 4,
+          "width": 8,
           "coords": ["I12p1", "I12p2", "I10p1", "I10p2", "I10p3", "I10p4", "K10p1", "K10p6", "K10p5", "K10p4", "L9p5", "M10p2", "M10p3", "N9p6", "N9p5", "O10p6", "O10p5", "O10p4", "P9p5"]
         },
         {
@@ -1928,7 +1877,7 @@
           "dashed": true,
           "dashArray": "12 24",
           "offset": -2,
-          "width": 4,
+          "width": 8,
           "coords": ["L7p1", "L9p2", "L9p1", "L9p6", "L9p5", "M10p2", "M10p3", "N9p6", "N9p5", "O10p6", "O10p5", "O10p4", "P9p5"]
         },
         {
@@ -1997,19 +1946,11 @@
         },
         {
           "color": "mountain",
-          "coords": ["K16p5", "K16p6", "K16p1"]
+          "coords": ["K16p6", "K16p1"]
         },
         {
           "color": "mountain",
           "coords": ["N17p1", "N17p2", "N17p3"]
-        },
-        {
-          "color": "mountain",
-          "coords": ["O20p6", "O20p1"]
-        },
-        {
-          "color": "mountain",
-          "coords": ["O20p2", "O20p3"]
         }
       ]
     },

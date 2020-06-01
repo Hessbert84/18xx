@@ -6465,5 +6465,404 @@
         "side": 6
       }
     ]
+  },
+  "x943": {
+    "color": "brown",
+    "rotations": 2,
+    "values": [
+      {
+        "angle": -22,
+        "percent": 0.9,
+        "value": 70
+      }
+    ],
+    "labels": [
+      {
+        "angle": 145,
+        "percent": 0.92,
+        "label": "B"
+      }
+    ],
+    "cities": [
+      {
+        "angle": 60,
+        "percent": 0.55
+      },
+      {
+        "angle": 180,
+        "percent": 0.55
+      },
+      {
+        "angle": 300,
+        "percent": 0.55
+      }
+    ],
+    "track": [
+      {
+        "type": "straight",
+        "side": 1,
+        "cross": "over"
+      },
+      {
+        "type": "straight",
+        "side": 2,
+        "cross": "under"
+      },
+      {
+        "type": "straight",
+        "side": 3,
+        "cross": "under"
+      }
+    ]
+  },
+  "x945": {
+    "color": "brown",
+    "rotations": 1,
+    "values": [
+      { 
+        "percent": 0, 
+        "angle": 30, 
+        "value": 80 
+      } 
+    ],
+    "labels": [{
+        "label": "P",
+        "angle": 60,
+        "percent": 0.7
+    }],
+    "cities": [
+      {
+        "percent": 0.8
+      },
+      {
+        "angle": 120,
+        "percent": 0.8
+      },
+      {
+        "angle": 180,
+        "percent": 0.8
+      },
+      {
+        "angle": 240,
+        "percent": 0.8
+      }
+    ]
+  },
+  "x947": {
+    "color": "brown",
+    "rotations": 1,
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.8,
+        "value": 50
+      }
+    ],
+    "labels": [{
+      "label": "AL",
+      "angle": 150,
+      "percent": 0.8
+    }],
+    "cities": [
+      {
+        "size": 2
+      }
+    ],
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      },
+      {
+        "side": 3
+      },
+      {
+        "side": 4
+      },
+      {
+        "side": 5
+      },
+      {
+        "side": 6
+      }
+    ]
+  },
+  "x948": {
+    "color": "brown",
+    "values": [
+      {
+        "angle": 285,
+        "percent": 0.5,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "percent": 0.57735
+      },
+      {
+        "angle": 200,
+        "percent": 0.5
+      }
+    ],
+    "track": [
+      {
+        "type": "gentle",
+        "side": 1
+      },
+      {
+        "type": "sharp",
+        "side": 4
+      }
+    ]
+  },
+  "x949": {
+    "color": "brown",
+    "values": [
+      {
+        "angle": 195,
+        "percent": 0.7,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "angle": 120,
+        "percent": 0.57735
+      },
+      {
+        "angle": 270,
+        "percent": 0.5
+      }
+    ],
+    "track": [
+      {
+        "type": "gentle",
+        "side": 1
+      },
+      {
+        "type": "sharp",
+        "side": 5
+      }
+    ]
+  },
+  "x9410": {
+    "color": "brown",
+    "values": [
+      {
+        "angle": 270,
+        "percent": 0.4,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "angle": 180,
+        "percent": 0.6
+      },
+      {
+        "angle": 90,
+        "percent": 0.5
+      }
+    ],
+    "track": [
+      {
+        "type": "straight",
+        "side": 1
+      },
+      {
+        "type": "sharp",
+        "side": 2
+      }
+    ]
+  },
+  "x9411": {
+    "color": "brown",
+    "values": [
+      {
+        "angle": 120,
+        "percent": 0.7,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "angle": 180,
+        "percent": 0.6
+      },
+      {
+        "angle": 60,
+        "percent": 0.57735
+      }
+    ],
+    "track": [
+      {
+        "type": "straight",
+        "side": 1,
+        "cross": "over"
+      },
+      {
+        "type": "gentle",
+        "side": 6,
+        "cross": "under"
+      }
+    ]
+  },
+  "x9412": {
+    "color": "brown",
+    "values": [
+      {
+        "angle": 60,
+        "percent": 0.7,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "percent": 0.6
+      },
+      {
+        "angle": 120,
+        "percent": 0.6
+      }
+    ],
+    "track": [
+      {
+        "type": "straight",
+        "side": 1,
+        "cross": "over"
+      },
+      {
+        "type": "straight",
+        "side": 6,
+        "cross": "under"
+      }
+    ]
+  },
+  "x9413": {
+    "color": "brown",
+    "rotations": 3,
+    "values": [
+      {
+        "angle": 150,
+        "percent": 0.7,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "angle": 210,
+        "percent": 0.4
+      },
+      {
+        "angle": 30,
+        "percent": 0.4
+      }
+    ],
+    "track": [
+      {
+        "type": "gentle",
+        "side": 1
+      },
+      {
+        "type": "gentle",
+        "side": 4
+      }
+    ]
+  },
+  "x9414": {
+    "color": "brown",
+    "rotations": 3,
+    "values": [
+      {
+        "angle": 120,
+        "percent": 0.4,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "angle": 210,
+        "percent": 0.5
+      },
+      {
+        "angle": 30,
+        "percent": 0.5
+      }
+    ],
+    "track": [
+      {
+        "type": "sharp",
+        "side": 1
+      },
+      {
+        "type": "sharp",
+        "side": 4
+      }
+    ]
+  },
+  "x9415": {
+    "color": "brown",
+    "values": [
+      {
+        "angle": 150,
+        "percent": 0.3,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "angle": 270,
+        "percent": 0.5
+      },
+      {
+        "angle": 30,
+        "percent": 0.5
+      }
+    ],
+    "track": [
+      {
+        "type": "sharp",
+        "side": 1
+      },
+      {
+        "type": "sharp",
+        "side": 5
+      }
+    ]
+  },
+  "x9416": {
+    "color": "brown",
+    "values": [
+      {
+        "angle": 90,
+        "percent": 0.4,
+        "value": 40
+      }
+    ],
+    "cities": [
+      {
+        "angle": 190,
+        "percent": 0.5
+      },
+      {
+        "angle": 360,
+        "percent": 0.5
+      }
+    ],
+    "track": [
+      {
+        "type": "gentle",
+        "cross": "over",
+        "side": 4
+      },
+      {
+        "type": "gentle",
+        "cross": "under",
+        "side": 5
+      }
+    ]
   }
 }
