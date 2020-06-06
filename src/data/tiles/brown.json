@@ -6420,12 +6420,12 @@
       }
     ]
   },
-  "IPL3": {
+  "IPL4": {
     "color": "brown",
     "rotations": 1,
     "values": [
       {
-        "value": 60,
+        "value": 80,
         "angle": 210,
         "percent": 0.8
       }
