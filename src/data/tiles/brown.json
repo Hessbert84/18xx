@@ -6456,6 +6456,48 @@
       }
     ]
   },
+  "X21": {
+    "color": "brown",
+    "values": [
+      {
+        "value": 80
+      }
+    ],
+    "cities": [
+      {
+        "angle": 30,
+        "percent": 0.6,
+        "rotation": 30,
+        "size": 2
+      },
+      {
+        "angle": 150,
+        "percent": 0.6,
+        "rotation": -30,
+        "size": 2
+      },      
+      {
+        "angle": 270,
+        "percent": 0.6,
+        "rotation": 90,
+        "size": 2
+      }
+    ],
+    "track": [
+      {
+        "type": "sharp",
+        "side": 1
+      },
+      {
+        "type": "sharp",
+        "side": 3
+      },
+      {
+        "type": "sharp",
+        "side": 5
+      }
+    ]
+  },
   "x943": {
     "color": "brown",
     "rotations": 2,

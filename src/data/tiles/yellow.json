@@ -1463,32 +1463,32 @@
     ],
     "cities": [
       {
-        "angle": 330,
+        "angle": 30,
         "percent": 0.6,
         "size": 1
       },
       {
-        "angle": 90,
+        "angle": 150,
         "percent": 0.6,
         "size": 1
       },      
       {
-        "angle": 210,
+        "angle": 270,
         "percent": 0.6,
         "size": 1
       }
     ],
     "track": [
       {
-        "type": "sharpStopRev",
+        "type": "sharpStop",
         "side": 1
       },
       {
-        "type": "sharpStopRev",
+        "type": "sharpStop",
         "side": 3
       },
       {
-        "type": "sharpStopRev",
+        "type": "sharpStop",
         "side": 5
       }
     ]
@@ -1522,6 +1522,36 @@
         "label": "M"
       }
     ]
+  },
+  "X35b": {
+    "color": "yellow",
+    "centerTowns": [{}],
+    "offBoardRevenue": {
+      "rows": 4,
+      "angle": 210,
+      "percent": 0.85,
+      "revenues": [
+        {
+          "color": "yellow",
+          "cost": "30"
+        },
+        {
+          "color": "green",
+          "cost": "40"
+        },
+        {
+          "color": "brown",
+          "cost": "50"
+        },
+        {
+          "color": "gray",
+          "cost": "60"
+        }
+      ]
+    },
+    "track": [{"side": 1}, {"side": 2},
+              {"side": 3}, {"side": 4},
+              {"side": 5}, {"side": 6}]
   },
   "SY1": {
     "color": "yellow",

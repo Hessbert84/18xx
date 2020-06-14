@@ -30,7 +30,9 @@
     "8": 8,
     "9": 8,
     "57": 4,
+    "X01": 1,
     "X02": 3,
+    "X35b": 1,
 
     "14": 3,
     "15": 3,
@@ -39,9 +41,18 @@
     "81": 4,
     "82": 4,
     "83": 4,
-    "X12": 3
+    "X11": 1,
+    "X12": 3,
+
+    "X21": 1,
+
+    "X31": 1
   },
   "map": {
+
+
+
+
       "hexes": [
           {
               "color": "plain",
@@ -82,7 +93,7 @@
                   }
                 ],
               "hexes": [
-                  "C1", "E1", "G1"
+                  "C1", "G1"
               ]
           },
           {
@@ -163,7 +174,7 @@
                     }
                   ],
               "hexes": [
-                  "C17", "E17", "G17"
+                  "C17", "G17"
               ]
           },
           {
@@ -228,7 +239,7 @@
                   }
                 ],
               "hexes": [
-                  "A5", "A7", "A9", "A11", "A13", "A15"
+                  "A5", "A7", "A11", "A13", "A15"
               ]
           },
           {
@@ -278,7 +289,7 @@
                   }
                 ],
               "hexes": [
-                  "I5", "I7", "I9", "I11", "I13", "I15"
+                  "I5", "I7", "I11", "I13", "I15"
               ]
           },
           {
@@ -295,7 +306,255 @@
               "hexes": [
                   "I17"
               ]
-          }
+          },
+          {
+            "color": "water",
+            "removeBorders": [
+                2, 6
+            ],
+            "routeBonus": [
+              {
+                "value": "+$50",
+                "fillColor": "white",
+                "strokeColor": "black",
+                "textColor": "black",
+                "angle": 0,
+                "percent": 0.3
+              }
+            ],
+            "offBoardRevenue": {
+              "rows": 2,
+              "revenues": [
+                {
+                  "color": "xxpaper_yellow",
+                  "cost": "20"
+                },
+                {
+                  "color": "xxpaper_green",
+                  "cost": "30"
+                },
+                {
+                  "color": "xxpaper_blue",
+                  "cost": "40"
+                },
+                {
+                  "color": "xxpaper_brown",
+                  "cost": "50"
+                },
+                {
+                  "color": "xxpaper_red",
+                  "cost": "60"
+                },                  
+                {
+                  "color": "xxpaper_gray",
+                  "cost": "70"
+                },
+                {
+                  "color": "xxpaper_purple",
+                  "cost": "80"
+                }
+              ],
+              "angle": 180,
+              "percent": 0.4
+            },
+            "track": [
+                {
+                  "type": "offboard",
+                  "side": 1
+                }
+              ],
+            "hexes": ["E1"]
+        },            
+        {
+            "color": "water",
+            "removeBorders": [
+                2, 6
+            ],
+            "routeBonus": [
+              {
+                "value": "+$50",
+                "fillColor": "white",
+                "strokeColor": "black",
+                "textColor": "black",
+                "angle": 180,
+                "percent": 0.3
+              }
+            ],
+            "offBoardRevenue": {
+              "rows": 2,
+              "revenues": [
+                {
+                  "color": "xxpaper_yellow",
+                  "cost": "20"
+                },
+                {
+                  "color": "xxpaper_green",
+                  "cost": "30"
+                },
+                {
+                  "color": "xxpaper_blue",
+                  "cost": "40"
+                },
+                {
+                  "color": "xxpaper_brown",
+                  "cost": "50"
+                },
+                {
+                  "color": "xxpaper_red",
+                  "cost": "60"
+                },                  
+                {
+                  "color": "xxpaper_gray",
+                  "cost": "70"
+                },
+                {
+                  "color": "xxpaper_purple",
+                  "cost": "80"
+                }
+              ],
+              "angle": 0,
+              "percent": 0.2
+            },
+            "track": [
+              {
+                  "type": "offboard",
+                  "side": 3
+                },
+                {
+                  "type": "offboard",
+                  "side": 4
+                },
+                {
+                  "type": "offboard",
+                  "side": 5
+                }
+              ],
+            "hexes": ["E17"]
+        },          
+        {
+            "color": "offboard",
+            "routeBonus": [
+              {
+                "value": "+$50",
+                "fillColor": "black",
+                "strokeColor": "white",
+                "textColor": "white",
+                "angle": 0,
+                "percent": 1
+              }
+            ],
+            "offBoardRevenue": {
+              "rows": 2,
+              "revenues": [
+                {
+                  "color": "xxpaper_yellow",
+                  "cost": "20"
+                },
+                {
+                  "color": "xxpaper_green",
+                  "cost": "30"
+                },
+                {
+                  "color": "xxpaper_blue",
+                  "cost": "40"
+                },
+                {
+                  "color": "xxpaper_brown",
+                  "cost": "50"
+                },
+                {
+                  "color": "xxpaper_red",
+                  "cost": "60"
+                },                  
+                {
+                  "color": "xxpaper_gray",
+                  "cost": "70"
+                },
+                {
+                  "color": "xxpaper_purple",
+                  "cost": "80"
+                }
+              ],
+              "angle": 270,
+              "percent": 0.2
+            },
+            "removeBorders": [
+              1, 4
+          ],
+          "track": [
+              {
+                "type": "offboard",
+                "side": 2
+              },
+              {
+                "type": "offboard",
+                "side": 3
+              }
+            ],
+            "hexes": ["I9"]
+        },
+        {
+          "color": "offboard",
+          "removeBorders": [
+              1, 4
+          ],
+          "routeBonus": [
+            {
+              "value": "+$50",
+              "fillColor": "black",
+              "strokeColor": "white",
+              "textColor": "white",
+              "angle": 0,
+              "percent": 1
+            }
+          ],
+          "offBoardRevenue": {
+            "rows": 2,
+            "revenues": [
+              {
+                "color": "xxpaper_yellow",
+                "cost": "20"
+              },
+              {
+                "color": "xxpaper_green",
+                "cost": "30"
+              },
+              {
+                "color": "xxpaper_blue",
+                "cost": "40"
+              },
+              {
+                "color": "xxpaper_brown",
+                "cost": "50"
+              },
+              {
+                "color": "xxpaper_red",
+                "cost": "60"
+              },                  
+              {
+                "color": "xxpaper_gray",
+                "cost": "70"
+              },
+              {
+                "color": "xxpaper_purple",
+                "cost": "80"
+              }
+            ],
+            "angle": 90,
+            "percent": 0.2
+          },
+          "track": [
+              {
+                "type": "offboard",
+                "side": 5
+              },
+              {
+                "type": "offboard",
+                "side": 6
+              }
+            ],
+          "hexes": ["A9"]
+        }
       ]
   }
 }

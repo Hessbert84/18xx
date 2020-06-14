@@ -7683,17 +7683,17 @@
     ],
     "cities": [
       {
-        "angle": 330,
+        "angle": 30,
         "percent": 0.6,
         "size": 1
       },
       {
-        "angle": 90,
+        "angle": 150,
         "percent": 0.6,
         "size": 1
       },      
       {
-        "angle": 210,
+        "angle": 270,
         "percent": 0.6,
         "size": 1
       }
@@ -7701,15 +7701,15 @@
     "track": [
       {
         "type": "sharp",
-        "side": 2
+        "side": 1
       },
       {
         "type": "sharp",
-        "side": 4
+        "side": 3
       },
       {
         "type": "sharp",
-        "side": 6
+        "side": 5
       }
     ]
   },

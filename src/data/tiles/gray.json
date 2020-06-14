@@ -1313,6 +1313,13 @@
       }
     ]
   },
+  "X31": {
+    "color": "gray",
+    "cities": [{"size": 6, "rotation": 0}],
+    "values": [{"value": 100, "angle": 0, "percent": 0}],
+    "track": [{"side":1},{"side":2},{"side":3},
+              {"side":4},{"side":5},{"side":6}]
+  },
   "H904": {
     "color": "gray",
     "values": [
